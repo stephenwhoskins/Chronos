@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"obhect_scroll_camera_down","path":"objects/obhect_scroll_camera_down/obhect_scroll_camera_down.yy",},"order":0,},
+    {"id":{"name":"object_scroll_camera_down","path":"objects/object_scroll_camera_down/object_scroll_camera_down.yy",},"order":0,},
     {"id":{"name":"sprite_left_wall_locked","path":"sprites/sprite_left_wall_locked/sprite_left_wall_locked.yy",},"order":7,},
     {"id":{"name":"object_base_wall","path":"objects/object_base_wall/object_base_wall.yy",},"order":19,},
     {"id":{"name":"object_barrier_1","path":"objects/object_barrier_1/object_barrier_1.yy",},"order":1,},
@@ -182,7 +182,7 @@
     {"folderPath":"folders/Objects/barriers.yy","order":6,"resourceVersion":"1.0","name":"barriers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies/warrior.yy","order":3,"resourceVersion":"1.0","name":"warrior","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/credits.yy","order":10,"resourceVersion":"1.0","name":"credits","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects/creduts.yy","order":9,"resourceVersion":"1.0","name":"creduts","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/credits.yy","order":9,"resourceVersion":"1.0","name":"credits","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies/timey.yy","order":4,"resourceVersion":"1.0","name":"timey","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [

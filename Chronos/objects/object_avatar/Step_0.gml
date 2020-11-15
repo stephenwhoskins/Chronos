@@ -13,16 +13,18 @@ if (global.health_level > 0 && !global.time_stopped)
 	}
 	else
 	{
+		// Handle moving left, right, up, and down here.
 		if (sprite_index != sprite_avatar_attacking)
 		{
 			sprite_index = sprite_avatar_idle;
-	
+			
+			vspeed = 0;
 			if (keyboard_check(vk_up))
 			{
 				sprite_index = sprite_avatar_walking;
 				if (place_free(x, y - 1))
 				{
-					y += -1;
+					vspeed = -1;
 				}
 			}
 			else if (keyboard_check(vk_down))
@@ -30,17 +32,18 @@ if (global.health_level > 0 && !global.time_stopped)
 				sprite_index = sprite_avatar_walking;
 				if (place_free(x, y + 1))
 				{
-					y += 1;
+					vspeed = 1;
 				}
 			}
 
+			hspeed = 0;
 			if (keyboard_check(vk_left))
 			{
 				sprite_index = sprite_avatar_walking;
 				image_xscale = -1.0;
 				if (place_free(x - 1, y))
 				{
-					x += -1;
+					hspeed = -1;
 				}
 			}
 			else if (keyboard_check(vk_right))
@@ -49,7 +52,7 @@ if (global.health_level > 0 && !global.time_stopped)
 				image_xscale = 1.0;
 				if (place_free(x + 1, y))
 				{
-					x += 1;
+					hspeed = 1;
 				}
 			}
 		}
