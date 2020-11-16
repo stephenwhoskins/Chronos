@@ -4,7 +4,7 @@
 var title_text = "Chronos Time Warp";
 title_struct = {
 text: title_text,
-x: camera_get_view_width(view_camera[0]) / 2- string_width(title_text) / 2,
+x: camera_get_view_width(view_camera[0]) / 2- string_width(title_text) / 2 - 16,
 y: 50
 };
 
