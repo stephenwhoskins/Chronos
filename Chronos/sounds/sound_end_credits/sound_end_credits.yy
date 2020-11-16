@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sound_end_credits.wav",
-  "duration": 29.8413486,
+  "duration": 70.37836,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

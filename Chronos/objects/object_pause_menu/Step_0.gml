@@ -14,7 +14,7 @@ if (keyboard_check(vk_escape) && !pausePressed)
 		// set new surface target
 		if (!surface_exists(my_application_surface))
 		{
-			my_application_surface = surface_create(3*camera_get_view_width(view_camera[0]), 3*camera_get_view_height(view_camera[0]));
+			my_application_surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 		}
 		surface_set_target(my_application_surface);
 		
