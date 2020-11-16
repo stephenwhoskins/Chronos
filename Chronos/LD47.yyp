@@ -122,6 +122,7 @@
     {"id":{"name":"object_bottom_wall","path":"objects/object_bottom_wall/object_bottom_wall.yy",},"order":1,},
     {"id":{"name":"object_right_wall","path":"objects/object_right_wall/object_right_wall.yy",},"order":3,},
     {"id":{"name":"object_bottom_wall_closed","path":"objects/object_bottom_wall_closed/object_bottom_wall_closed.yy",},"order":4,},
+    {"id":{"name":"sprite_tile_12","path":"sprites/sprite_tile_12/sprite_tile_12.yy",},"order":11,},
     {"id":{"name":"sprite_sword_attacking","path":"sprites/sprite_sword_attacking/sprite_sword_attacking.yy",},"order":5,},
     {"id":{"name":"sound_title_select","path":"sounds/sound_title_select/sound_title_select.yy",},"order":8,},
     {"id":{"name":"object_top_wall_locked","path":"objects/object_top_wall_locked/object_top_wall_locked.yy",},"order":9,},
