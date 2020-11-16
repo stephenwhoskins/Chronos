@@ -50,6 +50,18 @@ if (health_level > 0)
 			}
 			fire_frame = fire_frame_max;
 		}
+		
+		if (is_boss && !door_shut)
+		{
+			door_shut = true;
+			audio_stop_all();
+			audio_play_sound(sound_door_closed, 10, false);
+			wall_closed_instance.x = camera_get_view_x(view_camera[0]);
+			wall_closed_instance.y = camera_get_view_y(view_camera[0]) + 40;
+			wall_closed_instance.image_alpha = 1;
+			wall_closed_instance.solid = true;
+			boss_music_count = 0;
+		}
 	}
 	else
 	{
@@ -72,6 +84,16 @@ if (health_level > 0)
 			fire_frame++;
 		}
 		sprite_index = sprite_snake_idle;
+	}
+}
+
+if (boss_music_count < max_boss_music_count)
+{
+	boss_music_count++;
+	
+	if (boss_music_count == max_boss_music_count)
+	{
+		audio_play_sound(sound_bgm_3, 10, true);
 	}
 }
 

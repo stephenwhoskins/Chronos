@@ -12,3 +12,15 @@ fire_frame_max = room_speed * 2;
 fire_frame = 0;
 
 timey_death_initiated = false;
+
+max_boss_music_count = 120;
+boss_music_count = max_boss_music_count;
+door_shut = false;
+wall_closed_instance = noone;
+
+if (is_boss)
+{
+	wall_closed_instance = instance_create_depth(0, 0, depth-1, object_left_wall_closed);
+	wall_closed_instance.image_alpha = 0;
+	wall_closed_instance.solid = false;
+}
