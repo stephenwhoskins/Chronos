@@ -4,5 +4,5 @@ y += .3;
 
 if (y > room_height + 100)
 {
-	room_goto(title);
+	object_fade_out.room_id = title;
 }
