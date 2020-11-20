@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sound_door_unlocked.wav",
-  "duration": 3.335,
+  "duration": 1.228537,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

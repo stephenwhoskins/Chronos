@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sound_slice.wav",
-  "duration": 0.275,
+  "duration": 0.119785,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
