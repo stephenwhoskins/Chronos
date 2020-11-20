@@ -26,7 +26,7 @@ if (death_count < max_death_count)
 	
 	if (death_count == max_death_count - object_fade_out.max_fade_count)
 	{
-		object_fade_out.room_id = Credits;
+		object_fade_out.room_id = EndCutscene;
 	}
 }
 
