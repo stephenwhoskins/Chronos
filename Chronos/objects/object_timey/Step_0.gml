@@ -20,6 +20,11 @@ if (death_count < max_death_count)
 			global.shake_count = 0;
 			sprite_index = sprite_timey_dying;
 		}
+		
+		if (death_count == max_death_count / 3 + 1)
+		{
+			object_music_player.sound = audio_play_sound(sound_rumble, 10, true);
+		}
 	}
 	
 	death_count = min(death_count + 1, max_death_count);
