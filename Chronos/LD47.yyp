@@ -94,6 +94,7 @@
     {"id":{"name":"sprite_bottom_wall","path":"sprites/sprite_bottom_wall/sprite_bottom_wall.yy",},"order":0,},
     {"id":{"name":"sprite_snake_dead","path":"sprites/sprite_snake_dead/sprite_snake_dead.yy",},"order":3,},
     {"id":{"name":"sprite_side_top_2","path":"sprites/sprite_side_top_2/sprite_side_top_2.yy",},"order":22,},
+    {"id":{"name":"sound_walk","path":"sounds/sound_walk/sound_walk.yy",},"order":13,},
     {"id":{"name":"object_music_player","path":"objects/object_music_player/object_music_player.yy",},"order":0,},
     {"id":{"name":"sprite_wall_1","path":"sprites/sprite_wall_1/sprite_wall_1.yy",},"order":13,},
     {"id":{"name":"sprite_barrier_1","path":"sprites/sprite_barrier_1/sprite_barrier_1.yy",},"order":1,},

@@ -113,6 +113,19 @@ if (global.health_level > 0 && !global.time_stopped)
 
 set_camera();
 
+// Handle walk SFX here
+if (sprite_index == sprite_avatar_walking && last_sprite_index != sprite_avatar_walking)
+{
+	walk_sound = audio_play_sound(sound_walk, 10, true);
+}
+
+if (sprite_index != sprite_avatar_walking && last_sprite_index == sprite_avatar_walking)
+{
+	audio_stop_sound(walk_sound);
+}
+
+last_sprite_index = sprite_index;
+
 if (hurt_count == 0 && sprite_index != sprite_avatar_dead)
 {
 	audio_play_sound(sound_hit, 10, false);

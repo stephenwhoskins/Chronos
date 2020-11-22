@@ -46,6 +46,11 @@ if (time_warp_count < max_time_warp_count)
 		}
 	}
 	
+	if (time_warp_count == max_time_warp_count / 2 + 1)
+	{
+		object_music_player.sound = audio_play_sound(sound_rumble, 10, true);
+	}
+	
 	time_warp_count = min(time_warp_count + 1, max_time_warp_count);
 	
 	if (time_warp_count == max_time_warp_count)

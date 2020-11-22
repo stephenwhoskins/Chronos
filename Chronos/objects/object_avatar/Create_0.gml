@@ -13,3 +13,5 @@ death_count = max_death_count;
 attack_pressed = false;
 
 timey_time_warp_initiated = false;
+walk_sound = -1;
+last_sprite_index = sprite_index;
