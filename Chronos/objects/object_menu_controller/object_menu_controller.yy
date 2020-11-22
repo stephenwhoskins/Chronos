@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "title",
+    "path": "folders/Objects/title.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_menu_controller",

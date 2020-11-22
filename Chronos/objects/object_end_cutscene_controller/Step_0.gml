@@ -20,7 +20,7 @@ if (tower_layer_x != -136)
 else if (pause_count == max_pause_count)
 {
 	layer_x(lay_id, tower_layer_x + shake_offset);
-	layer_y(lay_id, layer_get_y(lay_id) + 0.125);
+	layer_y(lay_id, layer_get_y(lay_id) + 0.25);
 }
 // Watch the view for a bit.
 else

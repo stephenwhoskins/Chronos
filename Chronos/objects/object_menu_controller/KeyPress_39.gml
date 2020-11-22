@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (object_fade_out.room_id != -1)
+if (object_start_avatar.sprite_index != sprite_avatar_sleeping)
 {
 	return;
 }
