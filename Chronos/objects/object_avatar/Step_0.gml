@@ -3,6 +3,8 @@
 
 hspeed = 0;
 vspeed = 0;
+
+var controller = read_gameplay_controller();
 if (global.health_level > 0 && !global.time_stopped)
 {
 	if (bounce_back_count < max_bounce_back_count)
@@ -20,7 +22,7 @@ if (global.health_level > 0 && !global.time_stopped)
 		{
 			sprite_index = sprite_avatar_idle;
 			
-			if (keyboard_check(vk_up))
+			if (controller.up)
 			{
 				sprite_index = sprite_avatar_walking;
 				if (place_free(x, y - 1))
@@ -28,7 +30,7 @@ if (global.health_level > 0 && !global.time_stopped)
 					vspeed = -1;
 				}
 			}
-			else if (keyboard_check(vk_down))
+			else if (controller.down)
 			{
 				sprite_index = sprite_avatar_walking;
 				if (place_free(x, y + 1))
@@ -37,7 +39,7 @@ if (global.health_level > 0 && !global.time_stopped)
 				}
 			}
 
-			if (keyboard_check(vk_left))
+			if (controller.left)
 			{
 				sprite_index = sprite_avatar_walking;
 				image_xscale = -1.0;
@@ -46,7 +48,7 @@ if (global.health_level > 0 && !global.time_stopped)
 					hspeed = -1;
 				}
 			}
-			else if (keyboard_check(vk_right))
+			else if (controller.right)
 			{
 				sprite_index = sprite_avatar_walking;
 				image_xscale = 1.0;
@@ -92,7 +94,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			ds_list_destroy(_list);
 		}
 		
-		if (keyboard_check(ord("X")) && !attack_pressed)
+		if (controller.attacking && !attack_pressed)
 		{
 			if (sprite_index != sprite_avatar_attacking)
 			{
@@ -102,7 +104,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			sprite_index = sprite_avatar_attacking;
 			attack_pressed = true;
 		}
-		else if (!keyboard_check(ord("X")))
+		else if (!controller.attacking)
 		{
 			attack_pressed = false;
 		}

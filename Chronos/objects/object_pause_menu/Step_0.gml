@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if (keyboard_check(vk_escape) && !pausePressed)
+var controller = read_menu_controller();
+if (controller.menu && !pausePressed)
 {
 	paused = !paused;
 	
@@ -48,7 +48,7 @@ if (keyboard_check(vk_escape) && !pausePressed)
 	
 	pausePressed = true;
 }
-else if (!keyboard_check(vk_escape) && pausePressed)
+else if (!controller.menu && pausePressed)
 {
 	pausePressed = false;
 }
@@ -56,7 +56,7 @@ else if (!keyboard_check(vk_escape) && pausePressed)
 if (paused)
 {
 	// handle changing selection
-	var swap = keyboard_check(vk_left) || keyboard_check(vk_right);
+	var swap = controller.left || controller.right;
 	if (swap && !button_pressed && !exiting)
 	{
 		option = (option + 1) % max_options;
@@ -69,7 +69,7 @@ if (paused)
 	}
 	
 	// handle selection being made
-	if (keyboard_check(vk_enter) && !enter_pressed && !exiting)
+	if (controller.select && !enter_pressed && !exiting)
 	{
 		if (option == option_yes)
 		{
@@ -90,7 +90,7 @@ if (paused)
 		
 		enter_pressed = true;
 	}
-	else if (!keyboard_check(vk_enter) && enter_pressed)
+	else if (!controller.select && enter_pressed)
 	{
 		enter_pressed = false;
 	}

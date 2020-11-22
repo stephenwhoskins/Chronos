@@ -24,3 +24,4 @@ y: button_height
 buttons = [start_button, exit_button];
 num_buttons = array_length(buttons);
 selected = 0;
+swapped = false;
