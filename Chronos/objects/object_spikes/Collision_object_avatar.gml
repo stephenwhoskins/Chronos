@@ -4,7 +4,7 @@
 var actually_hit = true;
 
 // If avatar is below.
-if (other.y > y && !place_meeting(x, y - 21, object_avatar))
+if (other.y > y && !place_meeting(x, y - 20, object_avatar))
 {
 	actually_hit = false;
 }
