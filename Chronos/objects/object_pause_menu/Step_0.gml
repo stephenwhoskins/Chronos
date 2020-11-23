@@ -73,7 +73,7 @@ if (paused)
 	{
 		if (option == option_yes)
 		{
-			audio_play_sound(sound_title_select, 10, false);
+			audio_play_sound(sound_key, 10, false);
 			fade_count = 0;
 			exiting = true;
 			exit_count = 0;

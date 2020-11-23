@@ -3,11 +3,10 @@
 var view_x = camera_get_view_x(view_camera[0]);
 var view_y = camera_get_view_y(view_camera[0]);
 var hud_width = 256;
-var hud_height = 40;
 var health_x = view_x + sprite_get_width(sprite_controls) + 8;
 
 draw_set_color($303030);
-draw_rectangle(view_x, view_y, view_x + hud_width, view_y + hud_height, false);
+draw_rectangle(view_x, view_y, view_x + hud_width, view_y + global.hud_height, false);
 draw_set_color(c_white);
 
 // draw controls

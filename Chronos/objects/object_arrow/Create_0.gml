@@ -8,3 +8,5 @@ function script_timey_death_sequence()
 	object_timey.x = x;
 	object_timey.y = y;
 }
+
+audio_play_sound(sound_arrow, 10, false);

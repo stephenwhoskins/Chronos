@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// If the avatar isn't even in the same room, just return.
+if (script_get_room_index(object_avatar) != script_get_room_index(self))
+{
+	return;
+}
+
 var arrow_speed = 1.5;
 
 if (image_angle == 0)
