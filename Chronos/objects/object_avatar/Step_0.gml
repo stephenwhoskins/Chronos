@@ -113,18 +113,38 @@ if (global.health_level > 0 && !global.time_stopped)
 
 set_camera();
 
+// Automatically make the Avatar head for the nearest exit.
+if (escaping)
+{
+	sprite_index = sprite_avatar_walking;
+	image_xscale = -1.0;
+	var dest_x = camera_get_view_x(view_camera[0]);
+	var dest_y = camera_get_view_y(view_camera[0]) + view_hport[0] / 2  + global.hud_height;
+	
+	if (y != dest_y)
+	{
+		y += sign(dest_y - y);
+	}
+	else if (x != dest_x)
+	{
+		x += sign(dest_x - x);
+	}
+}
 // Handle walk SFX here
-if (sprite_index == sprite_avatar_walking && last_sprite_index != sprite_avatar_walking)
+else
 {
-	walk_sound = audio_play_sound(sound_walk, 10, true);
-}
+	if (sprite_index == sprite_avatar_walking && last_sprite_index != sprite_avatar_walking)
+	{
+		walk_sound = audio_play_sound(sound_walk, 10, true);
+	}
 
-if (sprite_index != sprite_avatar_walking && last_sprite_index == sprite_avatar_walking)
-{
-	audio_stop_sound(walk_sound);
+	if (sprite_index != sprite_avatar_walking && last_sprite_index == sprite_avatar_walking)
+	{
+		audio_stop_sound(walk_sound);
+	}
+	
+	last_sprite_index = sprite_index;
 }
-
-last_sprite_index = sprite_index;
 
 if (hurt_count == 0 && sprite_index != sprite_avatar_dead)
 {

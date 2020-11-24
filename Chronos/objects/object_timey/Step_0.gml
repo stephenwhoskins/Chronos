@@ -24,6 +24,7 @@ if (death_count < max_death_count)
 		if (death_count == max_death_count / 3 + 1)
 		{
 			object_music_player.sound = audio_play_sound(sound_rumble, 10, true);
+			object_avatar.escaping = true;
 		}
 	}
 	

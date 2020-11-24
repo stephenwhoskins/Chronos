@@ -135,6 +135,9 @@ if (variable_instance_exists(id, "snake_1") && variable_instance_exists(id, "sna
 		{
 			script_timey_death_sequence();
 			timey_death_initiated = true;
+			audio_play_sound(sound_door_closed, 10, false);
+			wall_closed_instance.image_alpha = 0;
+			wall_closed_instance.solid = false;
 		}
 	}
 }
