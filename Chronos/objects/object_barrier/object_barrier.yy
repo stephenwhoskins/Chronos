@@ -21,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "walls",
-    "path": "folders/Objects/walls.yy",
+    "name": "barriers",
+    "path": "folders/Objects/barriers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_base_wall",
+  "name": "object_barrier",
   "tags": [],
   "resourceType": "GMObject",
 }

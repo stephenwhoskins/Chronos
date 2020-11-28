@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 _text[0] = "For centuries the \nculmination of all human";
-_text[1] = "knowledge had been \nsafely kept behind the";
+_text[1] = "knowledge had been \nsafely kept within the";
 _text[2] = "walls of the Fortress of \nKnowledge.";
 _text[3] = "The information that it \ncontained within long";
 _text[4] = "benefitted those who \ncame seeking it.";

@@ -6,7 +6,7 @@ if (health_level > 0)
 	if (bounce_back_count < max_bounce_back_count)
 	{
 		var x_velocity = 3.0 * bounce_direction;
-		if (!place_meeting(x + x_velocity, y, object_base_wall))
+		if (!place_meeting(x + x_velocity, y, object_barrier))
 		{
 			x += x_velocity;
 		}
@@ -40,11 +40,11 @@ if (health_level > 0)
 		}
 		else
 		{
-			if (!place_meeting(x + dx, y, object_base_wall))
+			if (!place_meeting(x + dx, y, object_barrier))
 			{
 				x += dx;
 			}
-			if (!place_meeting(x, y + dy, object_base_wall))
+			if (!place_meeting(x, y + dy, object_barrier))
 			{
 				y += dy;
 			}
