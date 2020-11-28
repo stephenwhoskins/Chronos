@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9843d10d-3ecc-46d6-8f2e-87d72d18a7a5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "cutscene",
-    "path": "folders/Sprites/cutscene.yy",
+    "name": "end_cutscene",
+    "path": "folders/Sprites/end_cutscene.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_tower",

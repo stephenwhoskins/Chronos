@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"61e1d583-dcd5-444f-b3f4-e1698aa80289","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "cutscene",
-    "path": "folders/Sprites/cutscene.yy",
+    "name": "end_cutscene",
+    "path": "folders/Sprites/end_cutscene.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_mountain_top",
