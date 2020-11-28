@@ -13,7 +13,7 @@ draw_set_color(c_white);
 draw_sprite(sprite_controls, 0, view_x + 8, view_y);
 
 // draw key count
-draw_sprite(sprite_binary, global.key_count, view_x + 60, view_y + 16);
+draw_sprite(sprite_binary, global.key_count, view_x + 84, view_y + 16);
 
 // draw health
 for (var i = 0; i < global.health_level; i++)

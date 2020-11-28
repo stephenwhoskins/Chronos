@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "script_moving_block_meeting",
+  "name": "script_place_meeting",
   "tags": [],
   "resourceType": "GMScript",
 }

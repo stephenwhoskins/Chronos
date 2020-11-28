@@ -11,8 +11,7 @@ if (global.health_level > 0 && !global.time_stopped)
 	if (bounce_back_count < max_bounce_back_count)
 	{
 		var x_velocity = 2.0 * bounce_direction;
-		if (!place_meeting(x + x_velocity, y, object_barrier) &&
-		!script_moving_block_meeting(x + x_velocity, y))
+		if (!script_place_meeting(x + x_velocity, y))
 		{
 			x += x_velocity;
 		}
@@ -27,8 +26,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			if (controller.up)
 			{
 				sprite_index = sprite_avatar_walking;
-				if (!place_meeting(x, y - 1, object_barrier) &&
-				!script_moving_block_meeting(x, y - 1))
+				if (!script_place_meeting(x, y - 1))
 				{
 					vspeed = -1;
 				}
@@ -36,8 +34,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			else if (controller.down)
 			{
 				sprite_index = sprite_avatar_walking;
-				if (!place_meeting(x, y + 1, object_barrier) &&
-				!script_moving_block_meeting(x, y + 1))
+				if (!script_place_meeting(x, y + 1))
 				{
 					vspeed = 1;
 				}
@@ -47,8 +44,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			{
 				sprite_index = sprite_avatar_walking;
 				image_xscale = -1.0;
-				if (!place_meeting(x - 1, y, object_barrier) &&
-				!script_moving_block_meeting(x - 1, y))
+				if (!script_place_meeting(x - 1, y))
 				{
 					hspeed = -1;
 				}
@@ -57,8 +53,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			{
 				sprite_index = sprite_avatar_walking;
 				image_xscale = 1.0;
-				if (!place_meeting(x + 1, y, object_barrier) &&
-				!script_moving_block_meeting(x + 1, y))
+				if (!script_place_meeting(x + 1, y))
 				{
 					hspeed = 1;
 				}

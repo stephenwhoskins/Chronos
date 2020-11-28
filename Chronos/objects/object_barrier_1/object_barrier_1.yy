@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_barrier_0",
-    "path": "sprites/sprite_barrier_0/sprite_barrier_0.yy",
+    "name": "sprite_barrier_1",
+    "path": "sprites/sprite_barrier_1/sprite_barrier_1.yy",
   },
   "solid": true,
   "visible": true,
@@ -23,10 +23,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_moving_block","path":"objects/object_moving_block/object_moving_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_moving_block","path":"objects/object_moving_block/object_moving_block.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -34,7 +31,7 @@
     "path": "folders/Objects/barriers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_moving_block",
+  "name": "object_barrier_1",
   "tags": [],
   "resourceType": "GMObject",
 }
