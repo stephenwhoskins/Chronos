@@ -1,123 +1,44 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// If the avatar isn't even in the same room, just return.
 if (script_get_room_index(object_avatar) != script_get_room_index(self))
 {
-	return;
+    return;
 }
+
+// if image_angle is 0, it is pointing straight down. Adjust accordingly
+var pointing = degtorad(image_angle + 270);
 
 var arrow_speed = 1.5;
 
-if (image_angle == 0)
+var triggered = false;
+
+if (image_angle == 0 || image_angle == 180)
 {
-	if (image_xscale == 1.0)
+	if (object_avatar.x > (x - 16) && object_avatar.x < (x + 16))
 	{
-		if (object_avatar.x > x && object_avatar.x < (x + sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x + 8;
-			instance_arrow.y = y + 17;
-			instance_arrow.vspeed = arrow_speed;
-			reload_time = 0;
-		}
-	}
-	else
-	{
-		if (object_avatar.x > (x + sprite_width) && object_avatar.x < x && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x - 14;
-			instance_arrow.y = y + 17;
-			instance_arrow.vspeed = arrow_speed;
-			reload_time = 0;
-		}
+		triggered = true;
 	}
 }
 
-if (image_angle == 180)
+if (image_angle == 90 || image_angle == 270)
 {
-	if (image_xscale == 1.0)
+	if (object_avatar.y > (y - 16) && object_avatar.y < (y + 16))
 	{
-		if (object_avatar.x > (x - sprite_width) && object_avatar.x < x && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x - 8;
-			instance_arrow.y = y - 17;
-			instance_arrow.vspeed = -arrow_speed;
-			instance_arrow.image_angle = image_angle;
-			reload_time = 0;
-		}
-	}
-	else
-	{
-		if (object_avatar.x > x && object_avatar.x < (x - sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x + 14;
-			instance_arrow.y = y - 17;
-			instance_arrow.vspeed = -arrow_speed;
-			instance_arrow.image_angle = image_angle;
-			reload_time = 0;
-		}
+		triggered = true;
 	}
 }
 
-// NOTE THAT SPRITE_WIDTH IS DONE FOR COMPARISON; DON'T USE SPRITE_HEIGHT!
-if (image_angle == 90)
+if (triggered && reload_time == max_reload_time)
 {
-	if (image_xscale == 1.0)
-	{
-		if (object_avatar.y > y && object_avatar.y < (y + sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x - 17;
-			instance_arrow.y = y - 12;
-			instance_arrow.hspeed = -arrow_speed;
-			instance_arrow.image_angle = -image_angle;
-			reload_time = 0;
-		}
-	}
-	else
-	{
-		if (object_avatar.y > (y - sprite_width) && object_avatar.y < (y - 2.0 * sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x - 17;
-			instance_arrow.y = y + 6;
-			instance_arrow.hspeed = -arrow_speed;
-			instance_arrow.image_angle = -image_angle;
-			reload_time = 0;
-		}
-	}
+	instance_arrow = instance_create_depth(x, y, -100, object_arrow);
+	instance_arrow.x = x + 18 * cos(pointing);
+	instance_arrow.y = y - 18 * sin(pointing);
+	instance_arrow.hspeed = cos(pointing) * arrow_speed;
+	instance_arrow.vspeed = -sin(pointing) * arrow_speed;
+	reload_time = 0;
+	instance_arrow.image_angle = image_angle;
 }
 
-if (image_angle == -90)
-{
-	if (image_xscale == 1.0)
-	{
-		if (object_avatar.y > (y + sprite_width) && object_avatar.y < (y + 2.0 * sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x + 17;
-			instance_arrow.y = y + 12;
-			instance_arrow.hspeed = arrow_speed;
-			instance_arrow.image_angle = -image_angle;
-			reload_time = 0;
-		}
-	}
-	else
-	{
-		if (object_avatar.y > y && object_avatar.y < (y - sprite_width) && reload_time == max_reload_time)
-		{
-			instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
-			instance_arrow.x = x + 17;
-			instance_arrow.y = y - 6;
-			instance_arrow.hspeed = arrow_speed;
-			instance_arrow.image_angle = -image_angle;
-			reload_time = 0;
-		}
-	}
-}
 
 reload_time = min(reload_time + 1, max_reload_time);
