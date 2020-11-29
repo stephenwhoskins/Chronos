@@ -11,6 +11,7 @@ max_death_count = 180;
 death_count = max_death_count;
 
 attack_pressed = false;
+attack_2_pressed = false;
 
 timey_time_warp_initiated = false;
 walk_sound = -1;

@@ -109,6 +109,16 @@ if (global.health_level > 0 && !global.time_stopped)
 		{
 			attack_pressed = false;
 		}
+		
+		if (controller.attacking_2 && !attack_2_pressed)
+		{
+			attack_2_pressed = true;
+			instance_create_depth(x, y, depth + 1, object_bomb);
+		}
+		else if (!controller.attacking_2)
+		{
+			attack_2_pressed = false;
+		}
 	}
 }
 

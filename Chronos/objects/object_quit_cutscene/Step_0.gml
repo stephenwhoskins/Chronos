@@ -3,7 +3,7 @@
 
 var controller = read_gameplay_controller();
 
-if (controller.attacking)
+if (controller.attacking || controller.attacking_2)
 {
 	object_fade_out.room_id = title;
 }

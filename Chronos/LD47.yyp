@@ -161,6 +161,7 @@
     {"id":{"name":"object_fade_in","path":"objects/object_fade_in/object_fade_in.yy",},"order":12,},
     {"id":{"name":"get_miniroom","path":"scripts/get_miniroom/get_miniroom.yy",},"order":2,},
     {"id":{"name":"object_menu_controller","path":"objects/object_menu_controller/object_menu_controller.yy",},"order":0,},
+    {"id":{"name":"object_bomb","path":"objects/object_bomb/object_bomb.yy",},"order":2,},
     {"id":{"name":"object_fireball","path":"objects/object_fireball/object_fireball.yy",},"order":3,},
     {"id":{"name":"EndCutscene","path":"rooms/EndCutscene/EndCutscene.yy",},"order":3,},
     {"id":{"name":"sprite_door","path":"sprites/sprite_door/sprite_door.yy",},"order":14,},
