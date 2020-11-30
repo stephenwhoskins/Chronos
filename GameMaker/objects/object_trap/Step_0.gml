@@ -37,7 +37,7 @@ if (triggered && reload_time == max_reload_time)
 	instance_arrow.hspeed = cos(pointing) * arrow_speed;
 	instance_arrow.vspeed = -sin(pointing) * arrow_speed;
 	reload_time = 0;
-	instance_arrow.image_angle = image_angle;
+	instance_arrow.image_angle = -image_angle;
 }
 
 
