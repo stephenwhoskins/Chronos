@@ -109,6 +109,7 @@
     {"id":{"name":"sound_walk","path":"sounds/sound_walk/sound_walk.yy",},"order":13,},
     {"id":{"name":"object_music_player","path":"objects/object_music_player/object_music_player.yy",},"order":0,},
     {"id":{"name":"sprite_wall_1","path":"sprites/sprite_wall_1/sprite_wall_1.yy",},"order":13,},
+    {"id":{"name":"object_centipede","path":"objects/object_centipede/object_centipede.yy",},"order":5,},
     {"id":{"name":"sprite_barrier_1","path":"sprites/sprite_barrier_1/sprite_barrier_1.yy",},"order":1,},
     {"id":{"name":"object_right_wall_closed","path":"objects/object_right_wall_closed/object_right_wall_closed.yy",},"order":8,},
     {"id":{"name":"object_top_wall","path":"objects/object_top_wall/object_top_wall.yy",},"order":0,},
@@ -155,6 +156,7 @@
     {"id":{"name":"read_menu_controller","path":"scripts/read_menu_controller/read_menu_controller.yy",},"order":1,},
     {"id":{"name":"object_right_wall","path":"objects/object_right_wall/object_right_wall.yy",},"order":3,},
     {"id":{"name":"object_bottom_wall_closed","path":"objects/object_bottom_wall_closed/object_bottom_wall_closed.yy",},"order":4,},
+    {"id":{"name":"sprite_centipede","path":"sprites/sprite_centipede/sprite_centipede.yy",},"order":0,},
     {"id":{"name":"sprite_tile_12","path":"sprites/sprite_tile_12/sprite_tile_12.yy",},"order":11,},
     {"id":{"name":"sprite_sword_attacking","path":"sprites/sprite_sword_attacking/sprite_sword_attacking.yy",},"order":5,},
     {"id":{"name":"sound_title_select","path":"sounds/sound_title_select/sound_title_select.yy",},"order":8,},
@@ -231,6 +233,7 @@
     {"folderPath":"folders/Objects/title.yy","order":16,"resourceVersion":"1.0","name":"title","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/controller.yy","order":7,"resourceVersion":"1.0","name":"controller","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/intro_cutscene.yy","order":17,"resourceVersion":"1.0","name":"intro_cutscene","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/enemies/centipede.yy","order":5,"resourceVersion":"1.0","name":"centipede","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
