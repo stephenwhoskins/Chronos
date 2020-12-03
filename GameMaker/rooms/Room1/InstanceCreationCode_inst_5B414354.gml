@@ -1,1 +1,0 @@
-animation_count = 14;

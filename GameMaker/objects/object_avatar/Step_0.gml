@@ -62,6 +62,7 @@ if (global.health_level > 0 && !global.time_stopped)
 		else // Handle enemy damage here
 		{
 			var x_offset = 16;
+			var y_offset = -16;
 			
 			// Handle avatar facing the left.
 			if (image_xscale == -1)
@@ -70,7 +71,7 @@ if (global.health_level > 0 && !global.time_stopped)
 			}
 			
 			var _list = ds_list_create();
-			var _num = instance_place_list(x + x_offset, y, object_enemy, _list, false);
+			var _num = instance_place_list(x + x_offset, y + y_offset, object_enemy, _list, false);
 			if _num > 0
 			{
 				for (var i = 0; i < _num; ++i;)
