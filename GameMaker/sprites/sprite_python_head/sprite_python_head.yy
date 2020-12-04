@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 9,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 15,
   "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_bottom": 18,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 16,
-  "height": 16,
+  "height": 19,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"bd9281eb-38e0-448d-8cdb-12cc9e735c9a","path":"sprites/sprite_python_head/sprite_python_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bd9281eb-38e0-448d-8cdb-12cc9e735c9a","path":"sprites/sprite_python_head/sprite_python_head.yy",},"LayerId":{"name":"90dc418c-cfd6-4ef8-855a-a402ed863557","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_python_head","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","name":"bd9281eb-38e0-448d-8cdb-12cc9e735c9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0ba950a0-57a2-4777-945d-146b5cbfecfa","path":"sprites/sprite_python_head/sprite_python_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0ba950a0-57a2-4777-945d-146b5cbfecfa","path":"sprites/sprite_python_head/sprite_python_head.yy",},"LayerId":{"name":"23a68c78-3ec6-4c0f-8745-9c4874f39c7e","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_python_head","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","name":"0ba950a0-57a2-4777-945d-146b5cbfecfa","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_python_head","path":"sprites/sprite_python_head/sprite_python_head.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3b75a74d-5c63-4062-b146-f1156bc580ea","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd9281eb-38e0-448d-8cdb-12cc9e735c9a","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1e34d560-01fc-4aa1-8844-bca001b82c79","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ba950a0-57a2-4777-945d-146b5cbfecfa","path":"sprites/sprite_python_head/sprite_python_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"90dc418c-cfd6-4ef8-855a-a402ed863557","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"23a68c78-3ec6-4c0f-8745-9c4874f39c7e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "python",

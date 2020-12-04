@@ -5,8 +5,13 @@ if (object_start_avatar.sprite_index != sprite_avatar_sleeping)
 	return;
 }
 
-
 var controller = read_menu_controller();
+
+if (idle_count == max_idle_count && object_fade_out.room_id == -1)
+{
+	object_fade_out.room_id = IntroCutscene;
+}
+
 if (controller.left)
 {
 	if (swapped || object_fade_out.room_id != -1)
@@ -18,6 +23,7 @@ if (controller.left)
 	selected += num_buttons - 1;
 	selected %= num_buttons;
 	audio_play_sound(sound_title_select, 10, false);
+	idle_count = 0;
 }
 else if (controller.right)
 {
@@ -30,6 +36,7 @@ else if (controller.right)
 	selected += 1;
 	selected %= num_buttons;
 	audio_play_sound(sound_title_select, 10, false);
+	idle_count = 0;
 }
 else if (controller.select)
 {
@@ -53,8 +60,11 @@ else if (controller.select)
 		show_debug_message("Unexpected select state: " + string(selected));
 		game_end();
 	}
+	idle_count = 0;
 }
 else
 {
 	swapped = false;
 }
+
+idle_count = min(idle_count + 1, max_idle_count);
