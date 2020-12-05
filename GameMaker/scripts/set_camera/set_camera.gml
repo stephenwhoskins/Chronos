@@ -4,11 +4,20 @@ function set_camera(){
 	var c = view_camera[0];
 var miniroom_width = 256;
 var miniroom_height = 184;
+
+var maxSpeed = 4;
+
 var cy_offset = -40;
 var miniroom_x = floor(x / miniroom_width);
 var miniroom_y = floor(y / miniroom_height);
-var cx = miniroom_x * miniroom_width;
-var cy = miniroom_y * miniroom_height + cy_offset;
+var old_cx = camera_get_view_x(c);
+var old_cy = camera_get_view_y(c);
+var target_cx = miniroom_x * miniroom_width;
+var target_cy = miniroom_y * miniroom_height + cy_offset;
+var dx = target_cx - old_cx;
+var dy = target_cy - old_cy;
+var cx = old_cx + sign(dx) * min(maxSpeed, abs(dx));
+var cy = old_cy + sign(dy) * min(maxSpeed, abs(dy));
 
 var shake_x = 0;
 
