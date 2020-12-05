@@ -2,10 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function read_menu_controller(){
 	gamepad_set_axis_deadzone(0, .3)
-	var xVal = gamepad_axis_value(0,0);
+	var xVal = gamepad_axis_value(0, gp_axislh);
 	var is_left = xVal < 0;
 	var is_right = xVal > 0;
-	var yVal = gamepad_axis_value(0, 1);
+	var yVal = gamepad_axis_value(0, gp_axislv);
 	var is_up = yVal < 0;
 	var is_down = yVal > 0;
 	is_left |= gamepad_button_check(0, gp_padl);
