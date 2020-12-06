@@ -16,6 +16,6 @@ update_count = 0;
 
 for (i = num_body_segments - 1; i > -1; i--)
 {
-	instance_body_segments[i] = instance_create_depth(x, y, depth + 1, object_python_segment);
+	instance_body_segments[i] = instance_create_depth(x, y, depth + 1, object_centipede_segment);
 	instance_body_segments[i].animation_count = (2 * i) % instance_body_segments[i].max_animation_count;
 }

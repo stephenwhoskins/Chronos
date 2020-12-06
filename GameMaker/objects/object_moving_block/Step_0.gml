@@ -1,8 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Reset the block if the avatar has left the room.
+if (script_get_room_index(self) == script_get_room_index(object_avatar) && !avatar_present)
+{
+	x = start_x;
+	y = start_y;
+	moved = false;
+	avatar_present = true;
+}
+else if (script_get_room_index(self) != script_get_room_index(object_avatar) && avatar_present)
+{
+	avatar_present = false;
+}
+
 // Handle Avatar from above.
-if (place_meeting(x, y - 2, object_avatar) &&
+if (script_place_meeting_avatar(0, -2) &&
 object_avatar.vspeed > 0 &&
 place_free(x, y + object_avatar.vspeed) &&
 !moved)
@@ -12,7 +25,7 @@ place_free(x, y + object_avatar.vspeed) &&
 }
 
 // Handle Avatar from below.
-if (place_meeting(x, y + 2, object_avatar) &&
+if (script_place_meeting_avatar(0, 2) &&
 object_avatar.vspeed < 0 &&
 place_free(x, y + object_avatar.vspeed) &&
 !moved)
@@ -22,7 +35,7 @@ place_free(x, y + object_avatar.vspeed) &&
 }
 
 // Handle Avatar from the left.
-if (place_meeting(x - 2, y, object_avatar) &&
+if (script_place_meeting_avatar(-2, 0) &&
 object_avatar.hspeed > 0 &&
 place_free(x + object_avatar.hspeed, y) &&
 !moved)
@@ -32,7 +45,7 @@ place_free(x + object_avatar.hspeed, y) &&
 }
 
 // Handle Avatar from the right.
-if (place_meeting(x + 2, y, object_avatar) &&
+if (script_place_meeting_avatar(2, 0) &&
 object_avatar.hspeed < 0 &&
 place_free(x + object_avatar.hspeed, y) &&
 !moved)

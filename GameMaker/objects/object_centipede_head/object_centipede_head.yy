@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_python_head",
-    "path": "sprites/sprite_python_head/sprite_python_head.yy",
+    "name": "sprite_centipede_head",
+    "path": "sprites/sprite_centipede_head/sprite_centipede_head.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,8 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_python_head","path":"objects/object_python_head/object_python_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_python_head","path":"objects/object_python_head/object_python_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_centipede_head","path":"objects/object_centipede_head/object_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_centipede_head","path":"objects/object_centipede_head/object_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +34,7 @@
     "path": "folders/Objects/enemies/python.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_python_head",
+  "name": "object_centipede_head",
   "tags": [],
   "resourceType": "GMObject",
 }

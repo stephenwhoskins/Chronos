@@ -5,3 +5,4 @@ max_y_offset = sprite_height;
 start_x = x;
 start_y = y;
 moved = false;
+avatar_present = false;

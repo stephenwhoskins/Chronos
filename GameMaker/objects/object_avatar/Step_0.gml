@@ -6,7 +6,7 @@ vspeed = 0;
 
 var controller = read_gameplay_controller();
 
-if (global.health_level > 0 && !global.time_stopped)
+if (global.health_level > 0 && !global.time_stopped && !script_transitioning_rooms())
 {
 	if (bounce_back_count < max_bounce_back_count)
 	{

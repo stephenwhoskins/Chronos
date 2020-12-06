@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},"LayerId":{"name":"e7862818-3954-448f-bb0b-c83cb96c42b4","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_python_segment","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},"resourceVersion":"1.0","name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"LayerId":{"name":"e7862818-3954-448f-bb0b-c83cb96c42b4","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_centipede_segment","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"resourceVersion":"1.0","name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_python_segment","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},
+    "spriteId": {"name":"sprite_centipede_segment","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c0fb0d4d-761e-4ad1-971e-ff19316883bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c0fb0d4d-761e-4ad1-971e-ff19316883bb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0ffa3785-e81b-4217-b7fb-735a8bcd5eac","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_python_segment","path":"sprites/sprite_python_segment/sprite_python_segment.yy",},
+    "parent": {"name":"sprite_centipede_segment","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_python_segment",
+    "name": "sprite_centipede_segment",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7862818-3954-448f-bb0b-c83cb96c42b4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "python",
-    "path": "folders/Sprites/enemies/python.yy",
+    "name": "centipede",
+    "path": "folders/Sprites/enemies/centipede.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_python_segment",
+  "name": "sprite_centipede_segment",
   "tags": [],
   "resourceType": "GMSprite",
 }
