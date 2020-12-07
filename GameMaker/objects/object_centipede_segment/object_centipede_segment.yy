@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "python",
-    "path": "folders/Objects/enemies/python.yy",
+    "name": "centipede",
+    "path": "folders/Objects/enemies/centipede.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_centipede_segment",
