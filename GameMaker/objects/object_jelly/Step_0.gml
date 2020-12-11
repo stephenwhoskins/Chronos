@@ -8,9 +8,11 @@ if (state_count == 0)
 	if (sprite_index == sprite_jelly_shocking)
 	{
 		sprite_index = sprite_jelly_idle;
+		image_index = 0;
 	}
 	else
 	{
 		sprite_index = sprite_jelly_shocking
+		image_index = 0;
 	}
 }
