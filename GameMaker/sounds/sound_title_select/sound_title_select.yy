@@ -13,8 +13,8 @@
   "soundFile": "sound_title_select.wav",
   "duration": 0.29949,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_title_select",

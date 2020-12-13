@@ -13,8 +13,8 @@
   "soundFile": "sound_door_unlocked.wav",
   "duration": 1.228537,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_door_unlocked",

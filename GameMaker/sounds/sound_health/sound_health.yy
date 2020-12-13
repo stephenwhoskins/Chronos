@@ -13,8 +13,8 @@
   "soundFile": "sound_health.wav",
   "duration": 0.613957,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_health",

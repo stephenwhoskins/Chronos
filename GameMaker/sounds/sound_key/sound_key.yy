@@ -13,8 +13,8 @@
   "soundFile": "sound_key.wav",
   "duration": 1.196179,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_key",

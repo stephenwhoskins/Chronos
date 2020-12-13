@@ -93,7 +93,7 @@ if (boss_music_count < max_boss_music_count)
 	
 	if (boss_music_count == max_boss_music_count)
 	{
-		audio_play_sound(sound_bgm_3, 10, true);
+		audio_play_sound(sound_boss_music, 10, true);
 	}
 }
 

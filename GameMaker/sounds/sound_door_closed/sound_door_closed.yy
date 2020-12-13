@@ -13,8 +13,8 @@
   "soundFile": "sound_door_closed.wav",
   "duration": 0.444297,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_door_closed",

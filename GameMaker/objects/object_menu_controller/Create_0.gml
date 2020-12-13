@@ -27,4 +27,4 @@ selected = 0;
 swapped = false;
 
 idle_count = 0;
-max_idle_count = room_speed * 60; // 10 seconds
+max_idle_count = room_speed * 15; // 15 seconds

@@ -13,8 +13,8 @@
   "soundFile": "sound_power_up.wav",
   "duration": 0.789467,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "sound_power_up",
