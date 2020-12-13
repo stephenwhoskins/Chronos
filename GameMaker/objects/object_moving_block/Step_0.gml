@@ -15,7 +15,7 @@ else if (script_get_room_index(self) != script_get_room_index(object_avatar) && 
 }
 
 // Handle Avatar from above.
-if (script_place_meeting_avatar(0, -2) &&
+if (script_place_meeting_avatar(0, -3) &&
 object_avatar.vspeed > 0 &&
 place_free(x, y + object_avatar.vspeed) &&
 !moved)
@@ -25,7 +25,7 @@ place_free(x, y + object_avatar.vspeed) &&
 }
 
 // Handle Avatar from below.
-if (script_place_meeting_avatar(0, 2) &&
+if (script_place_meeting_avatar(0, 3) &&
 object_avatar.vspeed < 0 &&
 place_free(x, y + object_avatar.vspeed) &&
 !moved)
@@ -35,7 +35,7 @@ place_free(x, y + object_avatar.vspeed) &&
 }
 
 // Handle Avatar from the left.
-if (script_place_meeting_avatar(-2, 0) &&
+if (script_place_meeting_avatar(-3, 0) &&
 object_avatar.hspeed > 0 &&
 place_free(x + object_avatar.hspeed, y) &&
 !moved)
@@ -45,7 +45,7 @@ place_free(x + object_avatar.hspeed, y) &&
 }
 
 // Handle Avatar from the right.
-if (script_place_meeting_avatar(2, 0) &&
+if (script_place_meeting_avatar(3, 0) &&
 object_avatar.hspeed < 0 &&
 place_free(x + object_avatar.hspeed, y) &&
 !moved)
