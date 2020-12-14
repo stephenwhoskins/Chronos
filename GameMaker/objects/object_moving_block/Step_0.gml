@@ -15,42 +15,42 @@ else if (script_get_room_index(self) != script_get_room_index(object_avatar) && 
 }
 
 // Handle Avatar from above.
-if (script_place_meeting_avatar(0, -3) &&
-object_avatar.vspeed > 0 &&
-place_free(x, y + object_avatar.vspeed) &&
+if (script_place_meeting_avatar(0, -2) &&
+object_avatar.moving_down &&
+place_free(x, y + object_avatar.walk_speed) &&
 !moved)
 {
-	vspeed = object_avatar.vspeed;
+	vspeed = object_avatar.walk_speed;
 	moved = true;
 }
 
 // Handle Avatar from below.
-if (script_place_meeting_avatar(0, 3) &&
-object_avatar.vspeed < 0 &&
-place_free(x, y + object_avatar.vspeed) &&
+if (script_place_meeting_avatar(0, 2) &&
+object_avatar.moving_up &&
+place_free(x, y - object_avatar.walk_speed) &&
 !moved)
 {
-	vspeed = object_avatar.vspeed;
+	vspeed = -object_avatar.walk_speed;
 	moved = true;
 }
 
 // Handle Avatar from the left.
-if (script_place_meeting_avatar(-3, 0) &&
-object_avatar.hspeed > 0 &&
-place_free(x + object_avatar.hspeed, y) &&
+if (script_place_meeting_avatar(-2, 0) &&
+object_avatar.moving_right &&
+place_free(x + object_avatar.walk_speed, y) &&
 !moved)
 {
-	hspeed = object_avatar.hspeed;
+	hspeed = object_avatar.walk_speed;
 	moved = true;
 }
 
 // Handle Avatar from the right.
-if (script_place_meeting_avatar(3, 0) &&
-object_avatar.hspeed < 0 &&
-place_free(x + object_avatar.hspeed, y) &&
+if (script_place_meeting_avatar(2, 0) &&
+object_avatar.moving_left &&
+place_free(x - object_avatar.walk_speed, y) &&
 !moved)
 {
-	hspeed = object_avatar.hspeed;
+	hspeed = -object_avatar.walk_speed;
 	moved = true;
 }
 

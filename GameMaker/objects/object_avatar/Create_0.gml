@@ -18,3 +18,10 @@ walk_sound = -1;
 last_sprite_index = sprite_index;
 
 escaping = false;
+
+moving_up = false;
+moving_down = false;
+moving_left = false;
+moving_right = false;
+
+walk_speed = 1;

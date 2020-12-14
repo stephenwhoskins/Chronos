@@ -3,6 +3,10 @@
 
 hspeed = 0;
 vspeed = 0;
+moving_up = false;
+moving_down = false;
+moving_left = false;
+moving_right = false;
 
 var controller = read_gameplay_controller();
 
@@ -28,16 +32,18 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 				sprite_index = sprite_avatar_walking;
 				if (!script_place_meeting(x, y - 1))
 				{
-					vspeed = -1;
+					vspeed = -walk_speed;
 				}
+				moving_up = true;
 			}
 			else if (controller.down)
 			{
 				sprite_index = sprite_avatar_walking;
 				if (!script_place_meeting(x, y + 1))
 				{
-					vspeed = 1;
+					vspeed = walk_speed;
 				}
+				moving_down = true;
 			}
 
 			if (controller.left)
@@ -46,8 +52,9 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 				image_xscale = -1.0;
 				if (!script_place_meeting(x - 1, y))
 				{
-					hspeed = -1;
+					hspeed = -walk_speed;
 				}
+				moving_left = true;
 			}
 			else if (controller.right)
 			{
@@ -55,8 +62,9 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 				image_xscale = 1.0;
 				if (!script_place_meeting(x + 1, y))
 				{
-					hspeed = 1;
+					hspeed = walk_speed;
 				}
+				moving_right = true;
 			}
 		}
 		else // Handle enemy damage here
