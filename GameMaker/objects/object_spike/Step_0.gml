@@ -11,5 +11,4 @@ if (last_image_index != floor(image_index) && floor(image_index) == 1)
 	}
 }
 
-show_debug_message("x: " + string(x));
 last_image_index = floor(image_index);
