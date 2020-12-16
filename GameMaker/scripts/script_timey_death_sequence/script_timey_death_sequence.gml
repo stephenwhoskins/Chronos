@@ -4,8 +4,8 @@ function script_timey_death_sequence()
 {
 	global.time_stopped = true;
 	audio_stop_all();
-	object_timey.orig_y = y;
-	object_timey.x = x;
-	object_timey.y = y;
-	object_timey.death_count = 0;
+	object_chronos.orig_y = y;
+	object_chronos.x = x;
+	object_chronos.y = y;
+	object_chronos.death_count = 0;
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_timey_idle",
-    "path": "sprites/sprite_timey_idle/sprite_timey_idle.yy",
+    "name": "sprite_chronos_idle",
+    "path": "sprites/sprite_chronos_idle/sprite_chronos_idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_timey","path":"objects/object_timey/object_timey.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_timey","path":"objects/object_timey/object_timey.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_chronos","path":"objects/object_chronos/object_chronos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_chronos","path":"objects/object_chronos/object_chronos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_timey",
+  "name": "object_chronos",
   "tags": [],
   "resourceType": "GMObject",
 }

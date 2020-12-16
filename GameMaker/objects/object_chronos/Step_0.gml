@@ -11,14 +11,14 @@ if (death_count < max_death_count)
 {
 	if (death_count > 2 * max_death_count / 3)
 	{
-		sprite_index = sprite_timey_dead;
+		sprite_index = sprite_chronos_dead;
 	}
 	if (death_count > max_death_count / 3)
 	{
 		if (global.shake_count == global.max_shake_count)
 		{
 			global.shake_count = 0;
-			sprite_index = sprite_timey_dying;
+			sprite_index = sprite_chronos_dying;
 		}
 		
 		if (death_count == max_death_count / 3 + 1)
@@ -43,7 +43,7 @@ if (time_warp_count < max_time_warp_count)
 		if (global.shake_count == global.max_shake_count)
 		{
 			global.shake_count = 0;
-			sprite_index = sprite_timey_time_warping;
+			sprite_index = sprite_chronos_time_warping;
 		}
 	}
 	

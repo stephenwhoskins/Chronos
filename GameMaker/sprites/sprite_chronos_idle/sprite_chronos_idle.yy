@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},"LayerId":{"name":"0bce7eb0-ff83-4b67-9bc1-1238e19e9bcb","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_timey_idle","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},"resourceVersion":"1.0","name":"956e5420-72e9-4d78-b39a-22c15b7d1246","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},"LayerId":{"name":"0bce7eb0-ff83-4b67-9bc1-1238e19e9bcb","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_chronos_idle","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},"resourceVersion":"1.0","name":"956e5420-72e9-4d78-b39a-22c15b7d1246","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_timey_idle","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},
+    "spriteId": {"name":"sprite_chronos_idle","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"64d05bd5-6073-4415-9655-14a3ff754cc0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"64d05bd5-6073-4415-9655-14a3ff754cc0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"956e5420-72e9-4d78-b39a-22c15b7d1246","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 33,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_timey_idle","path":"sprites/sprite_timey_idle/sprite_timey_idle.yy",},
+    "parent": {"name":"sprite_chronos_idle","path":"sprites/sprite_chronos_idle/sprite_chronos_idle.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_timey_idle",
+    "name": "sprite_chronos_idle",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -68,11 +68,11 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0bce7eb0-ff83-4b67-9bc1-1238e19e9bcb","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "timey",
-    "path": "folders/Sprites/enemies/timey.yy",
+    "name": "chronos",
+    "path": "folders/Sprites/enemies/chronos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_timey_idle",
+  "name": "sprite_chronos_idle",
   "tags": [],
   "resourceType": "GMSprite",
 }
