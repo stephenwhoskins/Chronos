@@ -18,7 +18,7 @@ exiting = false;
 max_exit_count = 45;
 exit_count = max_exit_count;
 
-draw_set_font(Font1);
+draw_set_font(font_dialogue);
 var title_text = "Resume game?";
 title_struct = {
 text: title_text,
