@@ -50,6 +50,7 @@ else if (controller.select)
 		audio_play_sound(sound_key, 11, false);
 		object_start_avatar.sprite_index = sprite_avatar_walking;
 		object_start_avatar.hspeed = 1;
+		global.displayed_credits = false;
 	}
 	else if (buttons[selected] == exit_button)
 	{

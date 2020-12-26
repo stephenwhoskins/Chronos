@@ -9,3 +9,5 @@ global.shake_count = global.max_shake_count;
 audio_stop_all();
 
 global.hud_height = 40;
+
+global.displayed_credits = false;

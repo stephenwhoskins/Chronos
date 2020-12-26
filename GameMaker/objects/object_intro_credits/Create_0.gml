@@ -14,3 +14,5 @@ art_end_time = art_start_time + 4 * room_speed;
 
 music_and_sound_start_time = art_end_time;
 music_and_sound_end_time = music_and_sound_start_time + 4 * room_speed;
+
+max_animation_count = music_and_sound_end_time + 1;
