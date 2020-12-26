@@ -3,7 +3,7 @@
 _text[0] = "For centuries the \nculmination of all human";
 _text[1] = "information had been \nkept safely within the";
 _text[2] = "chambers of the Fortress \nof Knowledge.";
-_text[3] = "The information that it \nheld benefitted mankind";
+_text[3] = "The information that it \nheld benefited mankind";
 _text[4] = "for centuries.";
 _text[5] = "Then one day Chronos, \nwho became jealous of the";
 _text[6] = "idolatry that surrounded \nthe fortress, seized it";
