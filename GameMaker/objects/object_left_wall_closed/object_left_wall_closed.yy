@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "walls",
-    "path": "folders/Objects/walls.yy",
+    "name": "desert",
+    "path": "folders/Objects/walls/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_left_wall_closed",

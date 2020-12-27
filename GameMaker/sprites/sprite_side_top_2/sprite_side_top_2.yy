@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"52877694-f342-4758-9483-5ead4ebc365b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "walls",
-    "path": "folders/Sprites/walls.yy",
+    "name": "desert",
+    "path": "folders/Sprites/walls/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_side_top_2",

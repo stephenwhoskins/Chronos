@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b64bf4b1-79e0-4f5d-a95d-8aa9a55734c6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "walls",
-    "path": "folders/Sprites/walls.yy",
+    "name": "desert",
+    "path": "folders/Sprites/walls/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_door_locked_2",

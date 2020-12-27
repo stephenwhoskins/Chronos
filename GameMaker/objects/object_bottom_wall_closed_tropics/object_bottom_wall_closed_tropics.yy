@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_wall_2",
-    "path": "sprites/sprite_wall_2/sprite_wall_2.yy",
+    "name": "sprite_bottom_wall_closed_tropics",
+    "path": "sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",
   },
   "solid": true,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "desert",
-    "path": "folders/Objects/walls/desert.yy",
+    "name": "tropics",
+    "path": "folders/Objects/walls/tropics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_wall_2",
+  "name": "object_bottom_wall_closed_tropics",
   "tags": [],
   "resourceType": "GMObject",
 }

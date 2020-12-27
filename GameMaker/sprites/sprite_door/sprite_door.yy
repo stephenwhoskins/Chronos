@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fa69309a-8601-4eb8-bbde-b14f52406257","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "walls",
-    "path": "folders/Sprites/walls.yy",
+    "name": "desert",
+    "path": "folders/Sprites/walls/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_door",
