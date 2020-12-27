@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b09557d2-f284-4709-8166-dcc4099f6d37","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b09557d2-f284-4709-8166-dcc4099f6d37","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"LayerId":{"name":"b30bd208-283f-4bc0-ac96-d0560086348a","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_bottom_wall_closed_tropics","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","name":"b09557d2-f284-4709-8166-dcc4099f6d37","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3538974a-4cf9-489f-a853-770cb43b16cb","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3538974a-4cf9-489f-a853-770cb43b16cb","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"LayerId":{"name":"a0727581-a637-4ba3-85cc-575eb437463b","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_bottom_wall_closed_tropics","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","name":"3538974a-4cf9-489f-a853-770cb43b16cb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_bottom_wall_closed_tropics","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4460b575-b212-40ed-b5a2-20625e561231","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b09557d2-f284-4709-8166-dcc4099f6d37","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78417e82-ac1c-4e26-923b-6a4be2b8c247","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3538974a-4cf9-489f-a853-770cb43b16cb","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b30bd208-283f-4bc0-ac96-d0560086348a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a0727581-a637-4ba3-85cc-575eb437463b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "tropics",
