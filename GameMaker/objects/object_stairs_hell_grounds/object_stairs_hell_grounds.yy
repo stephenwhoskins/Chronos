@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "stairs",
+    "path": "folders/Objects/stairs.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_stairs_hell_grounds",

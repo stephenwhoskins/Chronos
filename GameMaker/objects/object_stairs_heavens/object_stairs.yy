@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "stairs",
-    "path": "folders/Objects/stairs.yy",
+    "name": "desert",
+    "path": "folders/Objects/walls/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_stairs",
