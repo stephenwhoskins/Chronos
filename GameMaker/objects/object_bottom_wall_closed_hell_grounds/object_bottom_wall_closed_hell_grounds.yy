@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_barrier_3",
-    "path": "sprites/sprite_barrier_3/sprite_barrier_3.yy",
+    "name": "sprite_bottom_wall_closed_hell_grounds",
+    "path": "sprites/sprite_bottom_wall_closed_hell_grounds/sprite_bottom_wall_closed_hell_grounds.yy",
   },
   "solid": true,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "barriers",
-    "path": "folders/Objects/barriers.yy",
+    "name": "hell_grounds",
+    "path": "folders/Objects/walls/hell_grounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_barrier_3",
+  "name": "object_bottom_wall_closed_hell_grounds",
   "tags": [],
   "resourceType": "GMObject",
 }

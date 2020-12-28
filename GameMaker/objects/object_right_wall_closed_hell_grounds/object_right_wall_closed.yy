@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_barrier_3",
-    "path": "sprites/sprite_barrier_3/sprite_barrier_3.yy",
+    "name": "sprite_right_wall_closed",
+    "path": "sprites/sprite_right_wall_closed/sprite_right_wall_closed.yy",
   },
   "solid": true,
   "visible": true,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "barriers",
-    "path": "folders/Objects/barriers.yy",
+    "name": "desert",
+    "path": "folders/Objects/walls/desert.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_barrier_3",
+  "name": "object_right_wall_closed",
   "tags": [],
   "resourceType": "GMObject",
 }

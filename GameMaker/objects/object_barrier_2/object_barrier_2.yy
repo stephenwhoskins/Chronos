@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_tile_13_tropics",
-    "path": "sprites/sprite_tile_13_tropics/sprite_tile_13_tropics.yy",
+    "name": "sprite_barrier_2",
+    "path": "sprites/sprite_barrier_2/sprite_barrier_2.yy",
   },
   "solid": true,
   "visible": true,

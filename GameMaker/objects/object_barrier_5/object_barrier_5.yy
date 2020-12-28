@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_barrier_3",
-    "path": "sprites/sprite_barrier_3/sprite_barrier_3.yy",
+    "name": "sprite_barrier_5",
+    "path": "sprites/sprite_barrier_5/sprite_barrier_5.yy",
   },
   "solid": true,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/barriers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_barrier_3",
+  "name": "object_barrier_5",
   "tags": [],
   "resourceType": "GMObject",
 }
