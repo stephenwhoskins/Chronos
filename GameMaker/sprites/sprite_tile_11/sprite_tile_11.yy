@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eb027383-61cc-4981-b2d3-0b9f6c4286a4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "tiles",
-    "path": "folders/Sprites/tiles.yy",
+    "name": "desert",
+    "path": "folders/Sprites/tiles/desert.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_tile_11",
