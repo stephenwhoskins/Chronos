@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d96e4c84-58a6-46ec-85e5-7efb545c8097","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "warrior",
-    "path": "folders/Sprites/enemies/warrior.yy",
+    "name": "time_viking",
+    "path": "folders/Sprites/enemies/time_viking.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_warrior_attacking",

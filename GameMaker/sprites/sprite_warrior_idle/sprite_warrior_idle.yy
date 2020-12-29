@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d071e7ac-356f-44f9-b3ee-880a2c8c2411","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "warrior",
-    "path": "folders/Sprites/enemies/warrior.yy",
+    "name": "time_viking",
+    "path": "folders/Sprites/enemies/time_viking.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_warrior_idle",

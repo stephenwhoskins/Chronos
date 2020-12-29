@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed8fe845-ed94-42b0-a8cc-29873add75c0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "warrior",
-    "path": "folders/Sprites/enemies/warrior.yy",
+    "name": "time_viking",
+    "path": "folders/Sprites/enemies/time_viking.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_warrior_walking",

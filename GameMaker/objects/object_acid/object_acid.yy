@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_angel_idle",
-    "path": "sprites/sprite_angel_idle/sprite_angel_idle.yy",
+    "name": "sprite_acid",
+    "path": "sprites/sprite_acid/sprite_acid.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_acid","path":"objects/object_acid/object_acid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_acid","path":"objects/object_acid/object_acid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +31,7 @@
     "path": "folders/Objects/enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_angel",
+  "name": "object_acid",
   "tags": [],
   "resourceType": "GMObject",
 }

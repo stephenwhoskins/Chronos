@@ -8,7 +8,7 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 3,
-  "bbox_right": 37,
+  "bbox_right": 38,
   "bbox_top": 22,
   "bbox_bottom": 37,
   "HTile": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a71b9ca8-ded9-4314-93f4-dace63bc6f37","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a71b9ca8-ded9-4314-93f4-dace63bc6f37","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"LayerId":{"name":"f29879b6-54e0-47cf-b9a0-efa39061b2a1","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_warrior_dead","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","name":"a71b9ca8-ded9-4314-93f4-dace63bc6f37","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8a468b3f-9396-4e87-90b2-a2dc784b1fb7","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8a468b3f-9396-4e87-90b2-a2dc784b1fb7","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"LayerId":{"name":"6f13d0f7-a98c-4df0-a5fb-1fd69bc202ce","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_warrior_dead","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","name":"8a468b3f-9396-4e87-90b2-a2dc784b1fb7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_warrior_dead","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d6be840a-a4b7-4809-b433-96bbe5f0d555","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a71b9ca8-ded9-4314-93f4-dace63bc6f37","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a385a9e3-5761-40d0-916f-a770df499150","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a468b3f-9396-4e87-90b2-a2dc784b1fb7","path":"sprites/sprite_warrior_dead/sprite_warrior_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,11 +65,11 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f29879b6-54e0-47cf-b9a0-efa39061b2a1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6f13d0f7-a98c-4df0-a5fb-1fd69bc202ce","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "warrior",
-    "path": "folders/Sprites/enemies/warrior.yy",
+    "name": "time_viking",
+    "path": "folders/Sprites/enemies/time_viking.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprite_warrior_dead",
