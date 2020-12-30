@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "sprite_wall_0_hell_grounds",
-    "path": "sprites/sprite_wall_0_hell_grounds/sprite_wall_0_hell_grounds.yy",
-  },
-  "solid": true,
+  "spriteId": null,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "object_wall",
-    "path": "objects/object_wall/object_wall.yy",
+    "name": "object_barrier",
+    "path": "objects/object_barrier/object_barrier.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "hell_grounds",
-    "path": "folders/Objects/walls/hell_grounds.yy",
+    "name": "walls",
+    "path": "folders/Objects/walls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_wall_0_hell_grounds",
+  "name": "object_wall",
   "tags": [],
   "resourceType": "GMObject",
 }

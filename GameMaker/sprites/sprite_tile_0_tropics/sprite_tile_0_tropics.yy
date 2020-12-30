@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"27488eaa-feb4-440b-bd8b-34a6a6864be8","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"27488eaa-feb4-440b-bd8b-34a6a6864be8","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"LayerId":{"name":"03dbef96-a7c9-4196-b139-807b708a8e40","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_tile_5_tropics","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"resourceVersion":"1.0","name":"27488eaa-feb4-440b-bd8b-34a6a6864be8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3add9ef0-9a38-4ef3-9396-f0f5ebb2496e","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3add9ef0-9a38-4ef3-9396-f0f5ebb2496e","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"LayerId":{"name":"871e3b48-55e1-4ad7-b682-53356a7e4a21","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_tile_0_tropics","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"resourceVersion":"1.0","name":"3add9ef0-9a38-4ef3-9396-f0f5ebb2496e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_tile_5_tropics","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},
+    "spriteId": {"name":"sprite_tile_0_tropics","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d641a9c9-a0b8-4ec5-9c57-90186991ab54","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27488eaa-feb4-440b-bd8b-34a6a6864be8","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"01907ea0-6a15-441d-897a-da66505b4649","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3add9ef0-9a38-4ef3-9396-f0f5ebb2496e","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_tile_5_tropics","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},
+    "parent": {"name":"sprite_tile_0_tropics","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_tile_5_tropics",
+    "name": "sprite_tile_0_tropics",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"03dbef96-a7c9-4196-b139-807b708a8e40","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"871e3b48-55e1-4ad7-b682-53356a7e4a21","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "tropics",
     "path": "folders/Sprites/tiles/tropics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_tile_5_tropics",
+  "name": "sprite_tile_0_tropics",
   "tags": [],
   "resourceType": "GMSprite",
 }
