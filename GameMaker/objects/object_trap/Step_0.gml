@@ -31,7 +31,7 @@ if (image_angle == 90 || image_angle == -90)
 
 if (triggered && reload_time == max_reload_time)
 {
-	instance_arrow = instance_create_depth(x, y, -100, object_arrow);
+	instance_arrow = instance_create_depth(x, y, depth - 1, object_arrow);
 	instance_arrow.x = x + 20 * cos(pointing);
 	instance_arrow.y = y - 18 * sin(pointing);
 	instance_arrow.hspeed = cos(pointing) * arrow_speed;
