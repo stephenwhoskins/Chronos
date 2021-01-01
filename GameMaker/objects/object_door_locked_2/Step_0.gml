@@ -3,6 +3,6 @@
 if (place_meeting(x, y, object_avatar) && global.key_count > 0)
 {
 	audio_play_sound(sound_door_unlocked, 10, false);
-	global.key_count--;
-	instance_destroy(self);
+	instance_destroy();
+	global.locked_door_opened = true;
 }
