@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-instance_change(object_bomb_exploding, true)
+if (other.hurt_count == other.max_hurt_count)
+	other.hurt_count = 0

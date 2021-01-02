@@ -313,6 +313,7 @@
     {"id":{"name":"sprite_tile_12","path":"sprites/sprite_tile_12/sprite_tile_12.yy",},"order":3,},
     {"id":{"name":"sprite_sword_attacking","path":"sprites/sprite_sword_attacking/sprite_sword_attacking.yy",},"order":5,},
     {"id":{"name":"sprite_tile_6_tropics","path":"sprites/sprite_tile_6_tropics/sprite_tile_6_tropics.yy",},"order":6,},
+    {"id":{"name":"object_bomb_exploding","path":"objects/object_bomb_exploding/object_bomb_exploding.yy",},"order":3,},
     {"id":{"name":"sound_title_select","path":"sounds/sound_title_select/sound_title_select.yy",},"order":9,},
     {"id":{"name":"sprite_wall_1_tropics","path":"sprites/sprite_wall_1_tropics/sprite_wall_1_tropics.yy",},"order":13,},
     {"id":{"name":"set_camera","path":"scripts/set_camera/set_camera.yy",},"order":1,},

@@ -171,7 +171,7 @@ if (hurt_count == 0 && sprite_index != sprite_avatar_dead)
 	audio_play_sound(sound_hit, 10, false);
 	bounce_back_count = 0;
 	
-	if (global.health_level == 0)
+	if (global.health_level <= 0)
 	{
 		sprite_index = sprite_avatar_dead;
 		death_count = 0;
