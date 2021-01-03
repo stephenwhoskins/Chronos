@@ -279,6 +279,7 @@
     {"id":{"name":"object_right_wall_closed_heavens","path":"objects/object_right_wall_closed_heavens/object_right_wall_closed_heavens.yy",},"order":2,},
     {"id":{"name":"object_snake","path":"objects/object_snake/object_snake.yy",},"order":0,},
     {"id":{"name":"sprite_bow","path":"sprites/sprite_bow/sprite_bow.yy",},"order":5,},
+    {"id":{"name":"sprite_spike_dying","path":"sprites/sprite_spike_dying/sprite_spike_dying.yy",},"order":1,},
     {"id":{"name":"sprite_warrior_idle","path":"sprites/sprite_warrior_idle/sprite_warrior_idle.yy",},"order":2,},
     {"id":{"name":"sound_end_credits","path":"sounds/sound_end_credits/sound_end_credits.yy",},"order":2,},
     {"id":{"name":"object_bottom_wall_closing","path":"objects/object_bottom_wall_closing/object_bottom_wall_closing.yy",},"order":1,},
