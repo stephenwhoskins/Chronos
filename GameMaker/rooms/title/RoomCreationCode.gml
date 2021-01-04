@@ -13,3 +13,10 @@ audio_stop_all();
 global.hud_height = 40;
 
 global.displayed_credits = false;
+
+
+enum hit_types {
+sword,
+bomb,
+arrow
+}
