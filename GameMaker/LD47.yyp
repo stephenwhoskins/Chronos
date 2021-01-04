@@ -309,6 +309,7 @@
     {"id":{"name":"read_menu_controller","path":"scripts/read_menu_controller/read_menu_controller.yy",},"order":1,},
     {"id":{"name":"sprite_sword_controls","path":"sprites/sprite_sword_controls/sprite_sword_controls.yy",},"order":9,},
     {"id":{"name":"object_bottom_wall_closed","path":"objects/object_bottom_wall_closed/object_bottom_wall_closed.yy",},"order":0,},
+    {"id":{"name":"sprite_spike_flashing","path":"sprites/sprite_spike_flashing/sprite_spike_flashing.yy",},"order":2,},
     {"id":{"name":"sprite_centipede_segment","path":"sprites/sprite_centipede_segment/sprite_centipede_segment.yy",},"order":0,},
     {"id":{"name":"sprite_barrier_7","path":"sprites/sprite_barrier_7/sprite_barrier_7.yy",},"order":7,},
     {"id":{"name":"sprite_tile_12","path":"sprites/sprite_tile_12/sprite_tile_12.yy",},"order":3,},
