@@ -85,6 +85,11 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 				for (var i = 0; i < _num; ++i;)
 				{
 				    var instance_enemy = _list[| i];
+					if (instance_enemy.object_index == object_centipede_segment)
+					{
+						// NOTE: itis probably clenaer to have the centipede segment handle this, but that may introduce an extra frame of lag over this.
+						instance_enemy = instance_enemy.head;
+					}
 					instance_enemy.hit_type = hit_types.sword;
 					if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
 					{
