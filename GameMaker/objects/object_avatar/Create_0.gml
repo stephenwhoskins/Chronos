@@ -24,4 +24,7 @@ moving_down = false;
 moving_left = false;
 moving_right = false;
 
+shock_count = 0;
+max_shock_count = 1 * room_speed;
+
 walk_speed = 1;

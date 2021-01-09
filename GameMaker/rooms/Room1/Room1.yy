@@ -59,6 +59,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"object_avatar","path":"objects/object_avatar/object_avatar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":704.0,"resourceVersion":"1.0","name":"inst_5EC9BD16","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_spike","path":"objects/object_spike/object_spike.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":592.0,"y":616.0,"resourceVersion":"1.0","name":"inst_25EE2A6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_centipede_head","path":"objects/object_centipede_head/object_centipede_head.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":696.0,"y":640.0,"resourceVersion":"1.0","name":"inst_2A77B3FB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":656.0,"y":648.0,"resourceVersion":"1.0","name":"inst_20C2D1C8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_snake","path":"objects/object_snake/object_snake.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":952.0,"y":88.0,"resourceVersion":"1.0","name":"inst_343A0045","tags":[],"resourceType":"GMRInstance",},
@@ -1864,6 +1865,7 @@
     {"name":"inst_7A0C8EF0","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_25EE2A6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2A77B3FB","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_20C2D1C8","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

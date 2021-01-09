@@ -8,6 +8,12 @@ moving_down = false;
 moving_left = false;
 moving_right = false;
 
+if (shock_count < max_shock_count)
+{
+	shock_count++;
+	return;
+}
+
 var controller = read_gameplay_controller();
 
 if (global.health_level > 0 && !global.time_stopped && !script_transitioning_rooms())
@@ -94,15 +100,24 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 					if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
 					{
 						instance_enemy.hurt_count = 0;
-					
-						// Handle enemy left of avatar.
-						if (instance_enemy.x < x)
-						{
-							instance_enemy.bounce_direction = -1.0;
+						
+						if (instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking)
+						{					
+							// Handle enemy left of avatar.
+							if (instance_enemy.x < x)
+							{
+								instance_enemy.bounce_direction = -1.0;
+							}
+							else
+							{
+								instance_enemy.bounce_direction = 1.0;
+							}
 						}
 						else
 						{
-							instance_enemy.bounce_direction = 1.0;
+							sprite_index = sprite_avatar_shocked;
+							shock_count = 0;;
+							global.health_level--;
 						}
 					}
 				}
