@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_chronos_idle",
-    "path": "sprites/sprite_chronos_idle/sprite_chronos_idle.yy",
+    "name": "sprite_angel_idle",
+    "path": "sprites/sprite_angel_idle/sprite_angel_idle.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_chronos","path":"objects/object_chronos/object_chronos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_chronos","path":"objects/object_chronos/object_chronos.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects/enemies/chronos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_chronos",
+  "name": "object_angel_minion",
   "tags": [],
   "resourceType": "GMObject",
 }
