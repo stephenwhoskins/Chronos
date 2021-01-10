@@ -180,6 +180,7 @@
     {"id":{"name":"sprite_tile_5_tropics","path":"sprites/sprite_tile_5_tropics/sprite_tile_5_tropics.yy",},"order":5,},
     {"id":{"name":"sprite_tile_1_tropics","path":"sprites/sprite_tile_1_tropics/sprite_tile_1_tropics.yy",},"order":1,},
     {"id":{"name":"object_arrow","path":"objects/object_arrow/object_arrow.yy",},"order":2,},
+    {"id":{"name":"sprite_jelly_dying","path":"sprites/sprite_jelly_dying/sprite_jelly_dying.yy",},"order":2,},
     {"id":{"name":"sprite_tile_0_tropics","path":"sprites/sprite_tile_0_tropics/sprite_tile_0_tropics.yy",},"order":0,},
     {"id":{"name":"sprite_tile_8_tropics","path":"sprites/sprite_tile_8_tropics/sprite_tile_8_tropics.yy",},"order":8,},
     {"id":{"name":"object_top_wall_closed","path":"objects/object_top_wall_closed/object_top_wall_closed.yy",},"order":6,},
