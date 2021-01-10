@@ -47,4 +47,10 @@ else if (animation_count == 0)
 	}
 }
 
+if (object_avatar.hurt_count == object_avatar.max_hurt_count && place_meeting(x, y, object_avatar))
+{
+	global.health_level--;
+	object_avatar.hurt_count = 0;
+}
+
 animation_count = (animation_count + 1) % max_animation_count;
