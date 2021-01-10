@@ -8,6 +8,9 @@ enum chronos_states
 	angels_flying_to_center
 }
 
+orig_x = x;
+orig_y = y;
+
 max_angels_per_group = 8;
 
 chronos_state = chronos_states.angels_flying_vertically;
