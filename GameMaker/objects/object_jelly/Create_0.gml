@@ -9,8 +9,8 @@ enum jelly_state
 }
 
 state = jelly_state.jelly_idle;
-max_idle_count = 2 * room_speed;
-max_shocking_count = .5 * room_speed;
+max_idle_count = 2.0 * room_speed;
+max_shocking_count = 1.0 * room_speed;
 
 dir = irandom_range(0, 2 * pi);
 init_speed = .5;

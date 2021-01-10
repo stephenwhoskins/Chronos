@@ -7,16 +7,12 @@ if (hurt_count == 0)
 
 if (state == jelly_state.jelly_shocking)
 {
-	if (sprite_index == sprite_jelly_shocking)
+	if (sprite_index != sprite_jelly_shocking)
 	{
-		sprite_index = sprite_jelly_idle;
+		sprite_index = sprite_jelly_shocking;
 		image_index = 0;
 	}
-	else
-	{
-		sprite_index = sprite_jelly_shocking
-		image_index = 0;
-	}
+
 	if (state_count == max_shocking_count)
 	{
 		spd = init_speed;
@@ -27,7 +23,12 @@ if (state == jelly_state.jelly_shocking)
 }
 else
 {
-	sprite_index = sprite_jelly_idle;
+	if (sprite_index != sprite_jelly_idle)
+	{
+		sprite_index = sprite_jelly_idle;
+		image_index = 0;
+	}
+	
 	if (state_count == max_idle_count)
 	{
 		spd = 0;
