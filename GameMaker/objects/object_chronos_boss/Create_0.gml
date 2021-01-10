@@ -1,19 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-max_angel_group_count = 16;
-
-for (i = max_angel_group_count - 1; i > -1; i--)
+enum chronos_states
 {
-	angel_instances_1[i] = instance_create_depth(x - 64, y - 128, depth - 1, object_angel_minion);
+	angels_flying_vertically,
+	angels_flying_horizontally,
+	angels_flying_to_center
 }
 
-for (i = max_angel_group_count - 1; i > -1; i--)
+max_angels_per_group = 8;
+
+chronos_state = chronos_states.angels_flying_vertically;
+
+for (i = max_angels_per_group - 1; i > -1; i--)
 {
-	angel_instances_2[i] = instance_create_depth(x, y - 128, depth - 1, object_angel_minion);
+	angel_instances_1[i] = instance_create_depth(x - 64, y - 128 - i * 32, depth - 1, object_angel_minion);
 }
 
-for (i = max_angel_group_count - 1; i > -1; i--)
+for (i = max_angels_per_group - 1; i > -1; i--)
 {
-	angel_instances_3[i] = instance_create_depth(x + 64, y - 128, depth - 1, object_angel_minion);
+	angel_instances_2[i] = instance_create_depth(x, y - 128 - i * 32, depth - 1, object_angel_minion);
+}
+
+for (i = max_angels_per_group - 1; i > -1; i--)
+{
+	angel_instances_3[i] = instance_create_depth(x + 64, y - 128 - i * 32, depth - 1, object_angel_minion);
 }

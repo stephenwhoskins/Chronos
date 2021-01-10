@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 7,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4fda859f-81cf-46c2-bf6f-dcdb94131fec","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4fda859f-81cf-46c2-bf6f-dcdb94131fec","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"LayerId":{"name":"3697dc27-1451-42cd-a4ce-7632e0f5be08","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_angel_dead","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","name":"4fda859f-81cf-46c2-bf6f-dcdb94131fec","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f1800c2b-d228-4f2a-b9e0-75f5f090e921","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f1800c2b-d228-4f2a-b9e0-75f5f090e921","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"LayerId":{"name":"4d1719b4-3c0b-45a9-9b7b-fd9c2fb2daf6","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_angel_dead","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","name":"f1800c2b-d228-4f2a-b9e0-75f5f090e921","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_angel_dead","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f9e12997-4508-4741-9061-ded577cccdf7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4fda859f-81cf-46c2-bf6f-dcdb94131fec","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ad602c37-b575-45cd-91d7-ac1baca5caa8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1800c2b-d228-4f2a-b9e0-75f5f090e921","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 23,
+    "yorigin": 28,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprite_angel_dead","path":"sprites/sprite_angel_dead/sprite_angel_dead.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3697dc27-1451-42cd-a4ce-7632e0f5be08","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4d1719b4-3c0b-45a9-9b7b-fd9c2fb2daf6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "angel",
