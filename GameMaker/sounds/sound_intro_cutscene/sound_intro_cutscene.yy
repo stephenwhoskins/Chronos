@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sound_intro_cutscene.wav",
-  "duration": 38.37482,
+  "duration": 38.37516,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
