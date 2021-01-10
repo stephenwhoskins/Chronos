@@ -2,8 +2,7 @@
 // You can write your code in this editor
 
 if (hurt_count == 0)
-	//instance_destroy();
-	hurt_count = max_hurt_count
+	instance_destroy();
 
 if (state == jelly_state.jelly_shocking)
 {
