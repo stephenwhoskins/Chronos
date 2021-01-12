@@ -73,56 +73,53 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 				moving_right = true;
 			}
 		}
-		else // Handle enemy damage here
+		else // Handle avatar attacking / enemy damage here
 		{
-			var x_offset = 16;
-			var y_offset = -16;
-			
-			// Handle avatar facing the left.
-			if (image_xscale == -1)
+			sword_attacking_instance.x = x;
+			sword_attacking_instance.y = y;
+			sword_attacking_instance.image_xscale = image_xscale;
+			with (sword_attacking_instance)
 			{
-				x_offset = -16;
-			}
-			
-			var _list = ds_list_create();
-			var _num = instance_place_list(x + x_offset, y + y_offset, object_enemy, _list, false);
-			if _num > 0
-			{
-				for (var i = 0; i < _num; ++i;)
+				var _list = ds_list_create();
+				var _num = instance_place_list(x, y, object_enemy, _list, false);
+				if _num > 0
 				{
-				    var instance_enemy = _list[| i];
-					if (instance_enemy.object_index == object_centipede_segment)
+					for (var i = 0; i < _num; ++i;)
 					{
-						// NOTE: itis probably clenaer to have the centipede segment handle this, but that may introduce an extra frame of lag over this.
-						instance_enemy = instance_enemy.head;
-					}
-					instance_enemy.hit_type = hit_types.sword;
-					if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
-					{
-						instance_enemy.hurt_count = 0;
+					    var instance_enemy = _list[| i];
+						if (instance_enemy.object_index == object_centipede_segment)
+						{
+							// NOTE: itis probably clenaer to have the centipede segment handle this, but that may introduce an extra frame of lag over this.
+							instance_enemy = instance_enemy.head;
+						}
+						instance_enemy.hit_type = hit_types.sword;
+						if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
+						{
+							instance_enemy.hurt_count = 0;
 						
-						if (instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking)
-						{					
-							// Handle enemy left of avatar.
-							if (instance_enemy.x < x)
-							{
-								instance_enemy.bounce_direction = -1.0;
+							if (instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking)
+							{					
+								// Handle enemy left of avatar.
+								if (instance_enemy.x < x)
+								{
+									instance_enemy.bounce_direction = -1.0;
+								}
+								else
+								{
+									instance_enemy.bounce_direction = 1.0;
+								}
 							}
 							else
 							{
-								instance_enemy.bounce_direction = 1.0;
+								object_avatar.sprite_index = sprite_avatar_shocked;
+								object_avatar.shock_count = 0;;
+								global.health_level--;
 							}
-						}
-						else
-						{
-							sprite_index = sprite_avatar_shocked;
-							shock_count = 0;;
-							global.health_level--;
 						}
 					}
 				}
+				ds_list_destroy(_list);
 			}
-			ds_list_destroy(_list);
 		}
 		
 		if (controller.attacking && !attack_pressed)

@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_sword",
+  "name": "object_sword_attacking",
   "tags": [],
   "resourceType": "GMObject",
 }

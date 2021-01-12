@@ -28,3 +28,6 @@ shock_count = 0;
 max_shock_count = 1 * room_speed;
 
 walk_speed = 1;
+
+sword_attacking_instance = instance_create_depth(x, y, depth - 1, object_sword_attacking);
+sword_attacking_instance.image_alpha = 0;
