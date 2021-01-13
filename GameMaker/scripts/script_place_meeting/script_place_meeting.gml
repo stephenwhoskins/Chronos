@@ -9,19 +9,19 @@ function script_place_meeting(x, y)
 		x_offset = 7;
 	}
 	
-	if (position_meeting(x - x_offset, y, object_barrier))
+	if (position_meeting(x - x_offset, y + 2, object_barrier))
 	{
 		return true;
 	}
-	if (position_meeting(x + x_offset, y, object_barrier))
+	if (position_meeting(x + x_offset, y + 2, object_barrier))
 	{
 		return true;
 	}
-	if (position_meeting(x - x_offset, y - 12, object_barrier))
+	if (position_meeting(x - x_offset, y - 4, object_barrier))
 	{
 		return true;
 	}
-	if (position_meeting(x + x_offset, y - 12, object_barrier))
+	if (position_meeting(x + x_offset, y - 4, object_barrier))
 	{
 		return true;
 	}
