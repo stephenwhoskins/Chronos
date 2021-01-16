@@ -10,12 +10,12 @@ if (other.y > y && !place_meeting(x, y - 20, object_avatar))
 }
 
 // If avatar is to the left.
-if (other.x < x && !place_meeting(x + 8, y, object_avatar))
+if (other.x < x && !place_meeting(x + 4, y, object_avatar))
 {
 	actually_hit = false;
 }
 // If avatar is the the right.
-else if (other.x > x && !place_meeting(x - 8, y, object_avatar))
+else if (other.x > x && !place_meeting(x - 4, y, object_avatar))
 {
 	actually_hit = false;
 }
