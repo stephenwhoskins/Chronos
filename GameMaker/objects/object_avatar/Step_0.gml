@@ -137,7 +137,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 			attack_pressed = false;
 		}
 		
-		if (controller.attacking_2 && !attack_2_pressed)
+		if (controller.attacking_2 && !attack_2_pressed && global.bombs_enabled)
 		{
 			attack_2_pressed = true;
 			instance_create_depth(x, y, depth + 1, object_bomb);

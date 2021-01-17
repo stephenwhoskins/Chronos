@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_sword_attacking",
-    "path": "sprites/sprite_sword_attacking/sprite_sword_attacking.yy",
+    "name": "sprite_bow",
+    "path": "sprites/sprite_bow/sprite_bow.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "weapons",
-    "path": "folders/Objects/weapons.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_sword_attacking",
+  "name": "object_bow_item",
   "tags": [],
   "resourceType": "GMObject",
 }

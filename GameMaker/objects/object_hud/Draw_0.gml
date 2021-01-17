@@ -9,12 +9,22 @@ draw_set_color($303030);
 draw_rectangle(view_x, view_y, view_x + hud_width, view_y + global.hud_height, false);
 draw_set_color(c_white);
 
-// draw controls
-//draw_sprite(sprite_controls, 0, view_x + 8, view_y);
+// draw bomb controls
 var controls_x = view_x + 8;
-draw_sprite(sprite_bomb_controls, 0, controls_x, view_y + 2);
+if (global.bombs_enabled)
+{
+	draw_sprite(sprite_bomb_controls, 1, controls_x, view_y + 2);
+}
+else
+{
+	draw_sprite(sprite_bomb_controls, 0, controls_x, view_y + 2);
+}
+
+// draw sword controls
 controls_x = controls_x + sprite_get_width(sprite_bomb_controls) + 4;
 draw_sprite(sprite_sword_controls, 0, controls_x, view_y + 2);
+
+// draw bow and arrow controls
 controls_x = controls_x + sprite_get_width(sprite_sword_controls) + 4;
 draw_sprite(sprite_bow_controls, 0, controls_x, view_y + 2);
 

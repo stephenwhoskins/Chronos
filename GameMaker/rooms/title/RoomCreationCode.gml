@@ -5,6 +5,8 @@ global.time_stopped = false;
 global.key_count = 0;
 global.locked_door_opened = false;
 
+global.bombs_enabled = false;
+
 global.max_shake_count = 240;
 global.shake_count = global.max_shake_count;
 
