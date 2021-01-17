@@ -95,10 +95,10 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 						instance_enemy.hit_type = hit_types.sword;
 						if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
 						{
-							instance_enemy.hurt_count = 0;
-						
 							if (instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking)
-							{					
+							{
+								instance_enemy.hurt_count = 0;
+								
 								// Handle enemy left of avatar.
 								if (instance_enemy.x < x)
 								{

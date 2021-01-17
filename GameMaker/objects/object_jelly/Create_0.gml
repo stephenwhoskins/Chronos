@@ -16,5 +16,17 @@ dir = random_range(0, 2 * pi);
 init_speed = .5;
 spd = init_speed;
 
-max_hurt_count = 1;
+start_x = x;
+start_y = y;
+
+health_level = 2;
+max_hurt_count = 30;
 hurt_count = max_hurt_count;
+
+max_bounce_back_count = 10;
+bounce_back_count = max_bounce_back_count;
+bounce_direction = 1.0;
+
+avatar_present = false;
+
+start_room_index = script_get_room_index(self);

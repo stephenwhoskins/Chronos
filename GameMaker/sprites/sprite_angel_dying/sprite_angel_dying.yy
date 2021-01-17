@@ -59,7 +59,7 @@
     "spriteId": {"name":"sprite_angel_dying","path":"sprites/sprite_angel_dying/sprite_angel_dying.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 15.0,
+    "playbackSpeed": 8.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

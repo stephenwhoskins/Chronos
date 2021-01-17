@@ -4,6 +4,6 @@ function script_get_room_col(obj)
 {
 	with (obj)
 	{
-		return floor(x / view_wport[0]);
+		return script_get_room_col_2(x);
 	}
 }

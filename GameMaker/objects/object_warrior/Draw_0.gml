@@ -6,6 +6,7 @@ draw_set_alpha(.5)
 draw_ellipse(bbox_left, bbox_bottom - 3, bbox_right, bbox_bottom + 2, false)
 draw_set_alpha(1);
 draw_set_color(c_white);
+
 if (hurt_count < max_hurt_count &&
 	floor(hurt_count / 2) % 2 == 0)
 {

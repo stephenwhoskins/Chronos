@@ -4,6 +4,6 @@ function script_get_room_row(obj)
 {
 	with (obj)
 	{
-		return floor(y / (view_hport[0] - global.hud_height));
+		return script_get_room_row_2(y);
 	}
 }
