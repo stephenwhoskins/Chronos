@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_bow",
-    "path": "sprites/sprite_bow/sprite_bow.yy",
+    "name": "sprite_bow_shiny",
+    "path": "sprites/sprite_bow_shiny/sprite_bow_shiny.yy",
   },
   "solid": false,
   "visible": true,
