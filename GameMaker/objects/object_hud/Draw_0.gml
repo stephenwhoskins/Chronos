@@ -41,11 +41,23 @@ for (var i = 0; i < global.health_level; i++)
 	draw_sprite(sprite_health, 0, health_x + 16 * i, view_y + 20);
 }
 
-// draw key indicators
+// draw key indicator
 if (global.key_count > 0)
 {
-	var key_x = health_x + 16 * global.max_health_level;
-	draw_sprite(sprite_key_indicator, 0, key_x, view_y + 3);
+	var key_x = health_x + 13 * global.max_health_level;
+	draw_sprite(sprite_key_indicator, 0, key_x, view_y + 5);
+}
+// draw centipede key indicator
+if (global.centipede_key_count > 0)
+{
+	var key_x = health_x + 13 * global.max_health_level;
+	draw_sprite(sprite_centipede_indicator, 0, key_x, view_y + 14);
+}
+// draw snake key indicator
+if (global.snake_key_count > 0)
+{
+	var key_x = health_x + 13 * global.max_health_level;
+	draw_sprite(sprite_snake_indicator, 0, key_x, view_y + 25);
 }
 
 // draw mini-map

@@ -5,6 +5,12 @@ global.time_stopped = false;
 global.key_count = 0;
 global.locked_door_opened = false;
 
+global.snake_key_count = 0;
+global.locked_snake_door_opened = false;
+
+global.centipede_key_count = 0;
+global.locked_centipede_door_opened = false;
+
 global.bombs_enabled = false;
 global.bow_and_arrow_enabled = false;
 
