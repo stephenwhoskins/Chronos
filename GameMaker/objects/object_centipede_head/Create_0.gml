@@ -1,14 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+image_angle = 270;
+
 num_body_segments = 8;
 max_hurt_count = 999999;
 hurt_count = 0;
 orig_x = x;
 orig_y = y;
-max_x = 64;
-max_y = 64;
-x_velocity = 8;
+max_x = 32;
+max_y = 48;
+x_velocity = 0;
 y_velocity = 8;
 
 max_update_count = 4;

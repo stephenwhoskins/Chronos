@@ -11,22 +11,51 @@ if (update_count == 0)
 	{
 		instance_body_segments[i].x = instance_body_segments[i + 1].x;
 		instance_body_segments[i].y = instance_body_segments[i + 1].y;
-		instance_body_segments[i].image_xscale = instance_body_segments[i + 1].image_xscale;
-		instance_body_segments[i].image_yscale = instance_body_segments[i + 1].image_yscale;
+		instance_body_segments[i].image_angle = instance_body_segments[i + 1].image_angle;
 	}
 
 	instance_body_segments[num_body_segments - 1].x = x;
 	instance_body_segments[num_body_segments - 1].y = y;
-	//instance_body_segments[num_body_segments - 1].image_xscale = image_xscale;
-	instance_body_segments[num_body_segments - 1].image_yscale = image_yscale;
-
-	if (abs(orig_y - y) > max_y)
-	{
-		y_velocity = -y_velocity;
-		image_yscale = -image_yscale;
-	}
+	instance_body_segments[num_body_segments - 1].image_angle = image_angle;
 
 	// Update the head.
+	if (image_angle == 270)
+	{
+		if (abs(orig_y - y) > max_y)
+		{
+			x_velocity = -8
+			y_velocity = 0;
+			image_angle = 180;
+		}
+	}
+	else if (image_angle == 180)
+	{
+		if (abs(orig_x - x) > max_x)
+		{
+			x_velocity = 0
+			y_velocity = -8;
+			image_angle = 90;
+		}
+	}
+	else if (image_angle == 90)
+	{
+		if (abs(orig_y - y) > max_y)
+		{
+			x_velocity = 8
+			y_velocity = 0;
+			image_angle = 0;
+		}
+	}
+	else if (image_angle == 0)
+	{
+		if (abs(orig_x - x) > max_x)
+		{
+			x_velocity = 0
+			y_velocity = 8;
+			image_angle = 270;
+		}
+	}
+	x += x_velocity;
 	y += y_velocity;
 }
 

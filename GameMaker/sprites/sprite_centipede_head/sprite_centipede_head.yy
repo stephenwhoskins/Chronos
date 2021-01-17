@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_right": 18,
   "bbox_top": 0,
-  "bbox_bottom": 18,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 19,
+  "width": 19,
+  "height": 16,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"679523fe-8490-4073-8826-35e4174064b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"679523fe-8490-4073-8826-35e4174064b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":{"name":"0263d921-835f-4868-8384-d50f3c58960c","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"679523fe-8490-4073-8826-35e4174064b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":{"name":"fddb399b-4d19-442c-8e8d-c13a74566c02","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"592d56a3-115f-44d7-a9b9-d129869477c0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"82f282b5-6c88-4a44-b4b0-4f0671cf003f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"679523fe-8490-4073-8826-35e4174064b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7e1b5ed1-ceb5-43ea-a210-0e87651354c8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0263d921-835f-4868-8384-d50f3c58960c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fddb399b-4d19-442c-8e8d-c13a74566c02","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "centipede",
