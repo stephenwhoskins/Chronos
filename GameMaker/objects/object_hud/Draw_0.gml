@@ -26,10 +26,14 @@ draw_sprite(sprite_sword_controls, 0, controls_x, view_y + 2);
 
 // draw bow and arrow controls
 controls_x = controls_x + sprite_get_width(sprite_sword_controls) + 4;
-draw_sprite(sprite_bow_controls, 0, controls_x, view_y + 2);
-
-// draw key count
-//draw_sprite(sprite_binary, global.key_count, view_x + 84, view_y + 16);
+if (global.bow_and_arrow_enabled)
+{
+	draw_sprite(sprite_bow_controls, 1, controls_x, view_y + 2);
+}
+else
+{
+	draw_sprite(sprite_bow_controls, 0, controls_x, view_y + 2);
+}
 
 // draw health
 for (var i = 0; i < global.health_level; i++)
@@ -37,7 +41,7 @@ for (var i = 0; i < global.health_level; i++)
 	draw_sprite(sprite_health, 0, health_x + 16 * i, view_y + 20);
 }
 
-// draw indicators
+// draw key indicators
 if (global.key_count > 0)
 {
 	var key_x = health_x + 16 * global.max_health_level;
