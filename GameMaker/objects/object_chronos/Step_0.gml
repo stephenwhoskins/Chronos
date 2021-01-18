@@ -56,9 +56,8 @@ if (time_warp_count < max_time_warp_count)
 	
 	if (time_warp_count == max_time_warp_count)
 	{
-		global.health_level = 5;
-		global.key_count = 0;
+		global.health_level = global.max_health_level;
 		global.time_stopped = false;
-		room_goto(Room1);
+		room_goto(room);
 	}
 }
