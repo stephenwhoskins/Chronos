@@ -4,9 +4,6 @@
 // extra boss logic here
 if (image_xscale > 1.5)
 {
-	max_x = 8;
-	max_y = 32;
-	
 	// handle changing of the music
 	if ((object_bottom_wall_closing_tropics.closed ||
 	!object_bottom_wall_closing_tropics.locked) &&
@@ -41,7 +38,7 @@ if (sprite_index == sprite_centipede_head_dying)
 
 if (update_count == 0)
 {
-	// Handle boss logic
+	// Boss doesn't move until the door is closed.
 	if (image_xscale > 1.5 &&
 	!object_bottom_wall_closing_tropics.closed)
 	{

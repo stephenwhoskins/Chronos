@@ -84,7 +84,6 @@
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_5","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_snake_door_locked","path":"objects/object_snake_door_locked/object_snake_door_locked.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":264.0,"resourceVersion":"1.0","name":"inst_56151F22","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"object_centipede_key","path":"objects/object_centipede_key/object_centipede_key.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":56.0,"resourceVersion":"1.0","name":"inst_1BFEDE54","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_7","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_bottom_wall_closing_tropics","path":"objects/object_bottom_wall_closing_tropics/object_bottom_wall_closing_tropics.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":160.0,"resourceVersion":"1.0","name":"inst_3FF235E4","tags":[],"resourceType":"GMRInstance",},
@@ -1617,7 +1616,6 @@
     {"name":"inst_69C3D22B","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_19BD7745","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_56151F22","path":"rooms/Room2/Room2.yy",},
-    {"name":"inst_1BFEDE54","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_3FF235E4","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_600F337D","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_4D7DF658","path":"rooms/Room2/Room2.yy",},

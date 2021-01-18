@@ -19,7 +19,8 @@ if (health_level > 0)
 	{
 		var x_velocity = 3.0 * bounce_direction;
 		if (!place_meeting(x + x_velocity, y, object_barrier) &&
-		script_get_room_index(self) == start_room_index)
+		script_get_room_index_2(bbox_left + x_velocity - 16, y) == start_room_index &&
+		script_get_room_index_2(bbox_right + x_velocity + 16, y) == start_room_index)
 		{
 			x += x_velocity;
 		}
@@ -61,7 +62,21 @@ if (health_level > 0)
 		dx = spd * cos(dir);
 		dy = spd * sin(dir);
 
-		if (place_meeting(x + dx, y + dy, object_avatar))
+		if (!place_meeting(x + dx, y, object_barrier) &&
+		script_get_room_index_2(bbox_left + dx - 16, y) == start_room_index &&
+		script_get_room_index_2(bbox_right + dx + 16, y) == start_room_index)
+		{
+			x += dx;
+		}
+		if (!place_meeting(x, y + dy, object_barrier) &&
+		script_get_room_index_2(x, bbox_top + dy - 16) == start_room_index &&
+		script_get_room_index_2(x, bbox_bottom + dy + 16) == start_room_index)
+		{
+			y += dy;
+		}
+		
+		// Handle avatar collision here.
+		if (place_meeting(x, y, object_avatar))
 		{
 			if (object_avatar.hurt_count == object_avatar.max_hurt_count)
 			{
@@ -77,19 +92,6 @@ if (health_level > 0)
 				{
 					object_avatar.bounce_direction = 1;
 				}
-			}
-		}
-		else
-		{
-			if (!place_meeting(x + dx, y, object_barrier)
-			&& script_get_room_index_2(x + dx, y) == start_room_index)
-			{
-				x += dx;
-			}
-			if (!place_meeting(x, y + dy, object_barrier)
-			&& script_get_room_index_2(x, y + dy) == start_room_index)
-			{
-				y += dy;
 			}
 		}
 	}

@@ -17,8 +17,7 @@ y_velocity = 8;
 max_update_count = 4;
 update_count = 0;
 
-var is_boss = abs(image_yscale) > 1.5;
-health_level = is_boss ? 15 : 3;
+health_level = 3;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
@@ -36,3 +35,10 @@ for (i = num_body_segments - 1; i > -1; i--)
 
 max_silence_count = 120;
 silence_count = 0;
+
+if (image_yscale > 1.5)
+{
+	max_x = 8;
+	max_y = 32;
+	health_level = 15;
+}
