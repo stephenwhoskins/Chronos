@@ -274,6 +274,7 @@
     {"id":{"name":"object_electricity_1","path":"objects/object_electricity_1/object_electricity_1.yy",},"order":9,},
     {"id":{"name":"object_right_wall_closed_hell_grounds","path":"objects/object_right_wall_closed_hell_grounds/object_right_wall_closed_hell_grounds.yy",},"order":2,},
     {"id":{"name":"sprite_door_locked_hell_grounds","path":"sprites/sprite_door_locked_hell_grounds/sprite_door_locked_hell_grounds.yy",},"order":6,},
+    {"id":{"name":"object_bottom_wall_closing_tropics","path":"objects/object_bottom_wall_closing_tropics/object_bottom_wall_closing_tropics.yy",},"order":11,},
     {"id":{"name":"sprite_bow_controls","path":"sprites/sprite_bow_controls/sprite_bow_controls.yy",},"order":5,},
     {"id":{"name":"sprite_centipede_head_dying","path":"sprites/sprite_centipede_head_dying/sprite_centipede_head_dying.yy",},"order":2,},
     {"id":{"name":"sprite_tile_9","path":"sprites/sprite_tile_9/sprite_tile_9.yy",},"order":11,},

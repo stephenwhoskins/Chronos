@@ -17,8 +17,8 @@ y_velocity = 8;
 max_update_count = 4;
 update_count = 0;
 
-var is_boss = abs(image_yscale) > 1.1;
-health_level = is_boss ? 12 : 3;
+var is_boss = abs(image_yscale) > 1.5;
+health_level = is_boss ? 15 : 3;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
@@ -28,7 +28,11 @@ bounce_direction = 1.0;
 
 for (i = num_body_segments - 1; i > -1; i--)
 {
+	// body segments destroy themselves once they've died
 	instance_body_segments[i] = instance_create_depth(x, y, depth + 1, object_centipede_segment);
 	instance_body_segments[i].head = self;
 	instance_body_segments[i].animation_count = (2 * i) % instance_body_segments[i].max_animation_count;
 }
+
+max_silence_count = 120;
+silence_count = 0;

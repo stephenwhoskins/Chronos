@@ -1,13 +1,42 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// extra boss logic here
 if (image_xscale > 1.5)
 {
 	max_x = 48;
 	max_y = 32;
+	
+	// handle changing of the music
+	if ((object_bottom_wall_closing_tropics.closed ||
+	!object_bottom_wall_closing_tropics.locked) &&
+	silence_count < max_silence_count)
+	{
+		if (silence_count == 0)
+		{
+			audio_stop_sound(object_music_player.sound);
+		}
+		
+		silence_count++;
+		
+		if (silence_count == max_silence_count)
+		{
+			object_music_player.played = false;
+			object_music_player.loop_begin_time = 0.0;
+			object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
+			if (health_level <= 0)
+			{
+				object_music_player.sound = audio_play_sound(sound_bgm_2, 10, true);
+			}
+			else
+			{
+				object_music_player.sound = audio_play_sound(sound_boss_music, 10, true);
+			}
+		}
+	}
 }
 
-if (sprite_index = sprite_centipede_head_dying)
+if (sprite_index == sprite_centipede_head_dying)
 	return;
 
 if (update_count == 0)
