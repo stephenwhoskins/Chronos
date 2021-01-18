@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+orig_x = x;
+
 max_x_offset = 32;
 last_image_index = image_index;
 

@@ -14,7 +14,6 @@ if (hurt_count == 0 && hit_type == hit_types.sword)
 
 if (last_image_index != floor(image_index) && floor(image_index) == 1 && sprite_index != sprite_spike_dying)
 {
-	orig_x = x;
 	x += 2 * image_xscale;
 	
 	if (abs(x - orig_x) > max_x_offset)
