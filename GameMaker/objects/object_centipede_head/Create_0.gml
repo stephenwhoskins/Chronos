@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+pattern_1 = true;
 image_angle = 270;
 
 num_body_segments = 8;

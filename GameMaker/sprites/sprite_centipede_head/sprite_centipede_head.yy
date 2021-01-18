@@ -24,9 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":{"name":"fddb399b-4d19-442c-8e8d-c13a74566c02","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"592d56a3-115f-44d7-a9b9-d129869477c0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5fdb4976-9bce-42e9-84c5-f4b2fc4365b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5fdb4976-9bce-42e9-84c5-f4b2fc4365b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":{"name":"3328e9e2-6d67-4990-a90f-0bcb493fd4cd","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"5fdb4976-9bce-42e9-84c5-f4b2fc4365b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"38b50b69-5c60-49c1-b808-22089102c014","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"38b50b69-5c60-49c1-b808-22089102c014","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"LayerId":{"name":"3328e9e2-6d67-4990-a90f-0bcb493fd4cd","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","name":"38b50b69-5c60-49c1-b808-22089102c014","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},
@@ -36,12 +39,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7e1b5ed1-ceb5-43ea-a210-0e87651354c8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"592d56a3-115f-44d7-a9b9-d129869477c0","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f4ac7350-d02b-426e-ba87-7a5eee1efe6f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fdb4976-9bce-42e9-84c5-f4b2fc4365b9","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cd8eb4d5-a225-4bbf-bb85-f56ce7094fc2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38b50b69-5c60-49c1-b808-22089102c014","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fddb399b-4d19-442c-8e8d-c13a74566c02","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3328e9e2-6d67-4990-a90f-0bcb493fd4cd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "centipede",
