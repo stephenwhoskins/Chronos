@@ -7,3 +7,8 @@ hurt_count = max_hurt_count;
 max_bounce_back_count = 10;
 bounce_back_count = max_bounce_back_count;
 bounce_direction = 1.0;
+
+start_x = x;
+start_y = y;
+avatar_present = false;
+start_room_index = script_get_room_index(self);

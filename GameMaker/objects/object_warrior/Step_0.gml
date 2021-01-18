@@ -3,10 +3,25 @@
 
 if (health_level > 0)
 {
+	// Reset the warrior if the avatar has left the room.
+	if (script_get_room_index(self) == script_get_room_index(object_avatar) && !avatar_present)
+	{
+		x = start_x;
+		y = start_y;
+		avatar_present = true;
+	}
+	else if (script_get_room_index(self) != script_get_room_index(object_avatar) && avatar_present)
+	{
+		avatar_present = false;
+	}
+	
+	// Handle bounce from being attacked.
 	if (bounce_back_count < max_bounce_back_count)
 	{
 		var x_velocity = 3.0 * bounce_direction;
-		if (!place_meeting(x + x_velocity, y, object_barrier))
+		if (!place_meeting(x + x_velocity, y, object_barrier) &&
+		script_get_room_index_2(bbox_left + x_velocity - 16, y) == start_room_index &&
+		script_get_room_index_2(bbox_right + x_velocity + 16, y) == start_room_index)
 		{
 			x += x_velocity;
 		}
@@ -40,11 +55,15 @@ if (health_level > 0)
 		}
 		else
 		{
-			if (!place_meeting(x + dx, y, object_barrier))
+			if (!place_meeting(x + dx, y, object_barrier) &&
+			script_get_room_index_2(bbox_left + dx - 16, y) == start_room_index &&
+			script_get_room_index_2(bbox_right + dx + 16, y) == start_room_index)
 			{
 				x += dx;
 			}
-			if (!place_meeting(x, y + dy, object_barrier))
+			if (!place_meeting(x, y + dy, object_barrier) &&
+			script_get_room_index_2(x, bbox_top + dy - 16) == start_room_index &&
+			script_get_room_index_2(x, bbox_bottom + dy + 16) == start_room_index)
 			{
 				y += dy;
 			}

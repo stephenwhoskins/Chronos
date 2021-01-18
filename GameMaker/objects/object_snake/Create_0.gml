@@ -24,3 +24,8 @@ if (is_boss)
 	wall_closed_instance.image_alpha = 0;
 	wall_closed_instance.solid = false;
 }
+
+start_x = x;
+start_y = y;
+avatar_present = false;
+start_room_index = script_get_room_index(self);
