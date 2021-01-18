@@ -29,6 +29,7 @@ if (update_count == 0)
 	instance_body_segments[num_body_segments - 1].image_angle = image_angle;
 
 	// Update the head.
+	// First pattern
 	if (pattern_1)
 	{
 		if (image_angle == 270)
@@ -62,6 +63,7 @@ if (update_count == 0)
 			}
 		}
 	}
+	// Second pattern
 	else
 	{
 		if (image_angle == 270)
@@ -100,6 +102,25 @@ if (update_count == 0)
 	x_velocity = movement_speed * cos(degtorad(image_angle));
 	y_velocity = -movement_speed * sin(degtorad(image_angle));
 	
+	if (place_meeting(x + x_velocity, y + y_velocity, object_avatar))
+	{
+		if (object_avatar.hurt_count == object_avatar.max_hurt_count)
+		{
+			global.health_level = max(global.health_level - 1, 0);
+			object_avatar.hurt_count = 0;
+			
+			// If avatar is to the left.
+			if (object_avatar.x < x)
+			{
+				object_avatar.bounce_direction = -1;
+			}
+			else
+			{
+				object_avatar.bounce_direction = 1;
+			}
+		}
+	}
+
 	if (!place_meeting(x + x_velocity, y, object_barrier))
 	{
 		x += x_velocity;

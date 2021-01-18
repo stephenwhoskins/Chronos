@@ -4,6 +4,6 @@ function script_get_room_row(obj)
 {
 	with (obj)
 	{
-		return script_get_room_row_2(y);
+		return script_get_room_row_2(y - (bbox_bottom - bbox_top) / 2);
 	}
 }

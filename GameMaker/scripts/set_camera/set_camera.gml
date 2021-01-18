@@ -10,7 +10,7 @@ function set_camera()
 
 	var cy_offset = -40;
 	var miniroom_x = floor(x / miniroom_width);
-	var miniroom_y = floor(y / miniroom_height);
+	var miniroom_y = floor((y - (bbox_bottom - bbox_top) / 2) / miniroom_height);
 	var old_cx = camera_get_view_x(c);
 	var old_cy = camera_get_view_y(c);
 	var target_cx = miniroom_x * miniroom_width;
