@@ -4,7 +4,7 @@
 // extra boss logic here
 if (image_xscale > 1.5)
 {
-	max_x = 48;
+	max_x = 8;
 	max_y = 32;
 	
 	// handle changing of the music
@@ -41,6 +41,13 @@ if (sprite_index == sprite_centipede_head_dying)
 
 if (update_count == 0)
 {
+	// Handle boss logic
+	if (image_xscale > 1.5 &&
+	!object_bottom_wall_closing_tropics.closed)
+	{
+		return;
+	}
+	
 	// Update the body segments.
 	for (i = 0; i < num_body_segments - 1; i++)
 	{
@@ -126,12 +133,43 @@ if (update_count == 0)
 			}
 		}
 	}
-	
 	var movement_speed = 8;
 	x_velocity = movement_speed * cos(degtorad(image_angle));
 	y_velocity = -movement_speed * sin(degtorad(image_angle));
+	if (!place_meeting(x + x_velocity, y, object_barrier))
+	{
+		x += x_velocity;
+	}
+	else
+	{
+		if (x_velocity < 0)
+		{
+			image_angle = 0;
+		}
+		else
+		{
+			image_angle = 180;
+		}
+		pattern_1 = !pattern_1;
+	}
+	if (!place_meeting(x, y + y_velocity, object_barrier))
+	{
+		y += y_velocity;
+	}
+	else
+	{
+		if (pattern_1)
+		{
+			image_angle = 180;
+		}
+		else
+		{
+			image_angle = 0;
+		}
+	}
 	
-	if (place_meeting(x + x_velocity, y + y_velocity, object_avatar))
+	// Handle collisions with avatar.
+	if (place_meeting(x, y, object_avatar))
 	{
 		if (object_avatar.hurt_count == object_avatar.max_hurt_count)
 		{
@@ -149,24 +187,6 @@ if (update_count == 0)
 			}
 		}
 	}
-
-	if (!place_meeting(x + x_velocity, y, object_barrier))
-	{
-		x += x_velocity;
-	}
-	else
-	{
-		if (x_velocity < 0)
-		{
-			image_angle = 0;
-		}
-		else
-		{
-			image_angle = 180;
-		}
-		pattern_1 = !pattern_1;
-	}
-	y += y_velocity;
 }
 
 if (hurt_count == 0 && sprite_index != sprite_centipede_head_dying)
