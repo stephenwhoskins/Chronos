@@ -219,6 +219,7 @@
     {"id":{"name":"sprite_right_wall_locked","path":"sprites/sprite_right_wall_locked/sprite_right_wall_locked.yy",},"order":14,},
     {"id":{"name":"sprite_bottom_wall_closed_hell_grounds","path":"sprites/sprite_bottom_wall_closed_hell_grounds/sprite_bottom_wall_closed_hell_grounds.yy",},"order":0,},
     {"id":{"name":"object_spikes_tropics","path":"objects/object_spikes_tropics/object_spikes_tropics.yy",},"order":3,},
+    {"id":{"name":"object_white_arrow","path":"objects/object_white_arrow/object_white_arrow.yy",},"order":10,},
     {"id":{"name":"sprite_tile_2_tropics","path":"sprites/sprite_tile_2_tropics/sprite_tile_2_tropics.yy",},"order":2,},
     {"id":{"name":"object_hud","path":"objects/object_hud/object_hud.yy",},"order":7,},
     {"id":{"name":"script_get_room_col_2","path":"scripts/script_get_room_col_2/script_get_room_col_2.yy",},"order":16,},
