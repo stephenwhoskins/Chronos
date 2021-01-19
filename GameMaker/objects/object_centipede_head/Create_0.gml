@@ -25,6 +25,19 @@ max_bounce_back_count = 10;
 bounce_back_count = max_bounce_back_count;
 bounce_direction = 1.0;
 
+if (image_xscale > 1.5)
+{
+	if (global.centipede_key_count > 0)
+	{
+		instance_destroy();
+		return;
+	}
+	
+	max_x = 8;
+	max_y = 32;
+	health_level = 15;
+}
+
 for (i = num_body_segments - 1; i > -1; i--)
 {
 	// body segments destroy themselves once they've died
@@ -35,10 +48,3 @@ for (i = num_body_segments - 1; i > -1; i--)
 
 max_silence_count = 120;
 silence_count = 0;
-
-if (image_yscale > 1.5)
-{
-	max_x = 8;
-	max_y = 32;
-	health_level = 15;
-}

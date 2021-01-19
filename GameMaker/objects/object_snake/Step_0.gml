@@ -74,10 +74,10 @@ if (health_level > 0)
 			door_shut = true;
 			audio_stop_all();
 			audio_play_sound(sound_door_closed, 10, false);
-			wall_closed_instance.x = camera_get_view_x(view_camera[0]);
-			wall_closed_instance.y = camera_get_view_y(view_camera[0]) + 40;
-			wall_closed_instance.image_alpha = 1;
-			wall_closed_instance.solid = true;
+			object_magic_left_wall_closed.x = camera_get_view_x(view_camera[0]);
+			object_magic_left_wall_closed.y = camera_get_view_y(view_camera[0]) + 40;
+			object_magic_left_wall_closed.image_alpha = 1;
+			object_magic_left_wall_closed.solid = true;
 			boss_music_count = 0;
 		}
 	}
@@ -151,11 +151,11 @@ if (variable_instance_exists(id, "snake_1") && variable_instance_exists(id, "sna
 	{
 		if (!timey_death_initiated)
 		{
-			script_timey_death_sequence();
+			//script_timey_death_sequence();
+			audio_stop_all();
 			timey_death_initiated = true;
-			audio_play_sound(sound_door_closed, 10, false);
-			wall_closed_instance.image_alpha = 0;
-			wall_closed_instance.solid = false;
+			// snake key destroys itself
+			instance_create_depth(x, y - view_hport[0], depth - 2, object_snake_key);
 		}
 	}
 }
