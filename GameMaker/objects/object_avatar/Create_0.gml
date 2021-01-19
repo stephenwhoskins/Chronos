@@ -12,6 +12,7 @@ death_count = max_death_count;
 
 attack_pressed = false;
 attack_2_pressed = false;
+attack_3_pressed = false;
 
 timey_time_warp_initiated = false;
 walk_sound = -1;

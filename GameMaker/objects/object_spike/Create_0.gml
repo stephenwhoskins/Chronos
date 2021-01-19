@@ -14,5 +14,5 @@ max_bounce_back_count = 10;
 bounce_back_count = max_bounce_back_count;
 bounce_direction = 1.0;
 
-max_spark_count = 15;
-spark_count = max_spark_count;
+max_tink_count = floor(room_speed / 4);
+tink_count = max_tink_count;

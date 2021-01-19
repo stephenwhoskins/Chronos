@@ -146,6 +146,23 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 		{
 			attack_2_pressed = false;
 		}
+		
+		if (controller.attacking_3 && !attack_3_pressed && global.bow_and_arrow_enabled)
+		{
+			attack_3_pressed = true;
+			instance_arrow = instance_create_depth(bbox_right + 10, y - 8, depth - 1, object_arrow);
+			instance_arrow.hspeed = image_xscale * 2;
+			instance_arrow.image_xscale = image_xscale;
+			instance_arrow.image_angle = image_xscale * 90;
+			if (image_xscale < 0)
+			{
+				instance_arrow.x = bbox_left - 10;
+			}
+		}
+		else if (!controller.attacking_3)
+		{
+			attack_3_pressed = false;
+		}
 	}
 }
 

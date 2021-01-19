@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sound_tink","path":"sounds/sound_tink/sound_tink.yy",},"order":11,},
     {"id":{"name":"sprite_bottom_wall_closed_tropics","path":"sprites/sprite_bottom_wall_closed_tropics/sprite_bottom_wall_closed_tropics.yy",},"order":0,},
     {"id":{"name":"object_barrier_4","path":"objects/object_barrier_4/object_barrier_4.yy",},"order":7,},
     {"id":{"name":"object_scroll_camera_down","path":"objects/object_scroll_camera_down/object_scroll_camera_down.yy",},"order":0,},

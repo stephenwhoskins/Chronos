@@ -1,15 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (spark_count < max_spark_count)
+if (hurt_count == 0 && (hit_type == hit_types.sword || hit_type == hit_types.arrow))
 {
-	spark_count += 1;
-}
-
-if (hurt_count == 0 && hit_type == hit_types.sword)
-{
-	spark_count = 0
 	hurt_count = max_hurt_count;
+	
+	if (tink_count == max_tink_count)
+	{
+		audio_play_sound(sound_tink, 10, false);
+		tink_count = 0;
+	}
 }
 
 if (last_image_index != floor(image_index) && floor(image_index) == 1 && sprite_index != sprite_spike_dying)
@@ -46,3 +46,5 @@ if (hurt_count < max_hurt_count)
 	hurt_count += 1;
 
 last_image_index = floor(image_index);
+
+tink_count = min(tink_count + 1, max_tink_count);
