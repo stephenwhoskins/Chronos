@@ -12,3 +12,7 @@ start_x = x;
 start_y = y;
 avatar_present = false;
 start_room_index = script_get_room_index(self);
+
+sprite_idle = sprite_warrior_idle;
+sprite_walking = sprite_warrior_walking;
+sprite_dead = sprite_warrior_dead;

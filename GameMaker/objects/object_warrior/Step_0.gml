@@ -28,7 +28,7 @@ if (health_level > 0)
 	}
 	else if (distance_to_object(object_avatar)< 50)
 	{
-		sprite_index = sprite_warrior_walking;
+		sprite_index = sprite_walking;
 		var velocity = min(.8, distance_to_object(object_avatar));
 		var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
 		var dx = velocity * cos(angle);
@@ -71,25 +71,25 @@ if (health_level > 0)
 	}
 	else
 	{
-		sprite_index = sprite_warrior_idle;
+		sprite_index = sprite_idle;
 	}
 }
 
-if (hurt_count == 0 && sprite_index != sprite_warrior_dead)
+if (hurt_count == 0 && sprite_index != sprite_dead)
 {
 	health_level = max(health_level - 1, 0);
 	bounce_back_count = 0;
 	
 	if (health_level == 0)
 	{
-		sprite_index = sprite_warrior_dead;
+		sprite_index = sprite_dead;
 		if (random(100) < 40)
 		{
 			instance_create_depth(x, y, depth - 1, object_health);
 		}
 	}
 }
-else if (hurt_count == 0 && sprite_index == sprite_warrior_dead)
+else if (hurt_count == 0 && sprite_index == sprite_dead)
 {
 	hurt_count = max_hurt_count;
 }
