@@ -153,6 +153,7 @@
     {"id":{"name":"sprite_tile_7","path":"sprites/sprite_tile_7/sprite_tile_7.yy",},"order":9,},
     {"id":{"name":"object_black_timer","path":"objects/object_black_timer/object_black_timer.yy",},"order":15,},
     {"id":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"order":5,},
+    {"id":{"name":"sprite_avatar_shocked_2","path":"sprites/sprite_avatar_shocked_2/sprite_avatar_shocked_2.yy",},"order":8,},
     {"id":{"name":"object_wall_0_hell_grounds","path":"objects/object_wall_0_hell_grounds/object_wall_0_hell_grounds.yy",},"order":6,},
     {"id":{"name":"object_wall","path":"objects/object_wall/object_wall.yy",},"order":25,},
     {"id":{"name":"object_quit_cutscene","path":"objects/object_quit_cutscene/object_quit_cutscene.yy",},"order":2,},

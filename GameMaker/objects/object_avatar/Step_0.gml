@@ -8,14 +8,21 @@ moving_down = false;
 moving_left = false;
 moving_right = false;
 
+var controller = read_gameplay_controller();
+
 if (shock_count < max_shock_count)
 {
 	shock_count++;
+	
+	if (global.health_level <= 0 && shock_count == max_shock_count)
+	{
+		sprite_index = sprite_avatar_dead;
+		death_count = 0;
+	}
+	
 	return;
 }
-
-var controller = read_gameplay_controller();
-
+	
 if (global.health_level > 0 && !global.time_stopped && !script_transitioning_rooms())
 {
 	if (bounce_back_count < max_bounce_back_count)
@@ -112,7 +119,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 							else
 							{
 								object_avatar.sprite_index = sprite_avatar_shocked;
-								object_avatar.shock_count = 0;;
+								object_avatar.shock_count = 0;
 								global.health_level--;
 							}
 						}

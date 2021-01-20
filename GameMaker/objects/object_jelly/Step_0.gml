@@ -78,19 +78,30 @@ if (health_level > 0)
 		// Handle avatar collision here.
 		if (place_meeting(x, y, object_avatar))
 		{
-			if (object_avatar.hurt_count == object_avatar.max_hurt_count)
+			if (object_avatar.hurt_count == object_avatar.max_hurt_count &&
+			object_avatar.shock_count == object_avatar.max_shock_count &&
+			global.health_level > 0)
 			{
-				global.health_level = max(global.health_level - 1, 0);
-				object_avatar.hurt_count = 0;
-				
-				// If avatar is to the left
-				if (object_avatar.x < x)
+				if (sprite_index == sprite_jelly_shocking)
 				{
-					object_avatar.bounce_direction = -1;
+					object_avatar.sprite_index = sprite_avatar_shocked_2;
+					object_avatar.shock_count = 0;
+					global.health_level = max(global.health_level - 1, 0);
 				}
 				else
 				{
-					object_avatar.bounce_direction = 1;
+					global.health_level = max(global.health_level - 1, 0);
+					object_avatar.hurt_count = 0;
+				
+					// If avatar is to the left
+					if (object_avatar.x < x)
+					{
+						object_avatar.bounce_direction = -1;
+					}
+					else
+					{
+						object_avatar.bounce_direction = 1;
+					}
 				}
 			}
 		}
