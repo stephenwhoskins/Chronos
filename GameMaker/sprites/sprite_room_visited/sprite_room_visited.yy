@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"edbef15e-9043-4ffc-bed4-4dfa3298b70f","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"edbef15e-9043-4ffc-bed4-4dfa3298b70f","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},"LayerId":{"name":"ea41d650-17a9-43ce-a171-f29487117fb2","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_highlighted","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},"resourceVersion":"1.0","name":"edbef15e-9043-4ffc-bed4-4dfa3298b70f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"74773e98-aef4-4cd5-9c06-7b198ee11024","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"74773e98-aef4-4cd5-9c06-7b198ee11024","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},"LayerId":{"name":"02eb4dc4-ee33-4bbe-89ab-360dd5f8de7c","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_room_visited","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},"resourceVersion":"1.0","name":"74773e98-aef4-4cd5-9c06-7b198ee11024","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_highlighted","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},
+    "spriteId": {"name":"sprite_room_visited","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b43d1ccb-1c44-4aba-94c4-5879b7f0920d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"edbef15e-9043-4ffc-bed4-4dfa3298b70f","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"46d62421-2cdd-44db-a8ff-842de3e0157d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74773e98-aef4-4cd5-9c06-7b198ee11024","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_highlighted","path":"sprites/sprite_highlighted/sprite_highlighted.yy",},
+    "parent": {"name":"sprite_room_visited","path":"sprites/sprite_room_visited/sprite_room_visited.yy",},
     "resourceVersion": "1.3",
-    "name": "sprite_highlighted",
+    "name": "sprite_room_visited",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ea41d650-17a9-43ce-a171-f29487117fb2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"02eb4dc4-ee33-4bbe-89ab-360dd5f8de7c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "hud",
     "path": "folders/Sprites/hud.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_highlighted",
+  "name": "sprite_room_visited",
   "tags": [],
   "resourceType": "GMSprite",
 }

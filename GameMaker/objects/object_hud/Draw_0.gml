@@ -66,9 +66,9 @@ draw_sprite(sprite_map, 0,
 	map_left, view_y);
 var map_tile_offset = 1;
 var miniroom = get_miniroom(object_avatar);
-		draw_sprite(sprite_highlighted, 
+		draw_sprite(sprite_room_current, 
 		0, 
-		map_left + 14 + miniroom.x * (map_tile_offset + sprite_get_width(sprite_highlighted)), 
+		map_left + 14 + miniroom.x * (map_tile_offset + sprite_get_width(sprite_room_current)), 
 		view_y + 12 + miniroom.y * (sprite_get_height(sprite_highlighted) + map_tile_offset));
 
 
