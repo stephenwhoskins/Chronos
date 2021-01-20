@@ -13,7 +13,7 @@ fire_frame = 0;
 
 timey_death_initiated = false;
 
-max_boss_music_count = 120;
+max_boss_music_count = 2 * room_speed;
 boss_music_count = max_boss_music_count;
 door_shut = false;
 

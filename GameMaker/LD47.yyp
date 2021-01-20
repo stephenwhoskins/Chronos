@@ -212,6 +212,7 @@
     {"id":{"name":"sprite_door_locked","path":"sprites/sprite_door_locked/sprite_door_locked.yy",},"order":5,},
     {"id":{"name":"sprite_spikes_hellgrounds","path":"sprites/sprite_spikes_hellgrounds/sprite_spikes_hellgrounds.yy",},"order":5,},
     {"id":{"name":"sprite_centipede_key","path":"sprites/sprite_centipede_key/sprite_centipede_key.yy",},"order":8,},
+    {"id":{"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"order":4,},
     {"id":{"name":"script_timey_death_sequence","path":"scripts/script_timey_death_sequence/script_timey_death_sequence.yy",},"order":3,},
     {"id":{"name":"sound_bgm_2","path":"sounds/sound_bgm_2/sound_bgm_2.yy",},"order":4,},
     {"id":{"name":"sprite_trap","path":"sprites/sprite_trap/sprite_trap.yy",},"order":1,},

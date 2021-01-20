@@ -28,14 +28,38 @@ if (health_level > 0)
 	}
 	else if (distance_to_object(object_avatar) < 50 || being_attacked)
 	{
-		sprite_index = sprite_snake_walking;
-		var velocity = min(.8, distance_to_object(object_avatar));
-		var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
-		var dx = velocity * cos(angle);
-		var dy = velocity * sin(angle);
-		if (dx != 0)
-			image_xscale *= sign(dx) * sign(image_xscale);
-		if (place_meeting(x + dx, y + dy, object_avatar))
+		// Handle spitting fire if a boss here.
+		if (is_boss && fire_frame == fire_frame_max)
+		{
+			sprite_index = sprite_snake_spitting;
+			alarm[0] = 2 * room_speed;
+		}
+		else // Handle movement logic here
+		{
+			sprite_index = sprite_snake_walking;
+			var velocity = min(.8, distance_to_object(object_avatar));
+			var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
+			var dx = velocity * cos(angle);
+			var dy = velocity * sin(angle);
+			if (dx != 0)
+				image_xscale *= sign(dx) * sign(image_xscale);
+				
+			if (!place_meeting(x + dx, y, object_barrier) &&
+			script_get_room_index_2(bbox_left + dx - 16, y) == start_room_index &&
+			script_get_room_index_2(bbox_right + dx + 16, y) == start_room_index)
+			{
+				x += dx;
+			}
+			if (!place_meeting(x, y + dy, object_barrier) &&
+			script_get_room_index_2(x, bbox_top + dy - 16) == start_room_index &&
+			script_get_room_index_2(x, bbox_bottom + dy + 16) == start_room_index)
+			{
+				y += dy;
+			}
+		}
+		
+		// Handle avatar collision here.
+		if (place_meeting(x, y, object_avatar))
 		{
 			if (object_avatar.hurt_count == object_avatar.max_hurt_count)
 			{
@@ -53,22 +77,6 @@ if (health_level > 0)
 				}
 			}
 		}
-		else
-		{
-			if (!place_meeting(x + dx, y, object_barrier) &&
-			script_get_room_index_2(bbox_left + dx - 16, y) == start_room_index &&
-			script_get_room_index_2(bbox_right + dx + 16, y) == start_room_index)
-			{
-				x += dx;
-			}
-			if (!place_meeting(x, y + dy, object_barrier) &&
-			script_get_room_index_2(x, bbox_top + dy - 16) == start_room_index &&
-			script_get_room_index_2(x, bbox_bottom + dy + 16) == start_room_index)
-			{
-				y += dy;
-			}
-			fire_frame = fire_frame_max;
-		}
 		
 		if (is_boss && !door_shut)
 		{
@@ -84,9 +92,9 @@ if (health_level > 0)
 	}
 	else
 	{
-		if (is_boss && fire_frame == fire_frame_max)
+		/*if (is_boss && fire_frame == fire_frame_max)
 		{
-			/*var xs = sign(image_xscale);
+			var xs = sign(image_xscale);
 			var ys = sign(image_yscale);
 			var num_fireballs = 3;
 			for (var i = 0; i < num_fireballs; i++)
@@ -96,12 +104,8 @@ if (health_level > 0)
 				fire.dx = cos(angle) * .5 * xs;
 				fire.dy = sin(angle) * .5;
 			}
-			fire_frame = 0;*/
-		}
-		else
-		{
-			fire_frame++;
-		}
+			fire_frame = 0;
+		}*/
 		sprite_index = sprite_snake_idle;
 	}
 }
@@ -164,3 +168,5 @@ if (variable_instance_exists(id, "snake_1") && variable_instance_exists(id, "sna
 
 hurt_count = min(hurt_count + 1, max_hurt_count);
 bounce_back_count = min(bounce_back_count + 1, max_bounce_back_count);
+
+fire_frame = min(fire_frame + 1, fire_frame_max);
