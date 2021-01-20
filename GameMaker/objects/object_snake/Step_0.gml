@@ -28,11 +28,27 @@ if (health_level > 0)
 	}
 	else if (distance_to_object(object_avatar) < 50 || being_attacked)
 	{
+		being_attacked = true;
+		
 		// Handle spitting fire if a boss here.
 		if (is_boss && fire_frame == fire_frame_max)
 		{
-			sprite_index = sprite_snake_spitting;
-			alarm[0] = 2 * room_speed;
+			if (sprite_index != sprite_snake_spitting)
+			{
+				sprite_index = sprite_snake_spitting;
+				alarm[0] = 2 * room_speed;
+				
+				var xs = sign(image_xscale);
+				var ys = sign(image_yscale);
+				var num_fireballs = 3;
+				for (var i = 0; i < num_fireballs; i++)
+				{
+					var fire = instance_create_depth(floor(x + 8 * xs), floor(y - 32 * ys), depth - 1, object_fireball);
+					var angle = pi / 4 * (i - (num_fireballs / 2 - .5));
+					fire.dx = cos(angle) * xs;
+					fire.dy = sin(angle);
+				}
+			}
 		}
 		else // Handle movement logic here
 		{
@@ -92,20 +108,6 @@ if (health_level > 0)
 	}
 	else
 	{
-		/*if (is_boss && fire_frame == fire_frame_max)
-		{
-			var xs = sign(image_xscale);
-			var ys = sign(image_yscale);
-			var num_fireballs = 3;
-			for (var i = 0; i < num_fireballs; i++)
-			{
-				var fire = instance_create_layer(x + 3 * xs , y - 3 * ys, layer, object_fireball);
-				var angle = pi / 4 * (i - (num_fireballs / 2 - .5));
-				fire.dx = cos(angle) * .5 * xs;
-				fire.dy = sin(angle) * .5;
-			}
-			fire_frame = 0;
-		}*/
 		sprite_index = sprite_snake_idle;
 	}
 }
@@ -120,6 +122,13 @@ if (boss_music_count < max_boss_music_count)
 	}
 }
 
+// Snake is invincible when he's spitting fire.
+if (hurt_count == 0 && sprite_index == sprite_snake_spitting)
+{
+	hurt_count = max_hurt_count;
+}
+
+// Handle snake getting hurt.
 if (hurt_count == 0 && sprite_index != sprite_snake_dead)
 {
 	health_level = max(health_level - 1, 0);

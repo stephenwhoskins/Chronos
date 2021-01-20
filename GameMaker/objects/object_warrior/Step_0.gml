@@ -29,6 +29,7 @@ if (health_level > 0)
 	}
 	else if (distance_to_object(object_avatar) < 50 || being_attacked)
 	{
+		being_attacked = true;
 		sprite_index = sprite_walking;
 		var velocity = min(.8, distance_to_object(object_avatar));
 		var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
