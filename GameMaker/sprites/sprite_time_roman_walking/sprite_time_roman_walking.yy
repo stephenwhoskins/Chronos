@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4cd0a5a3-7b97-436e-ac27-7717b9da03bf","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4cd0a5a3-7b97-436e-ac27-7717b9da03bf","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":{"name":"1ea5d624-9d5d-462b-a7ae-8a99c6a87468","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_time_roman_walking","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"4cd0a5a3-7b97-436e-ac27-7717b9da03bf","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"843bec76-3a5f-4c5a-b058-3e87d1a3dff1","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"843bec76-3a5f-4c5a-b058-3e87d1a3dff1","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":{"name":"1ea5d624-9d5d-462b-a7ae-8a99c6a87468","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_time_roman_walking","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"843bec76-3a5f-4c5a-b058-3e87d1a3dff1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aedab923-ef80-4ee8-82f4-e6c0a08752bd","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aedab923-ef80-4ee8-82f4-e6c0a08752bd","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":{"name":"69e1c2fb-5947-4f56-9b76-509b4fd574f7","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_time_roman_walking","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"aedab923-ef80-4ee8-82f4-e6c0a08752bd","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fcb4db7b-1d71-453e-8f56-37752fd85e0c","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fcb4db7b-1d71-453e-8f56-37752fd85e0c","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"LayerId":{"name":"69e1c2fb-5947-4f56-9b76-509b4fd574f7","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_time_roman_walking","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","name":"fcb4db7b-1d71-453e-8f56-37752fd85e0c","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_time_roman_walking","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5ed58afe-97d6-4c9c-a4c7-de96f83617fe","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4cd0a5a3-7b97-436e-ac27-7717b9da03bf","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5a0c0342-5a41-4ab8-9935-655e53fe62db","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"843bec76-3a5f-4c5a-b058-3e87d1a3dff1","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b8b9108b-9f5a-4b8e-a14b-8c806824f091","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aedab923-ef80-4ee8-82f4-e6c0a08752bd","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"54ceeaaa-1117-4215-a67a-c7f444e6be9f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fcb4db7b-1d71-453e-8f56-37752fd85e0c","path":"sprites/sprite_time_roman_walking/sprite_time_roman_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1ea5d624-9d5d-462b-a7ae-8a99c6a87468","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"69e1c2fb-5947-4f56-9b76-509b4fd574f7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "time_roman",

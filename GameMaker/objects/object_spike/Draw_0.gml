@@ -36,7 +36,7 @@ if (hurt_count < max_hurt_count &&
 else if (hurt_count == max_hurt_count)
 {
 	draw_self();
-	if (tink_count < 5 && tink_count > 0)
+	if (tink_count < 6 && tink_count > 0)
 	{
 		draw_sprite(sprite_sword_sparks, 0, x, bbox_top);
 	}
