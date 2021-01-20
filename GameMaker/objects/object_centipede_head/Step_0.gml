@@ -55,11 +55,11 @@ if (update_count == 0)
 		instance_body_segments[i].image_angle = instance_body_segments[i + 1].image_angle;
 	}
 
-	instance_body_segments[num_body_segments - 1].x = x;
-	instance_body_segments[num_body_segments - 1].y = y;
+	instance_body_segments[i].x = x;
+	instance_body_segments[i].y = y;
 	instance_body_segments[i].image_xscale = image_xscale;
 	instance_body_segments[i].image_yscale = image_yscale;
-	instance_body_segments[num_body_segments - 1].image_angle = image_angle;
+	instance_body_segments[i].image_angle = image_angle;
 
 	// Update the head.
 	// First pattern

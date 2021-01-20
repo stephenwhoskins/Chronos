@@ -29,3 +29,5 @@ start_x = x;
 start_y = y;
 avatar_present = false;
 start_room_index = script_get_room_index(self);
+
+being_attacked = false;

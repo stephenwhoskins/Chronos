@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "object_electricity_0",
+    "path": "objects/object_electricity_0/object_electricity_0.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

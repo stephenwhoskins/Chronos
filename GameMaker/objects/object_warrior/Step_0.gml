@@ -9,6 +9,7 @@ if (health_level > 0)
 		x = start_x;
 		y = start_y;
 		avatar_present = true;
+		being_attacked = false;
 	}
 	else if (script_get_room_index(self) != script_get_room_index(object_avatar) && avatar_present)
 	{
@@ -26,7 +27,7 @@ if (health_level > 0)
 			x += x_velocity;
 		}
 	}
-	else if (distance_to_object(object_avatar)< 50)
+	else if (distance_to_object(object_avatar) < 50 || being_attacked)
 	{
 		sprite_index = sprite_walking;
 		var velocity = min(.8, distance_to_object(object_avatar));
@@ -79,6 +80,7 @@ if (hurt_count == 0 && sprite_index != sprite_dead)
 {
 	health_level = max(health_level - 1, 0);
 	bounce_back_count = 0;
+	being_attacked = true;
 	
 	if (health_level == 0)
 	{
