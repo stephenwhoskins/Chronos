@@ -222,7 +222,7 @@
     {"id":{"name":"sprite_bottom_wall_closed_hell_grounds","path":"sprites/sprite_bottom_wall_closed_hell_grounds/sprite_bottom_wall_closed_hell_grounds.yy",},"order":0,},
     {"id":{"name":"object_spikes_tropics","path":"objects/object_spikes_tropics/object_spikes_tropics.yy",},"order":3,},
     {"id":{"name":"sprite_tile_2_tropics","path":"sprites/sprite_tile_2_tropics/sprite_tile_2_tropics.yy",},"order":2,},
-    {"id":{"name":"object_hud","path":"objects/object_hud/object_hud.yy",},"order":7,},
+    {"id":{"name":"object_hud","path":"objects/object_hud/object_hud.yy",},"order":0,},
     {"id":{"name":"script_get_room_col_2","path":"scripts/script_get_room_col_2/script_get_room_col_2.yy",},"order":16,},
     {"id":{"name":"object_barrier_3","path":"objects/object_barrier_3/object_barrier_3.yy",},"order":6,},
     {"id":{"name":"object_door_locked_hell_grounds","path":"objects/object_door_locked_hell_grounds/object_door_locked_hell_grounds.yy",},"order":5,},
@@ -468,6 +468,7 @@
     {"folderPath":"folders/Sprites/enemies/time_roman.yy","order":8,"resourceVersion":"1.0","name":"time_roman","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies/time_egyptian.yy","order":9,"resourceVersion":"1.0","name":"time_egyptian","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/enemies/time_tribesman.yy","order":10,"resourceVersion":"1.0","name":"time_tribesman","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/hud.yy","order":25,"resourceVersion":"1.0","name":"hud","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
