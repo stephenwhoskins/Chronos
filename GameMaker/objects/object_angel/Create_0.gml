@@ -12,3 +12,5 @@ bounce_direction = 1.0;
 avatar_present = false;
 
 start_room_index = script_get_room_index(self);
+
+is_boss = image_xscale > 1.5 ? true : false;

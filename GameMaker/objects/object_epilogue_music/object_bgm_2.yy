@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprite_electric_rod",
-    "path": "sprites/sprite_electric_rod/sprite_electric_rod.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,16 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"object_electric_rod","path":"objects/object_electric_rod/object_electric_rod.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_bgm_2","path":"objects/object_bgm_2/object_bgm_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "hazards",
-    "path": "folders/Objects/hazards.yy",
+    "name": "music",
+    "path": "folders/Objects/music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_electric_rod",
+  "name": "object_bgm_2",
   "tags": [],
   "resourceType": "GMObject",
 }

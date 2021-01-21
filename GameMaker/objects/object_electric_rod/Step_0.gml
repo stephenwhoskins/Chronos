@@ -18,11 +18,11 @@ for (i = 0; i < instance_number(object_enemy); i++)
 }
 if (num_enemies == 0)
 {
-	instance_destroy();
+	return;
 }
 
 // Handle avatar collision here.
-if (place_meeting(x, y, object_avatar))
+if (place_meeting(x, y, object_avatar) || place_meeting(x, y - 1, object_avatar))
 {
 	if (object_avatar.hurt_count == object_avatar.max_hurt_count &&
 	object_avatar.shock_count == object_avatar.max_shock_count &&
@@ -32,26 +32,26 @@ if (place_meeting(x, y, object_avatar))
 		object_avatar.shock_count = 0;
 		global.health_level = max(global.health_level - 1, 0);
 		
-		if (object_index == object_electricity_0)
+		if (image_angle == 0)
 		{
 			if (object_avatar.y < y)
 			{
-				object_avatar.y -= 8;
+				object_avatar.y -= 4;
 			}
 			else
 			{
-				object_avatar.y += 8;
+				object_avatar.y += 4;
 			}
 		}
-		else if (object_index == object_electricity_1)
+		else if (image_angle == -90)
 		{
 			if (object_avatar.x < x)
 			{
-				object_avatar.x -= 8;
+				object_avatar.x -= 4;
 			}
 			else
 			{
-				object_avatar.x += 8;
+				object_avatar.x += 4;
 			}
 		}
 	}
