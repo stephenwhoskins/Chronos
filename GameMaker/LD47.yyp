@@ -190,6 +190,7 @@
     {"id":{"name":"sprite_bomb_controls","path":"sprites/sprite_bomb_controls/sprite_bomb_controls.yy",},"order":4,},
     {"id":{"name":"sprite_door_2_tropics","path":"sprites/sprite_door_2_tropics/sprite_door_2_tropics.yy",},"order":2,},
     {"id":{"name":"sprite_snake_key","path":"sprites/sprite_snake_key/sprite_snake_key.yy",},"order":9,},
+    {"id":{"name":"object_avatar_placement","path":"objects/object_avatar_placement/object_avatar_placement.yy",},"order":30,},
     {"id":{"name":"object_wall_1_tropics","path":"objects/object_wall_1_tropics/object_wall_1_tropics.yy",},"order":7,},
     {"id":{"name":"sound_bgm_1","path":"sounds/sound_bgm_1/sound_bgm_1.yy",},"order":0,},
     {"id":{"name":"sprite_tile_4_tropics","path":"sprites/sprite_tile_4_tropics/sprite_tile_4_tropics.yy",},"order":4,},

@@ -23,6 +23,8 @@ global.hud_height = 40;
 
 global.displayed_credits = false;
 
+global.door_goto_id = -1;
+
 
 enum hit_types {
 sword,
