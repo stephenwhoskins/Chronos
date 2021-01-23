@@ -5,3 +5,8 @@ image_index = object_avatar.image_index;
 image_xscale = object_avatar.image_xscale;
 x = object_avatar.x;
 y = object_avatar.y;
+
+if (place_meeting(x, y, object_water))
+{
+	y += 7;
+}
