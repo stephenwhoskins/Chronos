@@ -83,7 +83,6 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_stairs_hell_grounds","path":"objects/object_stairs_hell_grounds/object_stairs_hell_grounds.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":600.0,"resourceVersion":"1.0","name":"inst_51D54B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_stairs_hell_grounds","path":"objects/object_stairs_hell_grounds/object_stairs_hell_grounds.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":944.0,"y":48.0,"resourceVersion":"1.0","name":"inst_538567D0","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"object_bow_item","path":"objects/object_bow_item/object_bow_item.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":648.0,"resourceVersion":"1.0","name":"inst_3453A874","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_bgm_3","path":"objects/object_bgm_3/object_bgm_3.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":576.0,"resourceVersion":"1.0","name":"inst_3D561B8B","tags":[],"resourceType":"GMRInstance",},
@@ -1360,7 +1359,6 @@
     {"name":"inst_187A6DED","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_448F737C","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_230AA152","path":"rooms/Room3/Room3.yy",},
-    {"name":"inst_3453A874","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_48F7D690","path":"rooms/Room3/Room3.yy",},
     {"name":"inst_4E723499","path":"rooms/Room3/Room3.yy",},
   ],

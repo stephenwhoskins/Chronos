@@ -16,3 +16,5 @@ bounce_direction = 1.0;
 
 max_tink_count = floor(room_speed / 4);
 tink_count = max_tink_count;
+
+is_boss = image_xscale > 1.5 ? true : false;

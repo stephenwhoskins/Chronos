@@ -348,6 +348,7 @@
     {"id":{"name":"sprite_centipede_segment_dying","path":"sprites/sprite_centipede_segment_dying/sprite_centipede_segment_dying.yy",},"order":3,},
     {"id":{"name":"sprite_controls","path":"sprites/sprite_controls/sprite_controls.yy",},"order":1,},
     {"id":{"name":"sprite_tile_7_tropics","path":"sprites/sprite_tile_7_tropics/sprite_tile_7_tropics.yy",},"order":7,},
+    {"id":{"name":"sprite_tile_13","path":"sprites/sprite_tile_13/sprite_tile_13.yy",},"order":12,},
     {"id":{"name":"sound_bgm_4","path":"sounds/sound_bgm_4/sound_bgm_4.yy",},"order":5,},
     {"id":{"name":"sprite_tile_2","path":"sprites/sprite_tile_2/sprite_tile_2.yy",},"order":4,},
     {"id":{"name":"sound_boss_music","path":"sounds/sound_boss_music/sound_boss_music.yy",},"order":1,},
