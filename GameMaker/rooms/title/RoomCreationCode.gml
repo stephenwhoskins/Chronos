@@ -25,6 +25,8 @@ global.displayed_credits = false;
 
 global.door_goto_id = -1;
 
+global.covered_stairs_bombed = false;
+
 
 enum hit_types {
 sword,

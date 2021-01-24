@@ -291,6 +291,7 @@
     {"id":{"name":"object_right_wall_closed_tropics","path":"objects/object_right_wall_closed_tropics/object_right_wall_closed_tropics.yy",},"order":4,},
     {"id":{"name":"sprite_tile_6_heavens","path":"sprites/sprite_tile_6_heavens/sprite_tile_6_heavens.yy",},"order":7,},
     {"id":{"name":"sprite_tile_8","path":"sprites/sprite_tile_8/sprite_tile_8.yy",},"order":10,},
+    {"id":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"order":5,},
     {"id":{"name":"sprite_spike_snail_walking","path":"sprites/sprite_spike_snail_walking/sprite_spike_snail_walking.yy",},"order":0,},
     {"id":{"name":"sprite_tile_1","path":"sprites/sprite_tile_1/sprite_tile_1.yy",},"order":0,},
     {"id":{"name":"object_top_wall_closed_heavens","path":"objects/object_top_wall_closed_heavens/object_top_wall_closed_heavens.yy",},"order":3,},
