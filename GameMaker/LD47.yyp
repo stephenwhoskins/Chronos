@@ -240,6 +240,7 @@
     {"id":{"name":"sprite_side_top_2","path":"sprites/sprite_side_top_2/sprite_side_top_2.yy",},"order":16,},
     {"id":{"name":"sound_walk","path":"sounds/sound_walk/sound_walk.yy",},"order":10,},
     {"id":{"name":"script_draw_intro_credits","path":"scripts/script_draw_intro_credits/script_draw_intro_credits.yy",},"order":14,},
+    {"id":{"name":"script_ds_grid_set_if_greater","path":"scripts/script_ds_grid_set_if_greater/script_ds_grid_set_if_greater.yy",},"order":20,},
     {"id":{"name":"object_wall_2_hell_grounds","path":"objects/object_wall_2_hell_grounds/object_wall_2_hell_grounds.yy",},"order":8,},
     {"id":{"name":"script_get_room_row","path":"scripts/script_get_room_row/script_get_room_row.yy",},"order":11,},
     {"id":{"name":"object_stairs_hell_grounds","path":"objects/object_stairs_hell_grounds/object_stairs_hell_grounds.yy",},"order":1,},

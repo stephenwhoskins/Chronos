@@ -72,10 +72,13 @@ for (x = 0; x < 5; x++)
 	for (y = 0; y < 5; y++)
 	{
 		var sprite = noone;
+		var room_state = ds_grid_get(visited, x, y)
 		if (miniroom.x == x && miniroom.y == y)
 			sprite = sprite_room_current;
-		else if (ds_grid_get(visited, x, y) == visited_state.visited)
+		else if (room_state == visited_state.visited)
 			sprite = sprite_room_visited;
+		else if (room_state == visited_state.known)
+			sprite = sprite_room_known;
 		else
 			continue;
 		// note that all selectable sprites are the same size, leaving fixed in hopes of optimization.
