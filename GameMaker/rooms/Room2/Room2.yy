@@ -101,6 +101,7 @@
       ],"visible":true,"depth":600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_7","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_bottom_wall_closing_tropics","path":"objects/object_bottom_wall_closing_tropics/object_bottom_wall_closing_tropics.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":160.0,"resourceVersion":"1.0","name":"inst_3FF235E4","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"object_door_button","path":"objects/object_door_button/object_door_button.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":80.0,"resourceVersion":"1.0","name":"inst_75B570CD","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_8","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_bgm_2","path":"objects/object_bgm_2/object_bgm_2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":576.0,"resourceVersion":"1.0","name":"inst_6422C8F7","tags":[],"resourceType":"GMRInstance",},
@@ -2173,6 +2174,7 @@
     {"name":"inst_37240D8A","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_35EBC671","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_2733CBFC","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_75B570CD","path":"rooms/Room2/Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

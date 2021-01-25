@@ -8,22 +8,30 @@ function script_place_meeting(x, y)
 	{
 		x_offset = 7;
 	}
-	
-	if (position_meeting(x - x_offset, y + 2, object_barrier))
+
+	var instance_barrier = instance_position(x - x_offset, y + 2, object_barrier)
+	if (instance_barrier != noone)
 	{
-		return true;
+		if (instance_barrier.solid)
+			return true;
 	}
-	if (position_meeting(x + x_offset, y + 2, object_barrier))
+	instance_barrier = instance_position(x + x_offset, y + 2, object_barrier)
+	if (instance_barrier != noone)
 	{
-		return true;
+		if (instance_barrier.solid)
+			return true;
 	}
-	if (position_meeting(x - x_offset, y - 4, object_barrier))
+	instance_barrier = instance_position(x - x_offset, y - 4, object_barrier)
+	if (instance_barrier != noone)
 	{
-		return true;
+		if (instance_barrier.solid)
+			return true;
 	}
-	if (position_meeting(x + x_offset, y - 4, object_barrier))
+	instance_barrier = instance_position(x + x_offset, y - 4, object_barrier)
+	if (instance_barrier != noone)
 	{
-		return true;
+		if (instance_barrier.solid)
+			return true;
 	}
 	
 	return false;

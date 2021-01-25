@@ -27,6 +27,7 @@ global.door_goto_id = -1;
 
 global.covered_stairs_bombed = false;
 
+global.water_drained = false;
 
 enum hit_types {
 sword,

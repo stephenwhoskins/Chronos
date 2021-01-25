@@ -27,6 +27,8 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_bomb_exploding","path":"objects/object_bomb_exploding/object_bomb_exploding.yy",},"parent":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_avatar","path":"objects/object_avatar/object_avatar.yy",},"parent":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"object_covered_stairs","path":"objects/object_covered_stairs/object_covered_stairs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
