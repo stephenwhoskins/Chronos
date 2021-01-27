@@ -8,5 +8,5 @@ y = object_avatar.y;
 
 if (place_meeting(x, y, object_water))
 {
-	y += 7;
+	y += 10;
 }

@@ -1,0 +1,1 @@
+drained_solid = false;

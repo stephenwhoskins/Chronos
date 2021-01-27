@@ -1,8 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.water_drained && room == Room2)
+drained_sprite = sprite_tile_30_tropics;
+drained_solid = true;
+
+if (sprite_index == sprite_barrier_3)
 {
-	sprite_index = sprite_tile_12_tropics;
-	solid = false;
+	drained_sprite = sprite_tile_31_tropics;
 }
