@@ -9,3 +9,5 @@ death_count = max_death_count;
 
 max_time_warp_count = 480;
 time_warp_count = max_time_warp_count;
+
+global.shake_count = global.max_shake_count
