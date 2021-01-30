@@ -3,11 +3,12 @@
 
 other.hurt_count = 0;
 								
-// Handle enemy left of arrow.
-if (other.x < x)
+// If arrow is going to the left, bounce enemy to the left.
+if (hspeed < 0)
 {
 	other.bounce_direction = -1.0;
 }
+// If arrow is going to the right, bounce enemy to the right.
 else
 {
 	other.bounce_direction = 1.0;
