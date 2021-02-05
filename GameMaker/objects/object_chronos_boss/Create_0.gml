@@ -32,3 +32,11 @@ for (i = max_angels_per_group - 1; i > -1; i--)
 }
 
 intro_text_box = noone;
+
+audio_stop_all();
+
+alarm[0] = 10 * room_speed;
+
+health_level = 5;
+max_hurt_count = 30;
+hurt_count = max_hurt_count;

@@ -1,14 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-_text[0] = "For centuries the \nculmination of all human";
-_text[1] = "information had been \nkept safely within the";
-_text[2] = "chambers of the Fortress \nof Knowledge.";
-_text[3] = "The information that it \nheld greatly benefited";
-_text[4] = "mankind throughout that \ntime.";
-_text[5] = "Then one day Chronos, \nwho became jealous of the";
-_text[6] = "idolatry that surrounded \nthe fortress, seized it";
-_text[7] = "so that he could hold all \nthe knowledge for himself.";
-_text[8] = "No one thought the \nfortress could be returned.";
-_text[9] = "Until one day . . .";
+_text[0] = "No matter where in the \nmultiverse I am, you are";
+_text[1] = "always going to be there, \naren't you?";
+_text[2] = "And in every instance \nyou are always meant";
+_text[3] = "to be a constant thorn in \nmy side...";
+_text[4] = "Why won't you just...";
+_text[5] = "DIE!!!!!!!!!!!!!!!!!";
 
 event_inherited();

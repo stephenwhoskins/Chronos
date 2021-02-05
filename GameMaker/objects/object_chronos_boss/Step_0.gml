@@ -165,3 +165,21 @@ switch (chronos_state)
 		}
 		break;
 }
+
+if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
+{
+	health_level = max(health_level - 1, 0);
+	
+	if (health_level == 0)
+	{
+		sprite_index = sprite_chronos_dying;
+		script_timey_death_sequence();
+		instance_destroy();
+	}
+}
+else if (hurt_count == 0 && sprite_index == sprite_chronos_dying)
+{
+	hurt_count = max_hurt_count;
+}
+
+hurt_count = min(hurt_count + 1, max_hurt_count);
