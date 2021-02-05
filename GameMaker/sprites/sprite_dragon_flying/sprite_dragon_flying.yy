@@ -35,7 +35,7 @@
     "spriteId": {"name":"sprite_dragon_flying","path":"sprites/sprite_dragon_flying/sprite_dragon_flying.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

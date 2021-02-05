@@ -32,7 +32,7 @@
     "spriteId": {"name":"sprite_dragon_attacking_2","path":"sprites/sprite_dragon_attacking_2/sprite_dragon_attacking_2.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

@@ -3,6 +3,6 @@
 
 if (sprite_index == sprite_dragon_attacking_2)
 {
-	script_timey_death_sequence();
+	instance_create_depth(x, y, depth - 1, object_chronos_boss);
 	instance_destroy();
 }

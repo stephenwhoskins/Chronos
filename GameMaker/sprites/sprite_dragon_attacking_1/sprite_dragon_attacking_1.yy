@@ -35,7 +35,7 @@
     "spriteId": {"name":"sprite_dragon_attacking_1","path":"sprites/sprite_dragon_attacking_1/sprite_dragon_attacking_1.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

@@ -11,6 +11,16 @@ if (script_get_room_index(object_avatar) != script_get_room_index(self))
 
 switch (chronos_state)
 {
+	case chronos_states.introduction:
+		if (intro_text_box == noone)
+		{
+			intro_text_box = instance_create_depth(x, y, depth - 1, object_chronos_intro_text_box);
+		}
+		if (intro_text_box._text_index == intro_text_box._num_text_indexes - 1)
+		{
+			chronos_state = chronos_states.angels_flying_vertically;
+		}
+		break;
 	// Fly the angels vertically.
 	case chronos_states.angels_flying_vertically:
 		for (i = max_angels_per_group - 1; i > -1; i--)
