@@ -38,27 +38,32 @@ else
 }
 
 // draw health
-for (var i = 0; i < global.health_level; i++)
+var max_heart_columns = 5;
+for (var i = 0; i < global.health_level && i < max_heart_columns; i++)
 {
-	draw_sprite(sprite_health, 0, health_x + 16 * i, view_y + 20);
+	draw_sprite(sprite_health, 0, health_x + 16 * i, view_y + 13);
+}
+for (var i = max_heart_columns; i < global.health_level; i++)
+{
+	draw_sprite(sprite_health, 0, health_x + 16 * (i - 5), view_y + 27);
 }
 
 // draw key indicator
 if (global.key_count > 0)
 {
-	var key_x = health_x + 16 * global.max_health_level - 3;
+	var key_x = health_x + 16 * max_heart_columns - 3;
 	draw_sprite(sprite_key_indicator, 0, key_x, view_y + 5);
 }
 // draw centipede key indicator
 if (global.centipede_key_count > 0)
 {
-	var key_x = health_x + 16 * global.max_health_level - 3;
+	var key_x = health_x + 16 * max_heart_columns - 3;
 	draw_sprite(sprite_centipede_indicator, 0, key_x, view_y + 14);
 }
 // draw snake key indicator
 if (global.snake_key_count > 0)
 {
-	var key_x = health_x + 16 * global.max_health_level - 3;
+	var key_x = health_x + 16 * max_heart_columns - 3;
 	draw_sprite(sprite_snake_indicator, 0, key_x, view_y + 25);
 }
 
