@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!consumed && global.health_level != global.max_health_level)
+if (!consumed)
 {
 	global.max_health_level++;
 	global.health_level = global.max_health_level;
