@@ -15,8 +15,3 @@ for (i = max_angels_per_group - 1; i > -1; i--)
 {
 	instance_destroy(angel_instances_3[i].id);
 }
-
-if (intro_text_box != noone)
-{
-	instance_destroy(intro_text_box.id);
-}

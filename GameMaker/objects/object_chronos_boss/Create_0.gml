@@ -40,3 +40,7 @@ alarm[0] = 10 * room_speed;
 health_level = 5;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
+
+max_float_count = 240;
+float_count = 0;
+orig_y = y;

@@ -4,6 +4,12 @@
 var fly_speed = 2;
 var offset_magnitude = 128;
 
+var y_offset = 2.0 * sin(2.0 * pi * float_count / max_float_count);
+
+float_count = (float_count + 1) % max_float_count;
+
+y = orig_y + y_offset;
+
 if (script_get_room_index(object_avatar) != script_get_room_index(self))
 {
 	return;
@@ -11,14 +17,17 @@ if (script_get_room_index(object_avatar) != script_get_room_index(self))
 
 switch (chronos_state)
 {
+	// Chronos talks.
 	case chronos_states.introduction:
 		if (intro_text_box == noone)
 		{
-			intro_text_box = instance_create_depth(x, y, depth - 1, object_chronos_intro_text_box);
+			// The text box cleans up after itself.
+			intro_text_box = instance_create_depth(x, y, depth + 1, object_chronos_intro_text_box);
 		}
 		if (intro_text_box._text_index == intro_text_box._num_text_indexes - 1)
 		{
 			chronos_state = chronos_states.angels_flying_vertically;
+			alarm[1] = 2 * room_speed;
 		}
 		break;
 	// Fly the angels vertically.

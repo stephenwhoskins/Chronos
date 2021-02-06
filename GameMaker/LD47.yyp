@@ -149,6 +149,7 @@
     {"id":{"name":"object_intro_credits","path":"objects/object_intro_credits/object_intro_credits.yy",},"order":19,},
     {"id":{"name":"object_centipede_segment","path":"objects/object_centipede_segment/object_centipede_segment.yy",},"order":1,},
     {"id":{"name":"sprite_tile_1_heavens","path":"sprites/sprite_tile_1_heavens/sprite_tile_1_heavens.yy",},"order":2,},
+    {"id":{"name":"sound_chat","path":"sounds/sound_chat/sound_chat.yy",},"order":13,},
     {"id":{"name":"sprite_white","path":"sprites/sprite_white/sprite_white.yy",},"order":12,},
     {"id":{"name":"sprite_wall_2_hell_grounds","path":"sprites/sprite_wall_2_hell_grounds/sprite_wall_2_hell_grounds.yy",},"order":14,},
     {"id":{"name":"sprite_right_wall_closed","path":"sprites/sprite_right_wall_closed/sprite_right_wall_closed.yy",},"order":13,},
