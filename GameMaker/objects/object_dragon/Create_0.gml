@@ -22,4 +22,8 @@ orig_y = y;
 
 self_room_index = script_get_room_index(self);
 
-y -= 256;
+y -= 352;
+dragon_y = y;
+
+max_taunt_count = 3 * room_speed;
+taunt_count = 0;

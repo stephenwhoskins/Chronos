@@ -23,10 +23,28 @@ switch (dragon_state)
 	case dragon_states.idle:
 		break;
 	case dragon_states.introduction:
-		y++;
+		dragon_y = min(dragon_y + 0.5, orig_y);
+		y = floor(dragon_y);
 		if (y == orig_y)
 		{
-			dragon_state = dragon_states.flying_eight_pattern;
+			if (taunt_count % floor(room_speed / 4) == 0)
+			{
+				if (sprite_index == sprite_dragon_flying)
+				{
+					sprite_index = sprite_dragon_attacking_1;
+					image_index = 1;
+				}
+				else
+				{
+					sprite_index = sprite_dragon_flying;
+					image_index = 0;
+				}
+			}
+			taunt_count = min(taunt_count + 1.0, max_taunt_count);
+			if (taunt_count == max_taunt_count)
+			{
+				dragon_state = dragon_states.flying_eight_pattern;
+			}
 		}
 		break;
 }

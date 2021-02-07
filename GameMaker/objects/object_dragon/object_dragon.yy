@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_dragon_attacking_1",
-    "path": "sprites/sprite_dragon_attacking_1/sprite_dragon_attacking_1.yy",
+    "name": "sprite_dragon_flying",
+    "path": "sprites/sprite_dragon_flying/sprite_dragon_flying.yy",
   },
   "solid": false,
   "visible": true,
