@@ -13,7 +13,7 @@ if (script_get_room_index(object_avatar) == self_room_index && !avatar_present)
 	
 	avatar_present = true;
 }
-else if (script_get_room_index(object_avatar) != script_get_room_index(self) && avatar_present)
+else if (script_get_room_index(object_avatar) != self_room_index && avatar_present)
 {
 	avatar_present = false;
 }
