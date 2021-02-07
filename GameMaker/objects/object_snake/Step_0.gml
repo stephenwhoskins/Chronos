@@ -36,8 +36,11 @@ if (health_level > 0)
 			if (sprite_index != sprite_snake_spitting)
 			{
 				sprite_index = sprite_snake_spitting;
-				alarm[0] = 2 * room_speed;
-				
+				alarm[0] = .75 * room_speed;
+			}
+		}
+		else if (is_boss && fire_frame == 0)
+		{
 				var xs = sign(image_xscale);
 				var ys = sign(image_yscale);
 				var num_fireballs = 3;
@@ -48,7 +51,6 @@ if (health_level > 0)
 					fire.dx = cos(angle) * xs;
 					fire.dy = sin(angle);
 				}
-			}
 		}
 		else // Handle movement logic here
 		{
@@ -156,7 +158,7 @@ else if (hurt_count == 0 && sprite_index == sprite_snake_dead)
 	hurt_count = max_hurt_count;
 }
 
-if (variable_instance_exists(id, "snake_1") && variable_instance_exists(id, "snake_3") &&
+if (variable_instance_exists(id, "snake_1") && variable_instance_exists(id, "snake_2") &&
 	variable_instance_exists(id, "snake_3") && variable_instance_exists(id, "snake_4"))
 {
 	if (snake_1.sprite_index == sprite_snake_dead &&
