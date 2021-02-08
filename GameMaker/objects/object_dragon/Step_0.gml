@@ -43,8 +43,30 @@ switch (dragon_state)
 			taunt_count = min(taunt_count + 1.0, max_taunt_count);
 			if (taunt_count == max_taunt_count)
 			{
-				dragon_state = dragon_states.flying_eight_pattern;
+				dragon_state = dragon_states.flying_elliptical_pattern;
 			}
+		}
+		break;
+	case dragon_states.flying_elliptical_pattern:
+		if (flying_count > max_flying_count - room_speed)
+		{
+			radius_x = max(max_flying_count - flying_count, 0);
+			radius_y = max((max_flying_count - flying_count) / 2, 0);
+		}
+		else
+		{
+			radius_x = min(radius_x + 1, max_radius_x);
+			radius_y = min(radius_y + 1, max_radius_y);
+		}
+		// One ellipse per second:
+		dragon_x = radius_x * cos(flying_time * 2 * pi * flying_count / max_flying_count) + orig_x;
+		dragon_y = radius_y * sin(flying_time * 2 * pi * flying_count / max_flying_count) + orig_y;
+		x = floor(dragon_x);
+		y = floor(dragon_y);
+		flying_count = min(flying_count + 1, max_flying_count);
+		if (flying_count == max_flying_count)
+		{
+			dragon_state = dragon_states.fall_attack;
 		}
 		break;
 }
