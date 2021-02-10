@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-object_fade_out.room_id = Room2;
+object_fade_out.room_id = Room1;
 
 /*global.bombs_enabled = true;
 global.centipede_key_count++;

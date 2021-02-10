@@ -27,7 +27,9 @@ max_bounce_back_count = 10;
 bounce_back_count = max_bounce_back_count;
 bounce_direction = 1.0;
 
-if (image_xscale > 1.5)
+is_boss = image_xscale > 1.5;
+
+if (is_boss)
 {
 	if (global.centipede_key_count > 0)
 	{

@@ -3,7 +3,7 @@
 if (sprite_index == sprite_centipede_head_dying)
 {
 	// boss logic here
-	if (image_xscale > 1.5)
+	if (is_boss)
 	{
 		audio_stop_sound(object_music_player.sound);
 		instance_create_depth(x, y - view_hport[0], depth - 2, object_centipede_key);
