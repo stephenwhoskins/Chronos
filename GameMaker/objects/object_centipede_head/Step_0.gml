@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 // extra boss logic here
+
 if (image_xscale > 1.5)
 {
 	// handle changing of the music
@@ -133,9 +134,14 @@ if (update_count == 0)
 	var movement_speed = 8;
 	x_velocity = movement_speed * cos(degtorad(image_angle));
 	y_velocity = -movement_speed * sin(degtorad(image_angle));
-	if (!place_meeting(x + x_velocity, y, object_barrier))
+	if (is_boss && x_velocity == 0)
 	{
-		x += x_velocity;
+		x = unmod_x + sway_pixels * cos((frame_count % max_frame_count) / max_frame_count * 2 * pi);
+	}
+	else if (!place_meeting(x + x_velocity, unmod_y, object_barrier))
+	{
+		unmod_x += x_velocity;
+		x = unmod_x
 	}
 	else
 	{
@@ -147,11 +153,18 @@ if (update_count == 0)
 		{
 			image_angle = 180;
 		}
+		unmod_y = y;
+		unmod_x = x;
 		pattern_1 = !pattern_1;
 	}
-	if (!place_meeting(x, y + y_velocity, object_barrier))
+	if (is_boss && y_velocity == 0)
 	{
-		y += y_velocity;
+		y = unmod_y + sway_pixels * cos((frame_count % max_frame_count) / max_frame_count * pi);
+	}
+	else if (!place_meeting(x, y + y_velocity, object_barrier))
+	{
+		unmod_y += y_velocity;
+		y = unmod_y
 	}
 	else
 	{
@@ -163,7 +176,10 @@ if (update_count == 0)
 		{
 			image_angle = 0;
 		}
+		unmod_x = x;
+		unmod_y = y;
 	}
+	
 	
 	// Handle collisions with avatar.
 	if (place_meeting(x, y, object_avatar))
@@ -213,3 +229,5 @@ if (hurt_count < max_hurt_count)
 	hurt_count++;
 	
 update_count = (update_count + 1) % max_update_count;
+frame_count += 1;
+frame_count %= max_frame_count;

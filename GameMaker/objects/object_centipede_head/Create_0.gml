@@ -9,6 +9,8 @@ max_hurt_count = 999999;
 hurt_count = 0;
 orig_x = x;
 orig_y = y;
+unmod_x = x;
+unmod_y = y;
 max_x = 32;
 max_y = 48;
 x_velocity = 0;
@@ -48,3 +50,7 @@ for (i = num_body_segments - 1; i > -1; i--)
 
 max_silence_count = 120;
 silence_count = 0;
+
+frame_count = 0;
+max_frame_count = 30;
+sway_pixels = 4;
