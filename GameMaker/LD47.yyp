@@ -217,6 +217,7 @@
     {"id":{"name":"sprite_centipede_head","path":"sprites/sprite_centipede_head/sprite_centipede_head.yy",},"order":1,},
     {"id":{"name":"object_bomb_item","path":"objects/object_bomb_item/object_bomb_item.yy",},"order":2,},
     {"id":{"name":"sprite_time_roman_dead","path":"sprites/sprite_time_roman_dead/sprite_time_roman_dead.yy",},"order":0,},
+    {"id":{"name":"sprite_spike_snail_attacking","path":"sprites/sprite_spike_snail_attacking/sprite_spike_snail_attacking.yy",},"order":4,},
     {"id":{"name":"sprite_tile_21_tropics","path":"sprites/sprite_tile_21_tropics/sprite_tile_21_tropics.yy",},"order":21,},
     {"id":{"name":"sprite_door_locked_2_tropics","path":"sprites/sprite_door_locked_2_tropics/sprite_door_locked_2_tropics.yy",},"order":4,},
     {"id":{"name":"sprite_tile_3_heavens","path":"sprites/sprite_tile_3_heavens/sprite_tile_3_heavens.yy",},"order":4,},

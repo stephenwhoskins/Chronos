@@ -6,6 +6,16 @@ draw_ellipse(bbox_left + 78, bbox_bottom, bbox_right - 78, bbox_bottom + 20, fal
 draw_set_alpha(1);
 draw_set_color(c_white);
 
+if (death_count < max_death_count)
+{
+	if (floor(death_count / 2) % 2 == 0)
+	{
+		draw_self();
+	}
+	
+	return;
+}
+
 if (hurt_count < max_hurt_count &&
 	floor(hurt_count / 2) % 2 == 0)
 {

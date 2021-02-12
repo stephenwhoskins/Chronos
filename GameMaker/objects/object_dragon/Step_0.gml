@@ -145,6 +145,8 @@ switch (dragon_state)
 			dragon_state = dragon_states.flying_elliptical_pattern;
 		}
 		break;
+	case dragon_states.dying:
+		break;
 		
 }
 
@@ -155,6 +157,7 @@ if (hurt_count == 0 && death_count == max_death_count)
 	if (health_level == 0)
 	{
 		death_count = 0;
+		dragon_state = dragon_states.dying;
 	}
 }
 else if (hurt_count == 0 && death_count < max_death_count)
