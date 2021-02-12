@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1becb14f-a7dd-4bed-b684-8bab56b184de","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1becb14f-a7dd-4bed-b684-8bab56b184de","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":{"name":"47d3154a-493b-4505-822f-93c45c1641c7","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"1becb14f-a7dd-4bed-b684-8bab56b184de","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"9891ad56-01cf-4f11-acfc-0236270c2dbb","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9891ad56-01cf-4f11-acfc-0236270c2dbb","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":{"name":"47d3154a-493b-4505-822f-93c45c1641c7","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"9891ad56-01cf-4f11-acfc-0236270c2dbb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2797819e-81aa-4433-9c8b-63b5498bc808","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2797819e-81aa-4433-9c8b-63b5498bc808","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":{"name":"65050865-918d-4058-ad6a-9db9a6eb3195","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"2797819e-81aa-4433-9c8b-63b5498bc808","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2075cb3e-bf3f-4a53-87f8-61fdb70cefe3","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2075cb3e-bf3f-4a53-87f8-61fdb70cefe3","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"LayerId":{"name":"65050865-918d-4058-ad6a-9db9a6eb3195","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","name":"2075cb3e-bf3f-4a53-87f8-61fdb70cefe3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_snake_spitting","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"2ba9892c-15d7-448e-bdf4-931c53b880a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1becb14f-a7dd-4bed-b684-8bab56b184de","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"d437de01-9585-4d75-b49e-0e1951a94dff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9891ad56-01cf-4f11-acfc-0236270c2dbb","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a22d9ad7-3e11-4c4c-b8c8-b3cd2c4104f9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2797819e-81aa-4433-9c8b-63b5498bc808","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4919c32d-7d1c-41c4-832f-954614452757","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2075cb3e-bf3f-4a53-87f8-61fdb70cefe3","path":"sprites/sprite_snake_spitting/sprite_snake_spitting.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"47d3154a-493b-4505-822f-93c45c1641c7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"65050865-918d-4058-ad6a-9db9a6eb3195","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "snake",

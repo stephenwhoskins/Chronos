@@ -53,6 +53,9 @@ if (time_warp_count < max_time_warp_count)
 	if (time_warp_count == max_time_warp_count / 2 + 1)
 	{
 		object_music_player.sound = audio_play_sound(sound_rumble, 10, true);
+		object_music_player.played = false;
+		object_music_player.loop_begin_time = 0.0;
+		object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
 	}
 	
 	time_warp_count = min(time_warp_count + 1, max_time_warp_count);

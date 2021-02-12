@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-health_level = 5;
+health_level = 30;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
@@ -9,15 +9,18 @@ avatar_present = false;
 
 enum dragon_states
 {
-	idle,
+	waiting,
 	introduction,
 	flying_elliptical_pattern,
 	fire_attack,
-	fly_away,
-	fall_attack
+	idle,
+	flying_away,
+	targeting,
+	fall_attack,
+	flying_back
 }
 
-dragon_state = dragon_states.idle;
+dragon_state = dragon_states.waiting;
 
 orig_x = x;
 orig_y = y;
@@ -39,3 +42,17 @@ max_radius_x = 64;
 radius_x = 0;
 max_radius_y = 32;
 radius_y = 0;
+
+max_idle_count = room_speed;
+idle_count = 0;
+
+max_fire_count = room_speed;
+fire_count = 0;
+fire_interval = room_speed / 2;
+
+max_targeting_count = 2 * room_speed;
+targeting_count = 0;
+target_y = 0;
+
+max_death_count = room_speed;
+death_count = max_death_count;

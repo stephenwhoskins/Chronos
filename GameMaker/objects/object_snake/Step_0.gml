@@ -26,7 +26,8 @@ if (health_level > 0)
 			x += x_velocity;
 		}
 	}
-	else if (distance_to_object(object_avatar) < 50 || being_attacked)
+	else if (distance_to_object(object_avatar) < 50 ||
+			(distance_to_object(object_avatar) < 70 && is_boss) || being_attacked)
 	{
 		being_attacked = true;
 		
