@@ -1,8 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+var bbox_left_offset = 78;
+if (sprite_index == sprite_dragon_attacking_2)
+{
+	bbox_left_offset -= 13;
+}
+
 draw_set_color(c_black);
 draw_set_alpha(.5)
-draw_ellipse(bbox_left + 78, bbox_bottom, bbox_right - 78, bbox_bottom + 20, false)
+draw_ellipse(bbox_left + bbox_left_offset, bbox_bottom + shadow_offset, bbox_right - bbox_left_offset, bbox_bottom + 20 + shadow_offset, false)
 draw_set_alpha(1);
 draw_set_color(c_white);
 

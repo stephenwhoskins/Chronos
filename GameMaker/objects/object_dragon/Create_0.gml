@@ -17,8 +17,9 @@ enum dragon_states
 	flying_away,
 	targeting,
 	fall_attack,
+	flying_up,
 	flying_back,
-	dying
+	dead
 }
 
 dragon_state = dragon_states.waiting;
@@ -57,3 +58,5 @@ target_y = 0;
 
 max_death_count = 2 * room_speed;
 death_count = max_death_count;
+
+shadow_offset = 0;

@@ -103,18 +103,29 @@ switch (dragon_state)
 		}
 		break;
 	case dragon_states.flying_away:
-		y--;
-		if (y <= orig_y - 224)
+		y = max(y - 1, orig_y - 224);
+		shadow_offset = min(shadow_offset + 1, 224 - 20);
+		if (y == orig_y - 224)
 		{
+			target_y = orig_y;
 			dragon_state = dragon_states.targeting;
 		}
 		break;
 	case dragon_states.targeting:
+		var dx = floor(object_avatar.x) - x;
+		if (dx != 0)
+		{
+			x += sign(dx);
+		}
+		var dy = floor(object_avatar.y) + 10 - target_y;
+		if (dy != 0)
+		{
+			target_y += sign(dy);
+		}
+		y = target_y - 224;
 		targeting_count = min(targeting_count + 1, max_targeting_count);
 		if (targeting_count == max_targeting_count)
 		{
-			x = floor(object_avatar.x);
-			target_y = floor(object_avatar.y);
 			targeting_count = 0;
 			dragon_state = dragon_states.fall_attack;
 			sprite_index = sprite_dragon_attacking_2;
@@ -122,11 +133,20 @@ switch (dragon_state)
 		break;
 	case dragon_states.fall_attack:
 		y += 2;
+		shadow_offset -= 2;
 		if (y >= target_y)
 		{
 			global.shake_count = 3 * global.max_shake_count / 4;
-			dragon_state = dragon_states.flying_back;
+			dragon_state = dragon_states.flying_up;
 			sprite_index = sprite_dragon_flying;
+		}
+		break;
+	case dragon_states.flying_up:
+		y--;
+		shadow_offset++;
+		if (shadow_offset == 0)
+		{
+			dragon_state = dragon_states.flying_back;
 		}
 		break;
 	case dragon_states.flying_back:
@@ -145,7 +165,7 @@ switch (dragon_state)
 			dragon_state = dragon_states.flying_elliptical_pattern;
 		}
 		break;
-	case dragon_states.dying:
+	case dragon_states.dead:
 		break;
 		
 }
@@ -157,7 +177,8 @@ if (hurt_count == 0 && death_count == max_death_count)
 	if (health_level == 0)
 	{
 		death_count = 0;
-		dragon_state = dragon_states.dying;
+		dragon_state = dragon_states.dead;
+		sprite_index = sprite_dragon_dead;
 	}
 }
 else if (hurt_count == 0 && death_count < max_death_count)
