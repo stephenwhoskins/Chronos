@@ -185,6 +185,13 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 		script_timey_death_sequence();
 		instance_destroy();
 	}
+	else
+	{
+		spawn_index = (spawn_index + 1) % max_spawn_indices;
+		x = spawn_points_x[spawn_index];
+		y = spawn_points_y[spawn_index];
+		orig_y = y;
+	}
 }
 else if (hurt_count == 0 && sprite_index == sprite_chronos_dying)
 {

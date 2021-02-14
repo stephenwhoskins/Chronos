@@ -40,10 +40,19 @@ audio_stop_all();
 
 alarm[0] = 10 * room_speed;
 
-health_level = 5;
+health_level = 10;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
 max_float_count = 240;
 float_count = 0;
 orig_y = y;
+
+max_spawn_indices = 3;
+spawn_index = 0;
+spawn_points_x[0] = center_x;
+spawn_points_y[0] = center_y - 32;
+spawn_points_x[1] = center_x - 64;
+spawn_points_y[1] = center_y + 32;
+spawn_points_x[2] = center_x + 64;
+spawn_points_y[2] = center_y + 64;
