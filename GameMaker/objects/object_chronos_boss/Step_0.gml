@@ -51,20 +51,20 @@ switch (chronos_state)
 		{
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_1[i].x = orig_x - 128 - i * 32;
-				angel_instances_1[i].y = orig_y - 16;
+				angel_instances_1[i].x = center_x - 128 - i * 32;
+				angel_instances_1[i].y = center_y - 16;
 			}
 
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_2[i].x = orig_x - 128 - i * 32;
-				angel_instances_2[i].y = orig_y + 40;
+				angel_instances_2[i].x = center_x - 128 - i * 32;
+				angel_instances_2[i].y = center_y + 40;
 			}
 
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_3[i].x = orig_x - 128 - i * 32;
-				angel_instances_3[i].y = orig_y + 96;
+				angel_instances_3[i].x = center_x - 128 - i * 32;
+				angel_instances_3[i].y = center_y + 96;
 			}
 			
 			chronos_state = chronos_states.angels_flying_horizontally;
@@ -95,8 +95,8 @@ switch (chronos_state)
 			var y_offset = offset_magnitude * sin_90;
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_1[i].x = orig_x - x_offset - 32 * cos_90 * i;
-				angel_instances_1[i].y = orig_y - y_offset + 64 - 32 * sin_90 * i;
+				angel_instances_1[i].x = center_x - x_offset - 32 * cos_90 * i;
+				angel_instances_1[i].y = center_y - y_offset + 64 - 32 * sin_90 * i;
 			}
 
 			var cos_210 = cos(degtorad(210.0));
@@ -105,8 +105,8 @@ switch (chronos_state)
 			y_offset = offset_magnitude * sin_210
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_2[i].x = orig_x - x_offset - 32 * cos_210 * i;
-				angel_instances_2[i].y = orig_y - y_offset + 64 - 32 * sin_210 * i;
+				angel_instances_2[i].x = center_x - x_offset - 32 * cos_210 * i;
+				angel_instances_2[i].y = center_y - y_offset + 64 - 32 * sin_210 * i;
 				angel_instances_2[i].image_xscale = -1.0;
 			}
 
@@ -116,8 +116,8 @@ switch (chronos_state)
 			y_offset = offset_magnitude * sin_330;
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_3[i].x = orig_x - x_offset - 32 * cos_330 * i;
-				angel_instances_3[i].y = orig_y - y_offset + 64 - 32 * sin_330 * i;
+				angel_instances_3[i].x = center_x - x_offset - 32 * cos_330 * i;
+				angel_instances_3[i].y = center_y - y_offset + 64 - 32 * sin_330 * i;
 			}
 			
 			chronos_state = chronos_states.angels_flying_to_center;
@@ -153,21 +153,21 @@ switch (chronos_state)
 		{
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_1[i].x = orig_x - 64;
-				angel_instances_1[i].y = orig_y - 128 - i * 32;
+				angel_instances_1[i].x = center_x - 64;
+				angel_instances_1[i].y = center_y - 128 - i * 32;
 			}
 
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_2[i].x = orig_x;
-				angel_instances_2[i].y = orig_y - 128 - i * 32;
+				angel_instances_2[i].x = center_x;
+				angel_instances_2[i].y = center_y - 128 - i * 32;
 				angel_instances_2[i].image_xscale = 1.0;
 			}
 
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
-				angel_instances_3[i].x = orig_x + 64;
-				angel_instances_3[i].y = orig_y - 128 - i * 32;
+				angel_instances_3[i].x = center_x + 64;
+				angel_instances_3[i].y = center_y - 128 - i * 32;
 			}
 			
 			chronos_state = chronos_states.angels_flying_vertically;

@@ -16,19 +16,22 @@ max_angels_per_group = 8;
 
 chronos_state = chronos_states.introduction;
 
+center_x = script_get_room_camera_x(x) + view_wport[0] / 2;
+center_y = script_get_room_camera_y(y) + view_hport[0] / 2 - global.hud_height / 2;
+
 for (i = max_angels_per_group - 1; i > -1; i--)
 {
-	angel_instances_1[i] = instance_create_depth(x - 64, y - 128 - i * 32, depth - 1, object_angel_minion);
+	angel_instances_1[i] = instance_create_depth(center_x - 64, center_y - 128 - i * 32, depth - 1, object_angel_minion);
 }
 
 for (i = max_angels_per_group - 1; i > -1; i--)
 {
-	angel_instances_2[i] = instance_create_depth(x, y - 128 - i * 32, depth - 1, object_angel_minion);
+	angel_instances_2[i] = instance_create_depth(center_x, center_y - 128 - i * 32, depth - 1, object_angel_minion);
 }
 
 for (i = max_angels_per_group - 1; i > -1; i--)
 {
-	angel_instances_3[i] = instance_create_depth(x + 64, y - 128 - i * 32, depth - 1, object_angel_minion);
+	angel_instances_3[i] = instance_create_depth(center_x + 64, center_y - 128 - i * 32, depth - 1, object_angel_minion);
 }
 
 intro_text_box = noone;

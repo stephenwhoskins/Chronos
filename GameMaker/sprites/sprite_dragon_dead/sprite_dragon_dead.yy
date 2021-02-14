@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 214,
+  "bbox_right": 215,
   "bbox_top": 0,
-  "bbox_bottom": 58,
+  "bbox_bottom": 62,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 215,
-  "height": 59,
+  "width": 216,
+  "height": 63,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6f00a38-2f8a-4ec6-be44-3b1da8796448","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6f00a38-2f8a-4ec6-be44-3b1da8796448","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"LayerId":{"name":"58077bda-f9d8-4df8-b5a5-fd9bdd42898e","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_dragon_dead","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","name":"f6f00a38-2f8a-4ec6-be44-3b1da8796448","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"01403a17-393e-4d56-9fb7-53d79971c1f5","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"01403a17-393e-4d56-9fb7-53d79971c1f5","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"LayerId":{"name":"2d26ff37-7d13-4583-b8ae-e95376323e56","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_dragon_dead","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","name":"01403a17-393e-4d56-9fb7-53d79971c1f5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_dragon_dead","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"191fbab7-40c4-4a27-a4e5-0f718206f3d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6f00a38-2f8a-4ec6-be44-3b1da8796448","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dcbfebb8-d9fd-44f4-b3fb-afef8f454e36","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01403a17-393e-4d56-9fb7-53d79971c1f5","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 107,
-    "yorigin": 59,
+    "xorigin": 108,
+    "yorigin": 63,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprite_dragon_dead","path":"sprites/sprite_dragon_dead/sprite_dragon_dead.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"58077bda-f9d8-4df8-b5a5-fd9bdd42898e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2d26ff37-7d13-4583-b8ae-e95376323e56","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "dragon",
