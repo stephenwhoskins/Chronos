@@ -175,6 +175,46 @@ switch (chronos_state)
 		break;
 }
 
+switch (orb_state)
+{
+	case orb_states.initializing:
+		if (orbs_init_count % (max_orbs_init_count / num_orbs) == 0)
+		{
+			var orb_index = floor(num_orbs * orbs_init_count / max_orbs_init_count);
+			orb_instances[orb_index] = instance_create_depth(orig_x, orig_y - (bbox_bottom - bbox_top) / 2, depth - 1, object_orb);
+		}
+		orbs_init_count = min(orbs_init_count + 1, max_orbs_init_count);
+		if (orbs_init_count == max_orbs_init_count)
+		{
+			orb_state = orb_states.spinning;
+			orbs_init_count = 0;
+		}
+		break;
+	case orb_states.spinning:
+		orb_spinning_count = min(orb_spinning_count + 1, max_orb_spinning_count);
+		if (orb_spinning_count == max_orb_spinning_count)
+		{
+			orb_state = orb_states.firing;
+			orb_spinning_count = 0;
+		}
+		break;
+	case orb_states.firing:
+		if (orb_firing_count == 0)
+		{
+			for (i = num_orbs - 1; i > -1; i--)
+			{
+				orb_instances[i].firing = true;
+			}
+		}
+		orb_firing_count = min(orb_firing_count + 1, max_orb_firing_count);
+		if (orb_firing_count == max_orb_firing_count)
+		{
+			orb_state = orb_states.initializing;
+			orb_firing_count = 0;
+		}
+		break;
+}
+
 if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 {
 	health_level = max(health_level - 1, 0);
@@ -189,6 +229,7 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 	{
 		spawn_index = (spawn_index + 1) % max_spawn_indices;
 		x = spawn_points_x[spawn_index];
+		orig_x = x;
 		y = spawn_points_y[spawn_index];
 		orig_y = y;
 	}

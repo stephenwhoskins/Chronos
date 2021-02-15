@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "hazards",
+    "path": "folders/Objects/hazards.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_fireball",

@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+enum orb_states
+{
+	initializing,
+	spinning,
+	firing
+}
+
 enum chronos_states
 {
 	introduction,
@@ -11,6 +18,8 @@ enum chronos_states
 
 orig_x = x;
 orig_y = y;
+
+orb_state = orb_states.initializing;
 
 max_angels_per_group = 8;
 
@@ -56,3 +65,18 @@ spawn_points_x[1] = center_x - 64;
 spawn_points_y[1] = center_y + 32;
 spawn_points_x[2] = center_x + 64;
 spawn_points_y[2] = center_y + 64;
+
+num_orbs = 8;
+max_orbs_init_count = num_orbs * room_speed / 4;
+orbs_init_count = 0;
+
+for (i = num_orbs - 1; i > -1; i--)
+{
+	orb_instances[i] = noone;
+}
+
+max_orb_spinning_count = 5 * room_speed;
+orb_spinning_count = 0;
+
+max_orb_firing_count = 4 * room_speed;
+orb_firing_count = 0;
