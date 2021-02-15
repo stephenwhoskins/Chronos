@@ -55,8 +55,8 @@ if (is_boss && shoot_count >= max_shoot_count && last_image_index != floor(image
 	{
 		var shot = instance_create_depth(x, y, depth, object_spike_snail_spike);
 		shot.direction = start_angle + i * angle_increment;
-		shot.image_xscale = image_xscale;
-		shot.image_yscale = image_yscale;
+		shot.image_xscale = abs(image_xscale);
+		shot.image_yscale = abs(image_yscale);
 	}
 }
 else

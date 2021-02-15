@@ -23,4 +23,4 @@ shoot_count = max_shoot_count;
 
 
 is_boss = image_xscale > 1.5;
-respawn = is_boss ? 4 : 0;
+respawn = is_boss ? 2 : 0;
