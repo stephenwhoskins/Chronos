@@ -9,3 +9,8 @@ if (sprite_index == sprite_spike_snail_dying)
 	
 	instance_destroy();
 }
+else if (sprite_index == sprite_spike_snail_attacking && irandom(3) == 0)
+{
+	shoot_count = 0;
+	sprite_index = sprite_spike_snail_walking;
+}

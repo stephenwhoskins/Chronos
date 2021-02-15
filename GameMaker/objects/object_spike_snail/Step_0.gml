@@ -12,7 +12,7 @@ if (hurt_count == 0 && (hit_type == hit_types.sword || hit_type == hit_types.arr
 	}
 }
 
-if (last_image_index != floor(image_index) && floor(image_index) == 1 && sprite_index != sprite_spike_snail_dying)
+if (last_image_index != floor(image_index) && floor(image_index) == 1 && sprite_index == sprite_spike_snail_walking)
 {
 	x += 2 * image_xscale;
 	
@@ -44,6 +44,25 @@ else if (hurt_count == 0 && sprite_index == sprite_spike_snail_dying)
 
 if (hurt_count < max_hurt_count)
 	hurt_count += 1;
+	
+if (is_boss && shoot_count >= max_shoot_count && last_image_index != floor(image_index) && floor(image_index) == 1)
+{
+	sprite_index = sprite_spike_snail_attacking;
+	var num_shoot = 5;
+	var start_angle = 0;
+	var angle_increment = 45;
+	for (var i = 0; i < num_shoot; i++)
+	{
+		var shot = instance_create_depth(x, y, depth, object_spike_snail_spike);
+		shot.direction = start_angle + i * angle_increment;
+		shot.image_xscale = image_xscale;
+		shot.image_yscale = image_yscale;
+	}
+}
+else
+{
+	shoot_count++;
+}
 
 last_image_index = floor(image_index);
 

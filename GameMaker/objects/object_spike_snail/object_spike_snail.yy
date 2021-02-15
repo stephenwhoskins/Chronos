@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/enemies.yy",
+    "name": "spike",
+    "path": "folders/Objects/enemies/spike.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_spike_snail",
