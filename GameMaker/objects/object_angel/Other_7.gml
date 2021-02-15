@@ -9,3 +9,8 @@ if (sprite_index == sprite_angel_dying)
 	}
 	instance_destroy();
 }
+else if (sprite_index == sprite_angel_spawning)
+{
+	sprite_index = sprite_angel_idle;
+	spawning = false;
+}

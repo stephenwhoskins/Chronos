@@ -86,7 +86,7 @@ if (hurt_count == 0 && sprite_index != sprite_dead)
 	if (health_level == 0)
 	{
 		sprite_index = sprite_dead;
-		if (random(100) < 40)
+		if (random(100) < 33)
 		{
 			instance_create_depth(x, y, depth - 1, object_health);
 		}

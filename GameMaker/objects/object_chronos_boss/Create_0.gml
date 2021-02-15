@@ -13,7 +13,8 @@ enum chronos_states
 	introduction,
 	angels_flying_vertically,
 	angels_flying_horizontally,
-	angels_flying_to_center
+	angels_flying_to_center,
+	spawning_angels
 }
 
 orig_x = x;

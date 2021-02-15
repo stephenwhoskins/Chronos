@@ -170,24 +170,51 @@ switch (chronos_state)
 				angel_instances_3[i].y = center_y - 128 - i * 32;
 			}
 			
-			chronos_state = chronos_states.angels_flying_vertically;
+			chronos_state = chronos_states.spawning_angels;
 		}
+		break;
+	case chronos_states.spawning_angels:
+		var num_angels = 0;
+		var i;
+		for (i = 0; i < instance_number(object_angel); i++)
+		{
+			var angel_instance = instance_find(object_angel, i);
+	
+			if (script_get_room_index(angel_instance) == script_get_room_index(self))
+			{
+				num_angels++;
+			}
+		}
+		if (num_angels == 0)
+		{
+			var angel_instance = instance_create_depth(center_x - 64, center_y, depth - 1, object_angel);
+			angel_instance.spawning = true;
+			angel_instance.sprite_index = sprite_angel_spawning;
+			angel_instance = instance_create_depth(center_x + 64, center_y, depth - 1, object_angel);
+			angel_instance.spawning = true;
+			angel_instance.sprite_index = sprite_angel_spawning;
+			angel_instance.image_xscale = -1;
+		}
+		chronos_state = chronos_states.angels_flying_vertically;
 		break;
 }
 
 switch (orb_state)
 {
 	case orb_states.initializing:
-		if (orbs_init_count % (max_orbs_init_count / num_orbs) == 0)
+		if (chronos_state != chronos_states.introduction)
 		{
-			var orb_index = floor(num_orbs * orbs_init_count / max_orbs_init_count);
-			orb_instances[orb_index] = instance_create_depth(orig_x, orig_y - (bbox_bottom - bbox_top) / 2, depth - 1, object_orb);
-		}
-		orbs_init_count = min(orbs_init_count + 1, max_orbs_init_count);
-		if (orbs_init_count == max_orbs_init_count)
-		{
-			orb_state = orb_states.spinning;
-			orbs_init_count = 0;
+			if (orbs_init_count % (max_orbs_init_count / num_orbs) == 0)
+			{
+				var orb_index = floor(num_orbs * orbs_init_count / max_orbs_init_count);
+				orb_instances[orb_index] = instance_create_depth(orig_x, orig_y - 16, depth - 1, object_orb);
+			}
+			orbs_init_count = min(orbs_init_count + 1, max_orbs_init_count);
+			if (orbs_init_count == max_orbs_init_count)
+			{
+				orb_state = orb_states.spinning;
+				orbs_init_count = 0;
+			}
 		}
 		break;
 	case orb_states.spinning:

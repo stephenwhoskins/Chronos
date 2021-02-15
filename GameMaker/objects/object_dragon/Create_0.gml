@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//health_level = 30;
-health_level = 1;
+health_level = 30;
+//health_level = 1;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 

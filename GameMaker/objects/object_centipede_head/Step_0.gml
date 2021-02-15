@@ -217,7 +217,7 @@ if (hurt_count == 0 && sprite_index != sprite_centipede_head_dying)
 		{
 			instance_body_segments[i].sprite_index = sprite_centipede_segment_dying;
 		}
-		if (random(100) < 40)
+		if (random(100) < 33)
 		{
 			instance_create_depth(x, y, depth - 1, object_health);
 		}
