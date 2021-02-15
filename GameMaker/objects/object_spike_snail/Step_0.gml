@@ -31,7 +31,7 @@ if (hurt_count == 0 && sprite_index != sprite_spike_snail_dying)
 	if (health_level == 0)
 	{
 		sprite_index = sprite_spike_snail_dying;
-		if (random(100) < 33)
+		if (respawn == 0 && random(100) < 33)
 		{
 			instance_create_depth(x, y, depth - 1, object_health);
 		}
