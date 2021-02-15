@@ -52,7 +52,7 @@ switch (chronos_state)
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
 				angel_instances_1[i].x = center_x - 128 - i * 32;
-				angel_instances_1[i].y = center_y - 16;
+				angel_instances_1[i].y = center_y - 24;
 			}
 
 			for (i = max_angels_per_group - 1; i > -1; i--)
@@ -64,7 +64,7 @@ switch (chronos_state)
 			for (i = max_angels_per_group - 1; i > -1; i--)
 			{
 				angel_instances_3[i].x = center_x - 128 - i * 32;
-				angel_instances_3[i].y = center_y + 96;
+				angel_instances_3[i].y = center_y + 104;
 			}
 			
 			chronos_state = chronos_states.angels_flying_horizontally;

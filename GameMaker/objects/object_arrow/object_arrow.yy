@@ -26,6 +26,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_wall","path":"objects/object_wall/object_wall.yy",},"parent":{"name":"object_arrow","path":"objects/object_arrow/object_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_enemy","path":"objects/object_enemy/object_enemy.yy",},"parent":{"name":"object_arrow","path":"objects/object_arrow/object_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":40,"eventType":7,"collisionObjectId":null,"parent":{"name":"object_arrow","path":"objects/object_arrow/object_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_orb","path":"objects/object_orb/object_orb.yy",},"parent":{"name":"object_arrow","path":"objects/object_arrow/object_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
