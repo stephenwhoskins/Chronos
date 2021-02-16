@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_enemy","path":"objects/object_enemy/object_enemy.yy",},"parent":{"name":"object_angel_arrow","path":"objects/object_angel_arrow/object_angel_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_orb","path":"objects/object_orb/object_orb.yy",},"parent":{"name":"object_angel_arrow","path":"objects/object_angel_arrow/object_angel_arrow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

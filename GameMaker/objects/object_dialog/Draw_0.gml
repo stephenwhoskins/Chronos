@@ -30,6 +30,9 @@ draw_rectangle(x + 2, y + 3 + max_dialog_height / 2 - dialog_height / 2,
 			   x + view_wport[0] - 3, y - 2 + max_dialog_height / 2 + dialog_height / 2,
 			   true);
 
-event_inherited();
+if (fade_count == max_fade_count && fade_out_count == max_fade_count)
+{
+	event_inherited();
+}
 
 fade_count = min(fade_count + 1, max_fade_count);

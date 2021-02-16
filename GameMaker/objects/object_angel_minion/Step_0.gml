@@ -20,3 +20,5 @@ if (place_meeting(x, y, object_avatar))
 		}
 	}
 }
+
+hurt_count = min(hurt_count + 1, max_hurt_count);

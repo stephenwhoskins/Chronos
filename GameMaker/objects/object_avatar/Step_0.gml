@@ -145,14 +145,18 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 		if (controller.attacking_2 && !attack_2_pressed && global.bombs_enabled)
 		{
 			attack_2_pressed = true;
-			instance_create_depth(x, y, depth + 1, object_bomb);
+			if (instance_number(object_bomb) < 3)
+			{
+				instance_create_depth(x, y, depth + 1, object_bomb);
+			}
 		}
 		else if (!controller.attacking_2)
 		{
 			attack_2_pressed = false;
 		}
 		
-		if (controller.attacking_3 && !attack_3_pressed && global.bow_and_arrow_enabled)
+		if (controller.attacking_3 && !attack_3_pressed && global.bow_and_arrow_enabled &&
+			arrow_pause_count == max_arrow_pause_count)
 		{
 			attack_3_pressed = true;
 			instance_arrow = instance_create_depth(bbox_right + 10, y - 8, depth - 1, object_arrow);
@@ -163,6 +167,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 			{
 				instance_arrow.x = bbox_left - 10;
 			}
+			arrow_pause_count = 0;
 		}
 		else if (!controller.attacking_3)
 		{
@@ -228,3 +233,5 @@ if (sprite_index == sprite_avatar_dead && death_count == max_death_count &&
 hurt_count = min(hurt_count + 1, max_hurt_count);
 bounce_back_count = min(bounce_back_count + 1, max_bounce_back_count);
 death_count = min(death_count + 1, max_death_count);
+
+arrow_pause_count = min(arrow_pause_count + 1, max_arrow_pause_count);

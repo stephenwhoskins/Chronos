@@ -6,4 +6,6 @@ object_fade_out.room_id = Room1;
 global.centipede_key_count++;
 global.snake_key_count++;
 global.key_count++;
-global.water_drained = true;*/
+global.water_drained = true;
+global.max_health_level++;
+global.bow_and_arrow_enabled = true;*/

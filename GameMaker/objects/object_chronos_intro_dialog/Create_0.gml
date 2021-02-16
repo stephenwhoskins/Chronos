@@ -8,14 +8,4 @@ _text[3] = "to be a constant thorn in \nmy side...";
 _text[4] = "Why won't you just...";
 _text[5] = "DIE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
 
-x = script_get_room_camera_x(x);
-y = script_get_room_camera_y(y) + global.hud_height;
-
-max_dialog_height = 56;
-dialog_height = max_dialog_height;
-
-max_fade_count = 30;
-fade_count = 0;
-fade_out_count = max_fade_count;
-
 event_inherited();

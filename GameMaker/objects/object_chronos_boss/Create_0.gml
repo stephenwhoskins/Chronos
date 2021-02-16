@@ -14,7 +14,8 @@ enum chronos_states
 	angels_flying_vertically,
 	angels_flying_horizontally,
 	angels_flying_to_center,
-	spawning_angels
+	spawning_angels,
+	dying
 }
 
 orig_x = x;
@@ -45,10 +46,11 @@ for (i = max_angels_per_group - 1; i > -1; i--)
 }
 
 intro_text_box = noone;
+death_dialog = noone;
 
 audio_stop_all();
 
-alarm[0] = 10 * room_speed;
+alarm[0] = 11 * room_speed;
 
 health_level = 12;
 max_hurt_count = 30;

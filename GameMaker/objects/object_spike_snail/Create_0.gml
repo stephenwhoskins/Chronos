@@ -6,7 +6,7 @@ orig_x = x;
 max_x_offset = 32;
 last_image_index = image_index;
 
-max_health_level = 2;
+max_health_level = 1;
 health_level = max_health_level;
 max_hurt_count = 60;
 hurt_count = max_hurt_count;
@@ -23,4 +23,4 @@ shoot_count = max_shoot_count;
 
 
 is_boss = image_xscale > 1.5;
-respawn = is_boss ? 2 : 0;
+respawn = is_boss ? 6 : 0;

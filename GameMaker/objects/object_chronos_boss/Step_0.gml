@@ -22,7 +22,7 @@ switch (chronos_state)
 		if (intro_text_box == noone)
 		{
 			// The text box cleans up after itself.
-			intro_text_box = instance_create_depth(x, y, depth + 1, object_chronos_intro_text_box);
+			intro_text_box = instance_create_depth(x, y, depth + 1, object_chronos_intro_dialog);
 		}
 		if (intro_text_box._text_index == intro_text_box._num_text_indexes - 1)
 		{
@@ -205,12 +205,24 @@ switch (chronos_state)
 		}
 		chronos_state = chronos_states.angels_flying_vertically;
 		break;
+	case chronos_states.dying:
+		if (death_dialog == noone)
+		{
+			// The text box cleans up after itself.
+			death_dialog = instance_create_depth(x, y, depth + 1, object_chronos_death_dialog);
+		}
+		if (death_dialog._text_index == death_dialog._num_text_indexes - 1)
+		{
+			script_timey_death_sequence();
+			instance_destroy();
+		}
+		break;
 }
 
 switch (orb_state)
 {
 	case orb_states.initializing:
-		if (chronos_state != chronos_states.introduction)
+		if (chronos_state != chronos_states.introduction && chronos_state != chronos_states.dying)
 		{
 			if (orbs_init_count % (max_orbs_init_count / num_orbs) == 0)
 			{
@@ -274,9 +286,7 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 			angel_instance.sprite_index = sprite_angel_dying;
 		}
 		
-		sprite_index = sprite_chronos_dying;
-		script_timey_death_sequence();
-		instance_destroy();
+		chronos_state = chronos_states.dying;
 	}
 	else
 	{
