@@ -50,7 +50,7 @@ audio_stop_all();
 
 alarm[0] = 10 * room_speed;
 
-health_level = 8;
+health_level = 12;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
@@ -71,13 +71,10 @@ num_orbs = 8;
 max_orbs_init_count = num_orbs * room_speed / 4;
 orbs_init_count = 0;
 
-for (i = num_orbs - 1; i > -1; i--)
-{
-	orb_instances[i] = noone;
-}
-
 max_orb_spinning_count = 5 * room_speed;
 orb_spinning_count = 0;
 
 max_orb_firing_count = 4 * room_speed;
 orb_firing_count = 0;
+
+global.time_stopped = true;

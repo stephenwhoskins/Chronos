@@ -28,6 +28,7 @@ switch (chronos_state)
 		{
 			chronos_state = chronos_states.angels_flying_vertically;
 			alarm[1] = 2 * room_speed;
+			global.time_stopped = false;
 		}
 		break;
 	// Fly the angels vertically.
@@ -200,6 +201,7 @@ switch (chronos_state)
 			}
 			angel_instance.spawning = true;
 			angel_instance.sprite_index = sprite_angel_spawning;
+			angel_instance.health_level = 3;
 		}
 		chronos_state = chronos_states.angels_flying_vertically;
 		break;
@@ -212,8 +214,7 @@ switch (orb_state)
 		{
 			if (orbs_init_count % (max_orbs_init_count / num_orbs) == 0)
 			{
-				var orb_index = floor(num_orbs * orbs_init_count / max_orbs_init_count);
-				orb_instances[orb_index] = instance_create_depth(orig_x, orig_y - 16, depth - 1, object_orb);
+				instance_create_depth(orig_x, orig_y - 16, depth - 1, object_orb);
 			}
 			orbs_init_count = min(orbs_init_count + 1, max_orbs_init_count);
 			if (orbs_init_count == max_orbs_init_count)
@@ -236,7 +237,8 @@ switch (orb_state)
 		{
 			for (i = instance_number(object_orb) - 1; i > -1; i--)
 			{
-				orb_instances[i].firing = true;
+				var orb_instance = instance_find(object_orb, i);
+				orb_instance.firing = true;
 			}
 		}
 		orb_firing_count = min(orb_firing_count + 1, max_orb_firing_count);
@@ -252,10 +254,26 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 {
 	health_level = max(health_level - 1, 0);
 
-	orb_state = orb_states.firing;
+	if (orb_state == orb_states.initializing || orb_state == orb_states.spinning)
+	{
+		orbs_init_count = 0;
+		for (i = instance_number(object_orb) - 1; i > -1; i--)
+		{
+			var orb_instance = instance_find(object_orb, i);
+			orb_instance.firing = true;
+		}
+	}
 	
 	if (health_level == 0)
 	{
+		// Kill off all the angels.
+		for (i = instance_number(object_angel) - 1; i > -1; i--)
+		{
+			angel_instance = instance_find(object_angel, i);
+			angel_instance.health_level = 0;
+			angel_instance.sprite_index = sprite_angel_dying;
+		}
+		
 		sprite_index = sprite_chronos_dying;
 		script_timey_death_sequence();
 		instance_destroy();

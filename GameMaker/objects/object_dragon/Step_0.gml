@@ -203,7 +203,9 @@ if (death_count < max_death_count)
 	death_count = min(death_count + 1, max_death_count);
 	if (death_count == max_death_count)
 	{
-		instance_create_depth(x, y, depth - 1, object_chronos_boss);
+		var chronos_x = script_get_room_camera_x(x) + view_wport[0] / 2;
+		var chronos_y = script_get_room_camera_y(y) + view_hport[0] / 2;
+		instance_create_depth(chronos_x, chronos_y, depth - 1, object_chronos_boss);
 		instance_destroy();
 	}
 }
