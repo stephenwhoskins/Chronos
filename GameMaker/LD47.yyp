@@ -298,6 +298,7 @@
     {"id":{"name":"object_orb","path":"objects/object_orb/object_orb.yy",},"order":12,},
     {"id":{"name":"sprite_tile_31_tropics","path":"sprites/sprite_tile_31_tropics/sprite_tile_31_tropics.yy",},"order":32,},
     {"id":{"name":"sprite_snake_idle","path":"sprites/sprite_snake_idle/sprite_snake_idle.yy",},"order":0,},
+    {"id":{"name":"object_draw_text","path":"objects/object_draw_text/object_draw_text.yy",},"order":1,},
     {"id":{"name":"object_chronos_intro","path":"objects/object_chronos_intro/object_chronos_intro.yy",},"order":3,},
     {"id":{"name":"sprite_time_egyptian_idle","path":"sprites/sprite_time_egyptian_idle/sprite_time_egyptian_idle.yy",},"order":0,},
     {"id":{"name":"sprite_right_wall_closed_heavens","path":"sprites/sprite_right_wall_closed_heavens/sprite_right_wall_closed_heavens.yy",},"order":2,},
