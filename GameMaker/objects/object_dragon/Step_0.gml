@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (script_get_room_index(object_avatar) == self_room_index && !avatar_present)
+if (script_get_room_index(object_avatar) == self_room_index && !avatar_present &&
+object_avatar.y < orig_y + 80)
 {
 	audio_stop_all();
 	object_music_player.sound = audio_play_sound(sound_dragon, 10, true);
@@ -12,6 +13,15 @@ if (script_get_room_index(object_avatar) == self_room_index && !avatar_present)
 	dragon_state = dragon_states.introduction;
 	
 	avatar_present = true;
+	
+	// Create a barrier
+	instance_create_depth(616, 176, depth + 1, object_electric_rod);
+	instance_create_depth(624, 176, depth + 1, object_electricity_0);
+	instance_create_depth(632, 176, depth + 1, object_electricity_0);
+	instance_create_depth(640, 176, depth + 1, object_electricity_0);
+	instance_create_depth(648, 176, depth + 1, object_electricity_0);
+	instance_create_depth(656, 176, depth + 1, object_electricity_0);
+	instance_create_depth(664, 176, depth + 1, object_electric_rod);
 }
 else if (script_get_room_index(object_avatar) != self_room_index && avatar_present)
 {
