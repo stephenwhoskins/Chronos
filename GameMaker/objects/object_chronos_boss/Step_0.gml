@@ -187,13 +187,19 @@ switch (chronos_state)
 		}
 		if (num_angels == 0)
 		{
-			var angel_instance = instance_create_depth(center_x - 64, center_y, depth - 1, object_angel);
+			var angel_instance = noone;
+			
+			if (random(2) < 1)
+			{
+				angel_instance = instance_create_depth(center_x + 64, center_y, depth - 1, object_angel);
+				angel_instance.image_xscale = -1;
+			}
+			else
+			{
+				angel_instance = instance_create_depth(center_x - 64, center_y, depth - 1, object_angel);
+			}
 			angel_instance.spawning = true;
 			angel_instance.sprite_index = sprite_angel_spawning;
-			angel_instance = instance_create_depth(center_x + 64, center_y, depth - 1, object_angel);
-			angel_instance.spawning = true;
-			angel_instance.sprite_index = sprite_angel_spawning;
-			angel_instance.image_xscale = -1;
 		}
 		chronos_state = chronos_states.angels_flying_vertically;
 		break;
@@ -228,7 +234,7 @@ switch (orb_state)
 	case orb_states.firing:
 		if (orb_firing_count == 0)
 		{
-			for (i = num_orbs - 1; i > -1; i--)
+			for (i = instance_number(object_orb) - 1; i > -1; i--)
 			{
 				orb_instances[i].firing = true;
 			}
@@ -245,6 +251,8 @@ switch (orb_state)
 if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 {
 	health_level = max(health_level - 1, 0);
+
+	orb_state = orb_states.firing;
 	
 	if (health_level == 0)
 	{

@@ -11,7 +11,11 @@ for (i = 0; i < instance_number(object_enemy); i++)
 	
 	if (script_get_room_index(enemy_instance) == script_get_room_index(self) &&
 	enemy_instance.object_index != object_electricity_0 &&
-	enemy_instance.object_index != object_electricity_1)
+	enemy_instance.object_index != object_electricity_1 ||
+	(enemy_instance.object_index == object_dragon &&
+	(script_get_room_index_2(object_dragon.x, object_dragon.y + 352) == script_get_room_index(self) ||
+	script_get_room_index_2(object_dragon.x, object_dragon.y + 184) == script_get_room_index(self) ||
+	script_get_room_index_2(object_dragon.x, object_dragon.y) == script_get_room_index(self))))
 	{
 		num_enemies++;
 	}
