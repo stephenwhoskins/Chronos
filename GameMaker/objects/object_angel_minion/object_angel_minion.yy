@@ -27,6 +27,7 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"object_angel_minion","path":"objects/object_angel_minion/object_angel_minion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_sword_attacking","path":"objects/object_sword_attacking/object_sword_attacking.yy",},"parent":{"name":"object_angel_minion","path":"objects/object_angel_minion/object_angel_minion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"object_bomb_exploding","path":"objects/object_bomb_exploding/object_bomb_exploding.yy",},"parent":{"name":"object_angel_minion","path":"objects/object_angel_minion/object_angel_minion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"object_angel_minion","path":"objects/object_angel_minion/object_angel_minion.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -281,12 +281,18 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 		// Kill off all the angels.
 		for (i = instance_number(object_angel) - 1; i > -1; i--)
 		{
-			angel_instance = instance_find(object_angel, i);
+			var angel_instance = instance_find(object_angel, i);
 			angel_instance.health_level = 0;
+			angel_instance.sprite_index = sprite_angel_dying;
+		}
+		for (i = instance_number(object_angel_minion) - 1; i > -1; i--)
+		{
+			var angel_instance = instance_find(object_angel_minion, i);
 			angel_instance.sprite_index = sprite_angel_dying;
 		}
 		
 		chronos_state = chronos_states.dying;
+		global.time_stopped = true;
 	}
 	else
 	{

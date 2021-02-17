@@ -44,7 +44,7 @@
     "spriteId": {"name":"sprite_acid","path":"sprites/sprite_acid/sprite_acid.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

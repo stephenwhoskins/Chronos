@@ -28,6 +28,8 @@ if (death_count < max_death_count)
 			object_music_player.loop_begin_time = 0.0;
 			object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
 			object_avatar.escaping = true;
+			object_avatar.escape_x = object_avatar.x;
+			object_avatar.escape_y = object_avatar.y;
 		}
 	}
 	

@@ -10,6 +10,9 @@ for (var i = 0; i < instance_number(object_stairs); i++)
 		object_avatar.y = instance_stairs.y + instance_stairs.sprite_height - 2;
 		camera_set_view_pos(view_camera[0], script_get_room_camera_x(object_avatar.x),
 				script_get_room_camera_y(object_avatar.y));
-		break;
+		return;
 	}
 }
+
+camera_set_view_pos(view_camera[0], script_get_room_camera_x(object_avatar.x),
+	script_get_room_camera_y(object_avatar.y));

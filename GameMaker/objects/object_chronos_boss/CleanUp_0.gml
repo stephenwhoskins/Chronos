@@ -1,17 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-for (i = max_angels_per_group - 1; i > -1; i--)
+for (var i = instance_number(object_angel_minion) - 1; i > -1; i--)
 {
-	instance_destroy(angel_instances_1[i].id);
-}
-
-for (i = max_angels_per_group - 1; i > -1; i--)
-{
-	instance_destroy(angel_instances_2[i].id);
-}
-
-for (i = max_angels_per_group - 1; i > -1; i--)
-{
-	instance_destroy(angel_instances_3[i].id);
+	var angel_instance = instance_find(object_angel_minion, i);
+	instance_destroy(angel_instance.id);
 }

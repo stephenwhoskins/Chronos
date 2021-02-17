@@ -368,6 +368,7 @@
     {"id":{"name":"sprite_bottom_wall_locked","path":"sprites/sprite_bottom_wall_locked/sprite_bottom_wall_locked.yy",},"order":2,},
     {"id":{"name":"object_top_wall_closed_tropics","path":"objects/object_top_wall_closed_tropics/object_top_wall_closed_tropics.yy",},"order":5,},
     {"id":{"name":"sprite_barrier_3","path":"sprites/sprite_barrier_3/sprite_barrier_3.yy",},"order":3,},
+    {"id":{"name":"object_checkpoint","path":"objects/object_checkpoint/object_checkpoint.yy",},"order":27,},
     {"id":{"name":"sprite_door_locked_tropics","path":"sprites/sprite_door_locked_tropics/sprite_door_locked_tropics.yy",},"order":3,},
     {"id":{"name":"script_timey_time_warp","path":"scripts/script_timey_time_warp/script_timey_time_warp.yy",},"order":4,},
     {"id":{"name":"sprite_cloud","path":"sprites/sprite_cloud/sprite_cloud.yy",},"order":0,},

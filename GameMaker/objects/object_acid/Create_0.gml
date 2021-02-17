@@ -10,3 +10,5 @@ move_lower_left = 2;
 move_lower_right = 3;
 max_states = move_lower_right + 1;
 state = move_upper_left;
+
+image_speed = 0;

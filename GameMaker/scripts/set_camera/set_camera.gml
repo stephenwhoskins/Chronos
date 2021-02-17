@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function set_camera()
+function set_camera(new_x, new_y)
 {
 	var c = view_camera[0];
 	var miniroom_width = 256;
@@ -9,8 +9,8 @@ function set_camera()
 	var maxSpeed = 4;
 
 	var cy_offset = -40;
-	var miniroom_x = floor(x / miniroom_width);
-	var miniroom_y = floor((y - (bbox_bottom - bbox_top) / 2) / miniroom_height);
+	var miniroom_x = floor(new_x / miniroom_width);
+	var miniroom_y = floor((new_y - (bbox_bottom - bbox_top) / 2) / miniroom_height);
 	var old_cx = camera_get_view_x(c);
 	var old_cy = camera_get_view_y(c);
 	var target_cx = miniroom_x * miniroom_width;

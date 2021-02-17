@@ -176,23 +176,30 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 	}
 }
 
-set_camera();
+if (escaping)
+{
+	set_camera(escape_x, escape_y);
+}
+else
+{
+	set_camera(x, y);
+}
 
 // Automatically make the Avatar head for the nearest exit.
 if (escaping)
 {
 	sprite_index = sprite_avatar_walking;
 	image_xscale = -1.0;
-	var dest_x = camera_get_view_x(view_camera[0]);
-	var dest_y = camera_get_view_y(view_camera[0]) + view_hport[0] / 2  + global.hud_height;
+	var dest_x = camera_get_view_x(view_camera[0]) + view_wport[0] / 2;
+	var dest_y = camera_get_view_y(view_camera[0]) + view_hport[0] + global.hud_height;
 	
-	if (y != dest_y)
-	{
-		y += sign(dest_y - y);
-	}
-	else if (x != dest_x)
+	if (x != dest_x)
 	{
 		x += sign(dest_x - x);
+	}
+	else if (y != dest_y)
+	{
+		y += sign(dest_y - y);
 	}
 }
 // Handle walk SFX here

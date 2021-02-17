@@ -88,6 +88,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"object_electricity_0","path":"objects/object_electricity_0/object_electricity_0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":560.0,"resourceVersion":"1.0","name":"inst_33661058","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_electricity_0","path":"objects/object_electricity_0/object_electricity_0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1160.0,"y":560.0,"resourceVersion":"1.0","name":"inst_6919104F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_electricity_0","path":"objects/object_electricity_0/object_electricity_0.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1168.0,"y":560.0,"resourceVersion":"1.0","name":"inst_4EA21F86","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"object_checkpoint","path":"objects/object_checkpoint/object_checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":272.0,"resourceVersion":"1.0","name":"inst_37BCE405","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_6","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_stairs_heavens","path":"objects/object_stairs_heavens/object_stairs_heavens.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":600.0,"resourceVersion":"1.0","name":"inst_20DDE67F","tags":[],"resourceType":"GMRInstance",},
@@ -1583,6 +1584,7 @@
     {"name":"inst_63770D44","path":"rooms/Room4/Room4.yy",},
     {"name":"inst_146C5ACD","path":"rooms/Room4/Room4.yy",},
     {"name":"inst_4D7DF658","path":"rooms/Room4/Room4.yy",},
+    {"name":"inst_37BCE405","path":"rooms/Room4/Room4.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

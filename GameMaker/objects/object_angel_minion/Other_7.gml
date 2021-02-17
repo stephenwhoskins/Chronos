@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-y += .25;
 
-if (y > room_height + 100)
+if (sprite_index == sprite_angel_dying)
 {
-	object_fade_out.room_id = title;
+	instance_destroy();
 }
