@@ -18,17 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"object_epilogue_timer","path":"objects/object_epilogue_timer/object_epilogue_timer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_epilogue_timer","path":"objects/object_epilogue_timer/object_epilogue_timer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"object_epilogue_1_timer","path":"objects/object_epilogue_1_timer/object_epilogue_1_timer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"object_epilogue_1_timer","path":"objects/object_epilogue_1_timer/object_epilogue_1_timer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "epilogue",
+    "path": "folders/Objects/epilogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "object_epilogue_timer",
+  "name": "object_epilogue_1_timer",
   "tags": [],
   "resourceType": "GMObject",
 }

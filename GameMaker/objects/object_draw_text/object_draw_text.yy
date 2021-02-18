@@ -25,8 +25,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "credits",
-    "path": "folders/Objects/credits.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "object_draw_text",

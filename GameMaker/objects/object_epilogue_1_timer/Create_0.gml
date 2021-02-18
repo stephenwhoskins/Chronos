@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(Epilogue_1);
+alarm[0] = 15 * room_speed;
