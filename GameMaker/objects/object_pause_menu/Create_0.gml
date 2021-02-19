@@ -22,12 +22,12 @@ draw_set_font(font_dialogue);
 var title_text = "Resume game?";
 title_struct = {
 text: title_text,
-x: view_wport[0] / 2 - string_width(title_text) / 2,
-y: view_hport[0] / 2
+x: view_wport[0] / 2 - string_width(title_text) / 2 - 1,
+y: view_hport[0] / 2 - 19
 };
 
 var no_button_text = "No";
-var button_height = view_hport[0] / 2 + 16;
+var button_height = view_hport[0] / 2 - 3;
 no_button = {
 text: no_button_text,
 x: view_wport[0] / 2 - 30 - string_width(no_button_text),
@@ -35,6 +35,6 @@ y: button_height
 };
 yes_button = {
 text: "Yes",
-x: view_wport[0] / 2 + 30,
+x: view_wport[0] / 2 + 21,
 y: button_height
 };

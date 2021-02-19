@@ -125,12 +125,6 @@ if (boss_music_count < max_boss_music_count)
 	}
 }
 
-// Snake is invincible when he's spitting fire.
-if (hurt_count == 0 && sprite_index == sprite_snake_spitting)
-{
-	hurt_count = max_hurt_count;
-}
-
 // Handle snake getting hurt.
 if (hurt_count == 0 && sprite_index != sprite_snake_dead)
 {

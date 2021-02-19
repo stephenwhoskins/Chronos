@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var title_text = "Chronos Time Warp";
+var title_text = "Chronos";
 title_struct = {
 text: title_text,
-x: 42,
-y: 50
+x: 91,
+y: 56
 };
 
 var start_button_text = "Start";
@@ -17,7 +17,7 @@ y: button_height
 };
 exit_button = {
 text: "Exit",
-x: view_wport[0] / 2 + 30,
+x: view_wport[0] / 2 + 39,
 y: button_height
 };
 
