@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-y += .25;
+y += .275;
 
 if (y > room_height + 100)
 {

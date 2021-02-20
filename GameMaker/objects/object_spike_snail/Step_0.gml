@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (script_get_room_index(object_avatar) != script_get_room_index(self))
+{
+	return;
+}
+	
 if (hurt_count == 0 && (hit_type == hit_types.sword || hit_type == hit_types.arrow))
 {
 	hurt_count = max_hurt_count;
@@ -31,10 +36,6 @@ if (hurt_count == 0 && sprite_index != sprite_spike_snail_dying)
 	if (health_level == 0)
 	{
 		sprite_index = sprite_spike_snail_dying;
-		if (respawn == 0 && random(100) < 33)
-		{
-			instance_create_depth(x, y, depth - 1, object_health);
-		}
 	}
 }
 else if (hurt_count == 0 && sprite_index == sprite_spike_snail_dying)
@@ -53,11 +54,21 @@ if (is_boss && shoot_count >= max_shoot_count && last_image_index != floor(image
 	var angle_increment = 45;
 	for (var i = 0; i < num_shoot; i++)
 	{
-		var shot = instance_create_depth(x, y, depth, object_spike_snail_spike);
+		var shot = instance_create_depth(x + 2, y, depth, object_spike_snail_spike);
 		shot.direction = start_angle + i * angle_increment;
 		shot.image_xscale = abs(image_xscale);
 		shot.image_yscale = abs(image_yscale);
+		if (i == 2)
+		{
+			shot.x -= 7;
+		}
+		else if (i == 4)
+		{
+			shot.y += 14;
+		}
 	}
+	audio_play_sound(sound_spike_snail, 10, false);
+	shots_fired = min(shots_fired + 1, max_shots_fired);
 }
 else
 {

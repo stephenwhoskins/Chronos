@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+is_boss = image_xscale > 1.5;
 state_count = 0;
 
 enum jelly_state
@@ -19,7 +21,7 @@ spd = init_speed;
 start_x = x;
 start_y = y;
 
-health_level = 2;
+health_level = is_boss ? 16 : 2;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 

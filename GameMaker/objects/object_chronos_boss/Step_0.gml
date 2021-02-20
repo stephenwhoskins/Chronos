@@ -10,6 +10,13 @@ float_count = (float_count + 1) % max_float_count;
 
 y = orig_y + y_offset;
 
+// Hide Chronos if the avatar is dead.
+if (global.health_level <= 0)
+{
+	x = -1000;
+	y = -1000;
+}
+
 if (script_get_room_index(object_avatar) != script_get_room_index(self))
 {
 	return;

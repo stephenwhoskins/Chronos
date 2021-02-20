@@ -96,6 +96,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1224.0,"y":328.0,"resourceVersion":"1.0","name":"inst_7352A0C6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":328.0,"resourceVersion":"1.0","name":"inst_5DEB4287","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":232.0,"resourceVersion":"1.0","name":"inst_4CF314E5","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"object_jelly","path":"objects/object_jelly/object_jelly.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":440.0,"resourceVersion":"1.0","name":"inst_24DE2A90","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_5","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"object_snake_door_locked","path":"objects/object_snake_door_locked/object_snake_door_locked.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":264.0,"resourceVersion":"1.0","name":"inst_56151F22","tags":[],"resourceType":"GMRInstance",},
@@ -2187,6 +2188,7 @@
     {"name":"inst_3A10B572","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_36D72D86","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_35EFAC20","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_24DE2A90","path":"rooms/Room2/Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

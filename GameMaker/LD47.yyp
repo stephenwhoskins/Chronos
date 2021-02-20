@@ -437,6 +437,7 @@
     {"id":{"name":"sprite_door_locked_3_tropics","path":"sprites/sprite_door_locked_3_tropics/sprite_door_locked_3_tropics.yy",},"order":16,},
     {"id":{"name":"object_time_egyptian","path":"objects/object_time_egyptian/object_time_egyptian.yy",},"order":11,},
     {"id":{"name":"text_snake_big","path":"sprites/text_snake_big/text_snake_big.yy",},"order":6,},
+    {"id":{"name":"sound_spike_snail","path":"sounds/sound_spike_snail/sound_spike_snail.yy",},"order":14,},
     {"id":{"name":"sprite_tile_29_tropics","path":"sprites/sprite_tile_29_tropics/sprite_tile_29_tropics.yy",},"order":29,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
