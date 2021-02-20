@@ -31,7 +31,8 @@ if (health_level > 0)
 	{
 		being_attacked = true;
 		sprite_index = sprite_walking;
-		var velocity = min(.8, distance_to_object(object_avatar));
+		var velocity = min(0.0, distance_to_object(object_avatar));
+		velocity = max(1.0, velocity);
 		var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
 		var dx = velocity * cos(angle);
 		var dy = velocity * sin(angle);

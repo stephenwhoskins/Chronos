@@ -35,7 +35,7 @@ if (health_level > 0)
 				image_index = 0;
 			}
 
-			if (state_count == max_shocking_count)
+			if (state_count >= max_shocking_count)
 			{
 				spd = init_speed;
 				dir = random_range(0, 2 * pi);
@@ -51,7 +51,7 @@ if (health_level > 0)
 				image_index = 0;
 			}
 	
-			if (state_count == max_idle_count)
+			if (state_count >= max_idle_count)
 			{
 				spd = 0;
 				state = jelly_state.jelly_shocking;
