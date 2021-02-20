@@ -336,6 +336,7 @@
     {"id":{"name":"sprite_wall_3_hell_grounds","path":"sprites/sprite_wall_3_hell_grounds/sprite_wall_3_hell_grounds.yy",},"order":15,},
     {"id":{"name":"object_electricity_1","path":"objects/object_electricity_1/object_electricity_1.yy",},"order":9,},
     {"id":{"name":"object_right_wall_closed_hell_grounds","path":"objects/object_right_wall_closed_hell_grounds/object_right_wall_closed_hell_grounds.yy",},"order":2,},
+    {"id":{"name":"sound_health_2","path":"sounds/sound_health_2/sound_health_2.yy",},"order":15,},
     {"id":{"name":"sprite_door_locked_hell_grounds","path":"sprites/sprite_door_locked_hell_grounds/sprite_door_locked_hell_grounds.yy",},"order":6,},
     {"id":{"name":"object_bottom_wall_closing_tropics","path":"objects/object_bottom_wall_closing_tropics/object_bottom_wall_closing_tropics.yy",},"order":11,},
     {"id":{"name":"sprite_bow_controls","path":"sprites/sprite_bow_controls/sprite_bow_controls.yy",},"order":5,},
