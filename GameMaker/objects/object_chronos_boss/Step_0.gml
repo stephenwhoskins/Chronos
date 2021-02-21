@@ -36,6 +36,7 @@ switch (chronos_state)
 			chronos_state = chronos_states.angels_flying_vertically;
 			alarm[1] = 2 * room_speed;
 			global.time_stopped = false;
+			instance_create_depth(x, y, depth - 100, object_health_meter);
 		}
 		break;
 	// Fly the angels vertically.
@@ -296,6 +297,11 @@ if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
 		{
 			var angel_instance = instance_find(object_angel_minion, i);
 			angel_instance.sprite_index = sprite_angel_dying;
+		}
+		for (i = instance_number(object_health_meter) - 1; i > -1; i--)
+		{
+			var health_meter_instance = instance_find(object_health_meter, i);
+			instance_destroy(health_meter_instance.id);
 		}
 		
 		chronos_state = chronos_states.dying;

@@ -52,7 +52,7 @@ audio_stop_all();
 
 alarm[0] = 11 * room_speed;
 
-health_level = 12;
+health_level = 8;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
 
