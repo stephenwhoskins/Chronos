@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sound_health_meter.wav",
-  "duration": 0.17924,
+  "duration": 0.179422,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",
