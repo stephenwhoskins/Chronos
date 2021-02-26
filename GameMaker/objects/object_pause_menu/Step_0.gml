@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 var controller = read_menu_controller();
-if (controller.menu && !pausePressed)
+if ((controller.menu || (controller.cancel && paused)) && !pausePressed)
 {
 	paused = !paused;
 	
 	if (paused)
 	{
+		global.paused = true;
+		
 		fade_count = 0;
 		
 		option = option_no;

@@ -209,7 +209,7 @@ switch (chronos_state)
 			}
 			angel_instance.spawning = true;
 			angel_instance.sprite_index = sprite_angel_spawning;
-			angel_instance.health_level = 3;
+			angel_instance.health_level = 1;
 		}
 		chronos_state = chronos_states.angels_flying_vertically;
 		break;

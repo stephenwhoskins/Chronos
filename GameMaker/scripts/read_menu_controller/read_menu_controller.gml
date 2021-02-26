@@ -14,6 +14,7 @@ function read_menu_controller(){
 	is_down |= gamepad_button_check(0, gp_padd);
 	var is_menu = gamepad_button_check(0, gp_start);
 	var is_select = gamepad_button_check(0, gp_face1);
+	var is_cancel = gamepad_button_check(0, gp_face2);
 	is_left |= keyboard_check(vk_left);
 	is_right |= keyboard_check(vk_right);
 	is_up |= keyboard_check(vk_up);
@@ -26,7 +27,8 @@ function read_menu_controller(){
 		up: is_up,
 		down: is_down,
 		menu: is_menu,
-		select: is_select
+		select: is_select,
+		cancel: is_cancel
 	};
 	return controller;
 }

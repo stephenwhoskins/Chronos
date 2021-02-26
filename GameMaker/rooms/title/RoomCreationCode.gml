@@ -34,3 +34,5 @@ sword,
 bomb,
 arrow
 }
+
+global.paused = false;

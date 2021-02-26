@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function read_gameplay_controller(){
-	gamepad_set_axis_deadzone(0, .3)
+function read_gameplay_controller()
+{
+	gamepad_set_axis_deadzone(0, .3);
 	var xVal = gamepad_axis_value(0,gp_axislh);
 	var is_left = xVal < 0;
 	var is_right = xVal > 0;
@@ -13,8 +14,8 @@ function read_gameplay_controller(){
 	is_up |= gamepad_button_check(0, gp_padu);
 	is_down |= gamepad_button_check(0, gp_padd);
 	var is_attacking = gamepad_button_check(0, gp_face3);
-	var is_attacking_2 = gamepad_button_check(0, gp_face1);
-	var is_attacking_3 = gamepad_button_check(0, gp_face2);
+	var is_attacking_2 = global.paused ? 0 : gamepad_button_check(0, gp_face1);
+	var is_attacking_3 = global.paused ? 0 : gamepad_button_check(0, gp_face2);
 	is_left |= keyboard_check(vk_left);
 	is_right |= keyboard_check(vk_right);
 	is_up |= keyboard_check(vk_up);
@@ -31,5 +32,6 @@ function read_gameplay_controller(){
 		attacking_2: is_attacking_2,
 		attacking_3: is_attacking_3
 	};
+	if (!gamepad_button_check(0, gp_face1) && !gamepad_button_check(0, gp_face2)) global.paused = false;
 	return controller;
 }
