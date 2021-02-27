@@ -36,3 +36,5 @@ arrow
 }
 
 global.paused = false;
+
+global.dragon_dead = false;

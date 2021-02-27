@@ -30,7 +30,10 @@ orig_y = y;
 self_room_index = script_get_room_index(self);
 
 dragon_x = x;
-y -= 352;
+if (!global.dragon_dead)
+{
+	y -= 352;
+}
 dragon_y = y;
 
 max_taunt_count = 3 * room_speed;

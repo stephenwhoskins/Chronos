@@ -10,7 +10,16 @@ object_avatar.y < orig_y + 80)
 	object_music_player.loop_begin_time = 14.925;
 	object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
 	
-	dragon_state = dragon_states.introduction;
+	if (global.dragon_dead)
+	{
+		death_count = 0;
+		dragon_state = dragon_states.dead;
+		sprite_index = sprite_dragon_dead;
+	}
+	else
+	{
+		dragon_state = dragon_states.introduction;
+	}
 	
 	avatar_present = true;
 	
@@ -189,6 +198,7 @@ if (hurt_count == 0 && death_count == max_death_count)
 		death_count = 0;
 		dragon_state = dragon_states.dead;
 		sprite_index = sprite_dragon_dead;
+		global.dragon_dead = true;
 	}
 }
 else if (hurt_count == 0 && death_count < max_death_count)
