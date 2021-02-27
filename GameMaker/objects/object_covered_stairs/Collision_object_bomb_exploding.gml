@@ -4,6 +4,7 @@
 if (sprite_index != sprite_tile_12)
 {
 	sprite_index = sprite_tile_12;
+	y -= sprite_height / 2;
 	global.covered_stairs_bombed = true;
 	audio_stop_sound(object_music_player.sound);
 	alarm[0] = room_speed;

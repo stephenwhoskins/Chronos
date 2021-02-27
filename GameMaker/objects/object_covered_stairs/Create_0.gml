@@ -6,4 +6,5 @@ event_inherited();
 if (global.covered_stairs_bombed)
 {
 	sprite_index = sprite_tile_12;
+	y -= sprite_height / 2;
 }
