@@ -8,13 +8,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 3,
-  "bbox_right": 38,
+  "bbox_right": 40,
   "bbox_top": 22,
   "bbox_bottom": 37,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 40,
+  "width": 41,
   "height": 38,
   "textureGroupId": {
     "name": "Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5f43b158-653e-4e19-b08c-073bc00c6add","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5f43b158-653e-4e19-b08c-073bc00c6add","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"LayerId":{"name":"b6768ffb-b38a-4752-b15b-5ef06c441565","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_time_egyptian_dead","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","name":"5f43b158-653e-4e19-b08c-073bc00c6add","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"01d1706e-5125-4bc9-b570-602937bb964d","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"01d1706e-5125-4bc9-b570-602937bb964d","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"LayerId":{"name":"cacf348f-6b1d-4e77-9f0e-e1e02d364245","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_time_egyptian_dead","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","name":"01d1706e-5125-4bc9-b570-602937bb964d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_time_egyptian_dead","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"515a7cbf-abfd-48d3-af74-9ca522fc1c9d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f43b158-653e-4e19-b08c-073bc00c6add","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"30e1a031-2333-4d17-84fe-e2cafa385b13","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"01d1706e-5125-4bc9-b570-602937bb964d","path":"sprites/sprite_time_egyptian_dead/sprite_time_egyptian_dead.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b6768ffb-b38a-4752-b15b-5ef06c441565","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cacf348f-6b1d-4e77-9f0e-e1e02d364245","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "time_egyptian",

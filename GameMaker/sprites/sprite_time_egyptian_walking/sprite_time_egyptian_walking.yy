@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 21,
+  "bbox_left": 4,
+  "bbox_right": 20,
   "bbox_top": 9,
   "bbox_bottom": 37,
   "HTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ca4b8004-a084-4761-bd9f-40c948deeb91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ca4b8004-a084-4761-bd9f-40c948deeb91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":{"name":"2c79f265-3cef-4a5f-94d2-a400aeba0750","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_time_egyptian_walking","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"ca4b8004-a084-4761-bd9f-40c948deeb91","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7855c13f-8780-475b-b259-da0942df3a8f","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7855c13f-8780-475b-b259-da0942df3a8f","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":{"name":"2c79f265-3cef-4a5f-94d2-a400aeba0750","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_time_egyptian_walking","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"7855c13f-8780-475b-b259-da0942df3a8f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"759b6c84-8d4c-4e90-96bd-1cfea53cca91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"759b6c84-8d4c-4e90-96bd-1cfea53cca91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":{"name":"2a98ee14-7bc8-4909-a765-33590d213f38","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_time_egyptian_walking","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"759b6c84-8d4c-4e90-96bd-1cfea53cca91","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e33a5b0e-583a-4659-a471-9cd163e992f2","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e33a5b0e-583a-4659-a471-9cd163e992f2","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"LayerId":{"name":"2a98ee14-7bc8-4909-a765-33590d213f38","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_time_egyptian_walking","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","name":"e33a5b0e-583a-4659-a471-9cd163e992f2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprite_time_egyptian_walking","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"24811488-eda1-4a06-b731-f24e45e6ec13","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ca4b8004-a084-4761-bd9f-40c948deeb91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9dcde8d7-b66a-4f89-9956-6cc457212801","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7855c13f-8780-475b-b259-da0942df3a8f","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0a184a42-0f4a-4982-ae2a-7e8c356b6666","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"759b6c84-8d4c-4e90-96bd-1cfea53cca91","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"da8e271e-0839-479e-bd25-306036948e6a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e33a5b0e-583a-4659-a471-9cd163e992f2","path":"sprites/sprite_time_egyptian_walking/sprite_time_egyptian_walking.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2c79f265-3cef-4a5f-94d2-a400aeba0750","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"2a98ee14-7bc8-4909-a765-33590d213f38","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "time_egyptian",
