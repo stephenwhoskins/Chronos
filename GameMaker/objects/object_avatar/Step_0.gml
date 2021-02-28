@@ -189,17 +189,37 @@ else
 if (escaping)
 {
 	sprite_index = sprite_avatar_walking;
-	image_xscale = -1.0;
 	var dest_x = camera_get_view_x(view_camera[0]) + view_wport[0] / 2;
 	var dest_y = camera_get_view_y(view_camera[0]) + view_hport[0] + global.hud_height;
 	
 	if (x != dest_x)
 	{
-		x += sign(dest_x - x);
+		image_xscale = sign(dest_x - x);
+		x += image_xscale;
 	}
 	else if (y != dest_y)
 	{
 		y += sign(dest_y - y);
+	}
+}
+else if (instance_number(object_chronos_boss) > 0 && object_chronos_boss.chronos_state == chronos_states.introduction)
+{
+	sprite_index = sprite_avatar_walking;
+	var dest_x = camera_get_view_x(view_camera[0]) + view_wport[0] / 2;
+	var dest_y = camera_get_view_y(view_camera[0]) + 3 * view_hport[0] / 4;
+	
+	if (x != dest_x)
+	{
+		image_xscale = sign(dest_x - x);
+		x += image_xscale;
+	}
+	else if (y != dest_y)
+	{
+		y += sign(dest_y - y);
+	}
+	else
+	{
+		sprite_index = sprite_avatar_idle;
 	}
 }
 // Handle walk SFX here

@@ -270,7 +270,7 @@ switch (orb_state)
 		break;
 }
 
-if (hurt_count == 0 && sprite_index != sprite_chronos_dying)
+if (hurt_count == 0 && sprite_index != sprite_chronos_dying && chronos_state != chronos_states.introduction)
 {
 	health_level = max(health_level - 1, 0);
 

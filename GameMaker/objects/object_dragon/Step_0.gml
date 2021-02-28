@@ -5,10 +5,13 @@ if (script_get_room_index(object_avatar) == self_room_index && !avatar_present &
 object_avatar.y < orig_y + 80)
 {
 	audio_stop_all();
-	object_music_player.sound = audio_play_sound(sound_dragon, 10, true);
-	object_music_player.played = false;
-	object_music_player.loop_begin_time = 14.925;
-	object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
+	if (!global.dragon_dead)
+	{
+		object_music_player.sound = audio_play_sound(sound_dragon, 10, true);
+		object_music_player.played = false;
+		object_music_player.loop_begin_time = 14.925;
+		object_music_player.alarm[0] = object_music_player.loop_begin_time * room_speed;
+	}
 	
 	if (global.dragon_dead)
 	{
