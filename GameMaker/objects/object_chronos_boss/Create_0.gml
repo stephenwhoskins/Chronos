@@ -80,3 +80,7 @@ max_orb_firing_count = 4 * room_speed;
 orb_firing_count = 0;
 
 global.time_stopped = true;
+
+chronos_attacking = false;
+chronos_attack_count = 0;
+max_chronos_attack_count = 2;

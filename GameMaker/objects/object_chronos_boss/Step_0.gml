@@ -15,6 +15,11 @@ if (global.health_level <= 0)
 {
 	x = -1000;
 	y = -1000;
+	for (var i = instance_number(object_orb) - 1; i > -1; i--)
+	{
+		var orb_instance = instance_find(object_orb, i);
+		instance_destroy(orb_instance.id);
+	}
 }
 
 if (script_get_room_index(object_avatar) != script_get_room_index(self))
@@ -37,6 +42,34 @@ switch (chronos_state)
 			alarm[1] = 2 * room_speed;
 			global.time_stopped = false;
 			instance_create_depth(x, y, depth - 100, object_health_meter);
+			global.chronos_intro_complete = true;
+		}
+		
+		// Handle rushing through the dialog.
+		var controller = read_gameplay_controller();
+		if (!chronos_attacking && global.chronos_intro_complete)
+		{
+			if (controller.attacking || controller.attacking_2 || controller.attacking_3)
+			{
+				chronos_attacking = true;
+				chronos_attack_count++;
+				if (chronos_attack_count == max_chronos_attack_count)
+				{
+					intro_text_box._text_index = intro_text_box._num_text_indexes - 1;
+					chronos_state = chronos_states.angels_flying_vertically;
+					alarm[1] = 1;
+					alarm[0] = 1;
+					global.time_stopped = false;
+					instance_create_depth(x, y, depth - 100, object_health_meter);
+				}
+			}
+		}
+		else if (chronos_attacking)
+		{
+			if (!controller.attacking && !controller.attacking_2 && !controller.attacking_3)
+			{
+				chronos_attacking = false;
+			}
 		}
 		break;
 	// Fly the angels vertically.

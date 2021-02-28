@@ -38,3 +38,5 @@ arrow
 global.paused = false;
 
 global.dragon_dead = false;
+
+global.chronos_intro_complete = false;
