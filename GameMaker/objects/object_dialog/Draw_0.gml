@@ -12,6 +12,7 @@ if (fade_out_count < max_fade_count)
 	if (fade_out_count == max_fade_count)
 	{
 		instance_destroy();
+		return;
 	}
 }
 
