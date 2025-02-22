@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_timey_death_sequence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_timey_death_sequence",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

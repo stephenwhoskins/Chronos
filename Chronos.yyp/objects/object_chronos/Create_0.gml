@@ -1,0 +1,13 @@
+/// @description Insert description here
+// You can write your code in this editor
+max_float_count = 240;
+float_count = 0;
+orig_y = y;
+
+max_death_count = 720;
+death_count = max_death_count;
+
+max_time_warp_count = 480;
+time_warp_count = max_time_warp_count;
+
+global.shake_count = global.max_shake_count

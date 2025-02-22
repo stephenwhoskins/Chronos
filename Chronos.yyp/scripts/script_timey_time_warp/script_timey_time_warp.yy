@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_timey_time_warp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_timey_time_warp",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

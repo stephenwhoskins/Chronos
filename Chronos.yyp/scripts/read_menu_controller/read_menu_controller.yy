@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"read_menu_controller",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"read_menu_controller",
+  "parent":{
+    "name":"controller",
+    "path":"folders/Scripts/controller.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

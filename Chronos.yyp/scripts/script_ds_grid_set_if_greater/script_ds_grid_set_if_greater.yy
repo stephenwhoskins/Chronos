@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_ds_grid_set_if_greater",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_ds_grid_set_if_greater",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
