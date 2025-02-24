@@ -18,3 +18,5 @@ sprite_walking = sprite_warrior_walking;
 sprite_dead = sprite_warrior_dead;
 
 being_attacked = false;
+
+sight_radius = 150.0;

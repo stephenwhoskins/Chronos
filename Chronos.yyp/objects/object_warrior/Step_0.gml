@@ -27,12 +27,12 @@ if (health_level > 0)
 			x += x_velocity;
 		}
 	}
-	else if (distance_to_object(object_avatar) < 50 || being_attacked)
+	else if (distance_to_object(object_avatar) < sight_radius || being_attacked)
 	{
 		being_attacked = true;
 		sprite_index = sprite_walking;
-		var velocity = min(0.0, distance_to_object(object_avatar));
-		velocity = max(1.0, velocity);
+		var velocity = 1.5 * max(0.0, 1.0 - distance_to_object(object_avatar) / sight_radius);
+		if (hurt_count < max_hurt_count) velocity *= 0.5;
 		var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
 		var dx = velocity * cos(angle);
 		var dy = velocity * sin(angle);

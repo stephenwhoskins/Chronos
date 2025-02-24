@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"font_dialogue",
-  "AntiAlias":1,
+  "AntiAlias":0,
   "applyKerning":0,
   "ascender":16,
   "ascenderOffset":0,
@@ -107,7 +107,7 @@
     "124":{"character":124,"h":20,"offset":3,"shift":7,"w":1,"x":212,"y":2,},
     "125":{"character":125,"h":20,"offset":0,"shift":5,"w":4,"x":206,"y":2,},
     "126":{"character":126,"h":20,"offset":0,"shift":8,"w":7,"x":226,"y":46,},
-    "9647":{"character":9647,"h":20,"offset":3,"shift":16,"w":10,"x":235,"y":46,},
+    "9647":{"character":9647,"h":20,"offset":3,"shift":16,"w":9,"x":235,"y":46,},
   },
   "hinting":0,
   "includeTTF":false,

@@ -5,7 +5,7 @@ if (room_id != -1)
 	var alpha = fade_count / max_fade_count;
 	draw_set_color(c_black);
 	draw_set_alpha(alpha);
-	draw_rectangle(0, 0, view_wport[0], view_hport[0], false);
+	draw_rectangle(0, 0, 5 * view_wport[0], 4 * view_hport[0], false);
 	draw_set_alpha(1.0);
 	draw_set_color(c_white);
 
