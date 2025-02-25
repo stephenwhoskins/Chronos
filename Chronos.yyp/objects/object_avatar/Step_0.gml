@@ -48,6 +48,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 					vspeed = -walk_speed;
 				}
 				moving_up = true;
+				movement = MOVEMENT.UP;
 			}
 			else if (controller.down)
 			{
@@ -57,6 +58,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 					vspeed = walk_speed;
 				}
 				moving_down = true;
+				movement = MOVEMENT.DOWN;
 			}
 
 			if (controller.left)
@@ -68,6 +70,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 					hspeed = -walk_speed;
 				}
 				moving_left = true;
+				movement = MOVEMENT.UP;
 			}
 			else if (controller.right)
 			{
@@ -78,52 +81,65 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 					hspeed = walk_speed;
 				}
 				moving_right = true;
+				movement = MOVEMENT.UP;
 			}
 		}
 		else // Handle avatar attacking / enemy damage here
 		{
-			sword_attacking_instance.x = x;
-			sword_attacking_instance.y = y;
-			sword_attacking_instance.image_xscale = image_xscale;
-			with (sword_attacking_instance)
+			var _sword_instance = instance_find(object_sword_attacking, 0);
+			
+			if (_sword_instance != noone)
 			{
-				var _list = ds_list_create();
-				var _num = instance_place_list(x, y, object_enemy, _list, false);
-				if _num > 0
+				_sword_instance.x = x;
+				_sword_instance.y = y;
+				_sword_instance.image_xscale = image_xscale;
+				_sword_instance.image_yscale = 1;
+				if (movement == MOVEMENT.DOWN)
 				{
-					for (var i = 0; i < _num; ++i;)
+					_sword_instance.image_yscale = -1;
+					_sword_instance.y -= 25;
+				}
+				
+				with (_sword_instance)
+				{
+					var _list = ds_list_create();
+					var _num = instance_place_list(x, y, object_enemy, _list, false);
+					if _num > 0
 					{
-					    var instance_enemy = _list[| i];
-						instance_enemy.hit_type = hit_types.sword;
-						if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
+						for (var i = 0; i < _num; ++i;)
 						{
-							if (instance_enemy.object_index != object_electricity_0 &&
-							instance_enemy.object_index != object_electricity_1 &&
-							(instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking))
+						    var instance_enemy = _list[| i];
+							instance_enemy.hit_type = hit_types.sword;
+							if (instance_enemy.hurt_count == instance_enemy.max_hurt_count)
 							{
-								instance_enemy.hurt_count = 0;
-								
-								// Handle enemy left of avatar.
-								if (instance_enemy.x < x)
+								if (instance_enemy.object_index != object_electricity_0 &&
+								instance_enemy.object_index != object_electricity_1 &&
+								(instance_enemy.object_index != object_jelly || instance_enemy.state != jelly_state.jelly_shocking))
 								{
-									instance_enemy.bounce_direction = -1.0;
+									instance_enemy.hurt_count = 0;
+								
+									// Handle enemy left of avatar.
+									if (instance_enemy.x < x)
+									{
+										instance_enemy.bounce_direction = -1.0;
+									}
+									else
+									{
+										instance_enemy.bounce_direction = 1.0;
+									}
 								}
 								else
 								{
-									instance_enemy.bounce_direction = 1.0;
+									object_avatar.sprite_index = sprite_avatar_shocked;
+									object_avatar.shock_count = 0;
+									global.health_level--;
+									break;
 								}
-							}
-							else
-							{
-								object_avatar.sprite_index = sprite_avatar_shocked;
-								object_avatar.shock_count = 0;
-								global.health_level--;
-								break;
 							}
 						}
 					}
+					ds_list_destroy(_list);
 				}
-				ds_list_destroy(_list);
 			}
 		}
 		
@@ -133,6 +149,7 @@ if (global.health_level > 0 && !global.time_stopped && !script_transitioning_roo
 			{
 				image_index = 0;
 				audio_play_sound(sound_slice, 10, false);
+				instance_create_depth(x, y, depth - 1, object_sword_attacking);
 			}
 			sprite_index = sprite_avatar_attacking;
 			attack_pressed = true;

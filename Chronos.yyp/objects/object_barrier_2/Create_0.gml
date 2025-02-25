@@ -10,3 +10,8 @@ if (sprite_index == sprite_barrier_3)
 	draining_sprite = sprite_barrier_10;
 	drained_sprite = sprite_tile_31_tropics;
 }
+else if (object_index == object_barrier_9)
+{
+	draining_sprite = sprite_barrier_10;
+	drained_sprite = sprite_tile_32_tropics;
+}
