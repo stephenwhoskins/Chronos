@@ -26,9 +26,7 @@ if (health_level > 0)
 			x += x_velocity;
 		}
 	}
-	else if (
-			(distance_to_object(object_avatar) < 150 && !is_boss) ||
-			(distance_to_object(object_avatar) < 70 && is_boss) || being_attacked)
+	else if (distance_to_object(object_avatar) < sight_radius || being_attacked)
 	{
 		being_attacked = true;
 		
@@ -57,7 +55,8 @@ if (health_level > 0)
 		else // Handle movement logic here
 		{
 			sprite_index = sprite_snake_walking;
-			var velocity = min(.8, distance_to_object(object_avatar));
+			var velocity = max(0.0, 1.0 - distance_to_object(object_avatar) / sight_radius);
+			if (hurt_count < max_hurt_count) velocity *= 0.5;
 			var angle = arctan2(object_avatar.y - y, object_avatar.x - x);
 			var dx = velocity * cos(angle);
 			var dy = velocity * sin(angle);

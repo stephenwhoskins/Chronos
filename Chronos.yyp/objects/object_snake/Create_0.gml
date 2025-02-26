@@ -4,6 +4,7 @@ is_boss = abs(image_xscale) > 1.1;
 health_level = is_boss ? 25 : 3;
 max_hurt_count = 30;
 hurt_count = max_hurt_count;
+sight_radius = 150;
 
 max_bounce_back_count = 10;
 bounce_back_count = max_bounce_back_count;
@@ -23,6 +24,7 @@ if (is_boss)
 	{
 		instance_destroy();
 	}
+	sight_radius = 70;
 }
 
 start_x = x;
