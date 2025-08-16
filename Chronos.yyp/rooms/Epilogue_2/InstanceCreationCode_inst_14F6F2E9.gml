@@ -1,0 +1,1 @@
+text = "With the entirety of human\nhistory now restored,\nmankind has dedicated\nitself to the restoration of\ncivilization."

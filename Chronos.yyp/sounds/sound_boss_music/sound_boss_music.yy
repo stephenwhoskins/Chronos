@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":39.57577,
+  "duration":39.203968,
   "name":"sound_boss_music",
   "parent":{
     "name":"music",
